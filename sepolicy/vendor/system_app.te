@@ -20,3 +20,6 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 
 # Allow KProfiles to be adjusted by a system app
 allow system_app sysfs_kprofiles:file rw_file_perms;
+
+# FPS Info
+allow system_app vendor_sysfs_graphics:file { getattr open read };
