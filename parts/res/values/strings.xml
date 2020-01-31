@@ -41,4 +41,8 @@
     <string name="dirac_headset_bluetooth_collar">Mi Bluetooth Neckband</string>
     <string name="dirac_headset_bluetooth_linefree">Mi Bluetooth Earphones</string>
     <string name="dirac_headset_redmi_earphones">Redmi Earphones</string>
+	
+	<!-- Raise to wake strings-->
+    <string name="raise_to_wake_gesture_title">Raise to wake</string>
+    <string name="raise_to_wake_gesture_summary">Wake up the device instead of pulsing notification</string>
 </resources>
