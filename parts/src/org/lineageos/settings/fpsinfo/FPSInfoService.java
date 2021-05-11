@@ -81,19 +81,19 @@ public class FPSInfoService extends Service {
         FPSView(Context c) {
             super(c);
             float density = c.getResources().getDisplayMetrics().density;
-            int paddingPx = Math.round(5 * density);
+            int paddingPx = Math.round(10 * density);
             setPadding(paddingPx, paddingPx, paddingPx, paddingPx);
             setBackgroundColor(Color.argb(0x60, 0, 0, 0));
 
-            final int textSize = Math.round(12 * density);
+            final int textSize = Math.round(20 * density);
 
-            Typeface typeface = Typeface.create("monospace", Typeface.NORMAL);
+            Typeface typeface = Typeface.create("google-sans", Typeface.NORMAL);
 
             mOnlinePaint = new Paint();
             mOnlinePaint.setTypeface(typeface);
             mOnlinePaint.setAntiAlias(true);
             mOnlinePaint.setTextSize(textSize);
-            mOnlinePaint.setColor(Color.WHITE);
+            mOnlinePaint.setColor(Color.GREEN);
             mOnlinePaint.setShadowLayer(5.0f, 0.0f, 0.0f, Color.BLACK);
 
             mAscent = mOnlinePaint.ascent();
@@ -154,8 +154,7 @@ public class FPSInfoService extends Service {
             if (mOnlinePaint != null) {
                 mMaxWidth = (int) mOnlinePaint.measureText(mFps);
             }
-
-            int neededWidth = mPaddingLeft + mPaddingRight + mMaxWidth;
+            int neededWidth = mPaddingLeft + mPaddingRight + mMaxWidth + 40;
             int neededHeight = mPaddingTop + mPaddingBottom + 40;
             if (neededWidth != mNeededWidth || neededHeight != mNeededHeight) {
                 mNeededWidth = neededWidth;
