@@ -119,6 +119,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
 ro.launcher.blur.appLaunch=0
+ro.surface_flinger.supports_background_blur=1
 ro.vendor.display.sensortype=2
 vendor.display.enable_async_powermode=1
 
