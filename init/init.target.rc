@@ -197,8 +197,12 @@ on boot
     chown system system /sys/class/backlight/panel0-backlight/brightness_clone
     chmod 0664 /sys/class/power_supply/battery/dc_thermal_levels
     chown system system /sys/class/thermal/thermal_message/sconfig
-
     chown system system /sys/class/thermal/thermal_message/balance_mode
+
+    # Dc Dimming
+    chown system system /sys/class/drm/card0-DSI-1/disp_param
+    chmod 0660 /sys/class/drm/card0-DSI-1/disp_param
+
     # Load all wlan drivers
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_qca6390 qca_cld3_qca6490
 
