@@ -24,6 +24,7 @@ import android.content.SharedPreferences;
 import android.os.SystemProperties;
 import android.util.Log;
 import androidx.preference.PreferenceManager;
+import org.lineageos.settings.refreshrate.RefreshUtils;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.utils.FileUtils;
@@ -41,6 +42,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         DozeUtils.checkDozeService(context);
+		RefreshUtils.startService(context);
 
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
         FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "0x40000" : "0x50000");
