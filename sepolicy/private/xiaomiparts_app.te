@@ -27,6 +27,7 @@ allow xiaomiparts_app system_data_file:dir { search };
 
 allow xiaomiparts_app {
   cgroup
+  sysfs_htsr
   sysfs_thermal
 }:{ file lnk_file } rw_file_perms;
 
@@ -35,3 +36,5 @@ allow xiaomiparts_app game_service:service_manager { find };
 allow xiaomiparts_app netstats_service:service_manager { find };
 
 dontaudit xiaomiparts_app default_prop:file read;
+
+allow xiaomiparts_app hint_service:service_manager { find };
