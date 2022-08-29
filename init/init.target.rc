@@ -166,6 +166,9 @@ on boot
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_wlan
     chown system system /proc/tp_selftest
     chmod 0664 /proc/tp_selftest
+	
+	# Dc Dimming
+    chmod 0777 /sys/class/drm/card0-DSI-1/disp_param
 
     chown system system /sys/class/drm/card0-DSI-1/mipi_reg
     chmod 0664 /sys/class/drm/card0-DSI-1/mipi_reg
