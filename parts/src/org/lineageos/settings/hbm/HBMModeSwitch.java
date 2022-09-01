@@ -28,6 +28,7 @@ import org.lineageos.settings.utils.FileUtils;
 public class HBMModeSwitch implements OnPreferenceChangeListener {
 
     private static final String HBM = "/sys/class/drm/card0/card0-DSI-1/disp_param";
+    private static final String BACKLIGHT = "/sys/class/backlight/panel0-backlight/brightness";
 
     public static String getHBM() {
         if (FileUtils.isFileWritable(HBM)) {
@@ -37,10 +38,19 @@ public class HBMModeSwitch implements OnPreferenceChangeListener {
         return null;
     }
 
+    public static String getBACKLIGHT() {
+        if (FileUtils.isFileWritable(BACKLIGHT)) {
+            return BACKLIGHT;
+        }
+
+        return null;
+    }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         Boolean enabled = (Boolean) newValue;
         FileUtils.writeLine(getHBM(), enabled ? "0x10000" : "0xF0000");
+        FileUtils.writeLine(getBACKLIGHT(), enabled ? "2047" : "2047");
         return true;
     }
 }

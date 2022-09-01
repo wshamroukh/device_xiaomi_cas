@@ -31,6 +31,7 @@ public class HBMModeTileService extends TileService {
 
     private static final String HBM = "/sys/class/drm/card0/card0-DSI-1/disp_param";
     private static final String HBM_KEY = "hbm";
+    private static final String BACKLIGHT = "/sys/class/backlight/panel0-backlight/brightness";
 
 
     private void updateUI(boolean enabled) {
@@ -57,6 +58,7 @@ public class HBMModeTileService extends TileService {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         final boolean enabled = !(sharedPrefs.getBoolean(HBM_KEY, false));
         FileUtils.writeLine(HBM, enabled ? "0x10000" : "0xF0000");
+        FileUtils.writeLine(BACKLIGHT, enabled ? "2047" : "2047");
         sharedPrefs.edit().putBoolean(HBM_KEY, enabled).commit();
         updateUI(enabled);
     }
