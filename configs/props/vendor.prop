@@ -229,6 +229,9 @@ telephony.lteOnCdmaDevice=1
 # RIL Battery Saving off
 persist.vendor.radio.add_power_save=0
 
+# Screen recorder 
+debug.sdm.support_writeback=0
+
 # SoC
 ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
