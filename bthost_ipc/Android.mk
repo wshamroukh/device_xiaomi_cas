@@ -14,10 +14,10 @@ LOCAL_SRC_FILES := bthost_ipc.c
 LOCAL_C_INCLUDES += \
         $(LOCAL_PATH)/bthost_ipc.h
 
-LOCAL_MODULE := libbthost_if
+LOCAL_MODULE := libbthost_if_sink
 LOCAL_MODULE_SUFFIX  := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_SHARED_LIBRARIES := liblog libcutils
+LOCAL_SHARED_LIBRARIES := liblog libcutils libprocessgroup
 LOCAL_HEADER_LIBRARIES := libhardware_headers
 LOCAL_MODULE_TAGS := optional
 ifdef TARGET_2ND_ARCH
