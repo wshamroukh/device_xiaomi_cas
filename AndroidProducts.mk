@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_cas.mk
+    $(LOCAL_DIR)/aosp_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_cas-eng \
-    arrow_cas-user \
-    arrow_cas-userdebug
+    aosp_cas-eng \
+    aosp_cas-user \
+    aosp_cas-userdebug
