@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_cas.mk
+    $(LOCAL_DIR)/cherish_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_cas-eng \
-    arrow_cas-user \
-    arrow_cas-userdebug
+    cherish_cas-eng \
+    cherish_cas-user \
+    cherish_cas-userdebug
