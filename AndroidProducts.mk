@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_cas.mk
+    $(LOCAL_DIR)/pixys_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_cas-eng \
-    arrow_cas-user \
-    arrow_cas-userdebug
+    pixys_cas-eng \
+    pixys_cas-user \
+    pixys_cas-userdebug
