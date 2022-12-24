@@ -807,10 +807,6 @@ vendor/lib64/libtinyxml2_1.so
 vendor/etc/ltm_config_xiaomi_42_02_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_cmd_mode_dsc_dsi_panel.xml
 
-# Display Gralloc
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-
 # Display Postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
