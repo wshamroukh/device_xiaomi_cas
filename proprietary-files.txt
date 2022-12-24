@@ -647,45 +647,6 @@ vendor/etc/camera/seg_quantized.dlc
 vendor/etc/camera/st_license.lic
 vendor/etc/camera/vidhance_calibration
 
-# Camera (Prebuilt)
-vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
-vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
-vendor/lib/android.hardware.camera.provider@2.4-external.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-external-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-external-impl.so
-vendor/lib/camera.device@3.5-impl.so
-vendor/lib/camera.device@3.6-external-impl.so
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib/libcamera2ndk_vendor.so
-vendor/lib/libgui_vendor.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib/vendor.qti.hardware.camera.device@2.0.so
-vendor/lib/vendor.qti.hardware.camera.device@3.5.so
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-external-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-external-impl.so
-vendor/lib64/camera.device@3.5-impl.so
-vendor/lib64/camera.device@3.6-external-impl.so
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libdng_sdk2vendor.so
-vendor/lib64/libgui_vendor.so
-vendor/lib64/libgui_vendor.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.device@2.0.so
-vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
-
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
