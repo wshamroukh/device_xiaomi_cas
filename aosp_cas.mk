@@ -11,26 +11,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-
-PRODUCT_NAME := xtended_cas
+# Inherit some common Project-Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+IS_PHONE := true
+PRODUCT_NAME := aosp_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
 PRODUCT_MANUFACTURER := Xiaomi
 
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
-# Xtended Stuffs
-XTENDED_BUILD_MAINTAINER := waddah
-XTENDED_BUILD_TYPE := UNOFFICIAL
+# ELIXIR Stuffs
+ELIXIR_MAINTAINER := waddah
+ELIXIR_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
+EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_BLUR := true
-XTENDED_BUILD_DONATE_URL := https://www.paypal.com/paypalme/Alec174
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
