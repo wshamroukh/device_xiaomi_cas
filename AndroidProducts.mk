@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_cas.mk
+    $(LOCAL_DIR)/awaken_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_cas-eng \
-    xtended_cas-user \
-    xtended_cas-userdebug
+    awaken_cas-eng \
+    awaken_cas-user \
+    awaken_cas-userdebug
