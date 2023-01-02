@@ -42,7 +42,7 @@ SUSHI_BOOTANIMATION := 1080
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
 # disable/enable blur support, default is false
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 
 # UDFPS ICONS/ANIMATIONS
 TARGET_HAS_UDFPS := true
@@ -57,9 +57,7 @@ TARGET_GAPPS_ARCH := arm64
 
 # Opt out of google dialer support, compiler will build arrow dialer,
 # package type will change from PIXEL -> GMS
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true
-
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
+TARGET_OPTOUT_GOOGLE_TELEPHONY := false
 
 WITH_GMS := true
 
