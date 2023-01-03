@@ -14,7 +14,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 # Inherit some common cherish stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := xtended_cas
+PRODUCT_NAME := cherish_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
@@ -22,7 +22,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-ARGET_SUPPORTS_QUICK_TAP := true
+
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
 USE_PIXEL_CHARGING := true
