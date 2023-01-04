@@ -13,26 +13,19 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-WITH_GMS := true
-EVO_BUILD_TYPE := UNOFFICIAL
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := flase
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-EXTRA_UDFPS_ANIMATIONS := true
-EVO_MAINTAINER := WADDAH
-TARGET_ENABLE_BLUR := false
-EVO_SIGNED := true
 
 PRODUCT_NAME := evolution_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
 PRODUCT_MANUFACTURER := Xiaomi
+BOARD_VENDOR := Xiaomi
 
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# FOD animations
+EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
