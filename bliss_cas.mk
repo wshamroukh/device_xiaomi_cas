@@ -11,26 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common blissOS stuff
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
-PRODUCT_NAME := evolution_cas
+# Bliss Properties
+TARGET_SUPPORTS_QUICK_TAP := true
+BLISS_BUILDTYPE=OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_BOOT_ANIMATION_RES := 1080
+EXTRA_UDFPS_ANIMATIONS := true
+
+
+PRODUCT_NAME := bliss_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
 PRODUCT_MANUFACTURER := Xiaomi
 BOARD_VENDOR := Xiaomi
-
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# FOD animations
-EXTRA_UDFPS_ANIMATIONS := true
-
-EVO_BUILD_TYPE := OFFICIAL
-TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
-TARGET_SUPPORTS_CALL_RECORDING := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
