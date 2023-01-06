@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Xtended OS stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-PRODUCT_NAME := evolution_cas
+PRODUCT_NAME := xtended_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
@@ -23,14 +23,13 @@ BOARD_VENDOR := Xiaomi
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# FOD animations
-EXTRA_UDFPS_ANIMATIONS := true
-
-EVO_BUILD_TYPE := OFFICIAL
+WITH_GAPPS := true
+XTENDED_BUILD_MAINTAINER := WADDAH
+XTENDED_BUILD_TYPE := OFFICIAL
 TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
-TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_USES_BLUR := true
+TARGET_SHIP_GCAM_GO := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
