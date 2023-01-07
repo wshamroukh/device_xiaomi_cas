@@ -11,10 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
-PRODUCT_NAME := evolution_cas
+# Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
+
+PRODUCT_NAME := carbon_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
@@ -22,15 +25,11 @@ PRODUCT_MANUFACTURER := Xiaomi
 BOARD_VENDOR := Xiaomi
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
 
-# FOD animations
-EXTRA_UDFPS_ANIMATIONS := true
-
-EVO_BUILD_TYPE := OFFICIAL
-TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
-TARGET_SUPPORTS_CALL_RECORDING := true
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carbon.maintainer="WADDAH"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
