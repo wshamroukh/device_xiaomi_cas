@@ -9,4 +9,4 @@ allow system_app vendor_sysfs_battery_supply:file { getattr };
 r_dir_file(system_app, vendor_sysfs_battery_supply)
 # Fixing denials 
 allow system_app proc_pagetypeinfo:file { getattr open read };
-
+allow system_app vendor_default_prop:file { getattr map open };

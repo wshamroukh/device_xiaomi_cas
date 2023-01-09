@@ -3,5 +3,6 @@ allow system_server proc_last_kmsg:file r_file_perms;
 
 get_prop(system_server, vendor_display_notch_prop)
 # Fixing denials 
+allow system_server default_prop:property_service set;
 allow system_server sysfs:file { getattr open read };
 allow system_server vendor_file:file { getattr map open read };
