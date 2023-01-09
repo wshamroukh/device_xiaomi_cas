@@ -1,7 +1,3 @@
 type xiaomiparts_app, domain;
 
 typeattribute xiaomiparts_app mlstrustedsubject;
-# Fixing denials 
-allow xiaomiparts_app content_capture_service:service_manager find;
-allow xiaomiparts_app game_service:service_manager find;
-allow xiaomiparts_app netstats_service:service_manager find;

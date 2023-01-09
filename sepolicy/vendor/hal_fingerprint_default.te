@@ -39,5 +39,3 @@ binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
 allow hal_fingerprint_default sysfs_fod:file { open read };
-# Fixing denials 
-allow hal_fingerprint_default system_prop:file { getattr map open read };
