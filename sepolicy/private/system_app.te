@@ -4,5 +4,4 @@ hal_client_domain(system_app, hal_mlipay)
 r_dir_file(system_app sysfs_zram)
 # Fixing denials 
 allow system_app proc_pagetypeinfo:file { getattr open read };
-allow system_app vendor_default_prop:file { getattr map open };
 

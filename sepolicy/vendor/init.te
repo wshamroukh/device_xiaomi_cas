@@ -6,7 +6,5 @@ allow init proc_last_kmsg:file {
 allow init per_boot_file:file ioctl;
 allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
 # Fixing denials 
-allow init sysfs:file { open write };
 allow init vendor_data_file:file { append lock };
-allow init vendor_file:file { execute execute_no_trans };
 
