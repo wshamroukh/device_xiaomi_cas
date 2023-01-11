@@ -195,7 +195,6 @@ persist.data.iwlan=1
 persist.data.iwlan.ipsec.ap=1
 persist.data.iwlan.enable=true
 persist.radio.VT_ENABLE=1
-persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.vt.supported=1
 persist.vendor.sys.cnd.iwlan=1
 persist.vendor.cne.logging.qxdm=3974
