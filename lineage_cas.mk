@@ -25,6 +25,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+BUILD_FINGERPRINT := Xiaomi/cas/cas:12/RKQ1.211001.001/V13.0.6.0.SJJCNXM:user/release-keys
 # chipset flag enclose var with "" if more than one
 # friendly tip: builders can use init_xxx.cpp as workaround for spacing
 # e.g. property_override("ro.rice.chipset", "Snapdragon 870 5G");
