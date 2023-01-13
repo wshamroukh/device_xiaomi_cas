@@ -219,6 +219,3 @@ CONFIG_IEEE80211AX := true
 
 # Inherit from the proprietary version
 include vendor/xiaomi/cas/BoardConfigVendor.mk
-
-# Inherit from proprietary files for miuicamera
--include vendor/xiaomi/cas-miuicamera/products/board.mk
