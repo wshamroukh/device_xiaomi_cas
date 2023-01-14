@@ -398,7 +398,7 @@
     <!-- Shows the required view for in-display fingerprint -->
     <bool name="config_supportsInDisplayFingerprint">true</bool>
 
-    <!-- Shows the required view for Screen OFF FOD -->
+    <!-- Shows the required view for Screen OFF FOD UDFPS -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
