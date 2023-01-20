@@ -35,16 +35,11 @@ genfscon sysfs /devices/platform/soc/9800000.qcom,npu/wakeup                    
 genfscon sysfs /devices/platform/soc/abb0000.qcom,cvpss/wakeup                                                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/wakeup                                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/188101c.qcom,spss/wakeup                                                                               u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/aab0000.qcom,venus/wakeup                                                                              u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca6390/wakeup                                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/wakeup                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/wakeup                                                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:gpio_keys/wakeup                                                                                   u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c10000.qcom,pcie/wakeup                                                                               u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1c10000.qcom,pcie/pci0002:00/0002:00:00.0/0002:01:00.0/0306_02.01.00_EFS/wakeup                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c00000.qcom,pcie/wakeup                                                                               u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/1101_00.01.00/wakeup                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/wakeup                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-3/3-0049/wakeup                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/wakeup                                                                         u:object_r:sysfs_wakeup:s0
@@ -92,7 +87,6 @@ genfscon sysfs /devices/platform/soc/188101c.qcom,spss/wakeup/wakeup21          
 genfscon sysfs /devices/platform/soc/abb0000.qcom,cvpss/wakeup/wakeup23                                                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/wakeup/wakeup25                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/wakeup/wakeup27                                                                      u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/wakeup/wakeup29                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,smp2p_sleepstate/wakeup/wakeup30                                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/998000.qcom,qup_uart/wakeup/wakeup31                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/diag/diag/wakeup32                                                                                          u:object_r:sysfs_wakeup:s0
