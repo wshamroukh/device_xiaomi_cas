@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_cas.mk
+    $(LOCAL_DIR)/lineage_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_cas-eng \
-    arrow_cas-user \
-    arrow_cas-userdebug
+    lineage_cas-eng \
+    lineage_cas-user \
+    lineage_cas-userdebug
