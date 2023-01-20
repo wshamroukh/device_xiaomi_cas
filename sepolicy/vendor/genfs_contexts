@@ -34,7 +34,6 @@ genfscon sysfs /devices/platform/soc/8300000.qcom,turing/wakeup                 
 genfscon sysfs /devices/platform/soc/9800000.qcom,npu/wakeup                                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/abb0000.qcom,cvpss/wakeup                                                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1e00000.qcom,ipa/wakeup                                                                                u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/wakeup                                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/wakeup                                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/188101c.qcom,spss/wakeup                                                                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/aab0000.qcom,venus/wakeup                                                                              u:object_r:sysfs_wakeup:s0
@@ -94,7 +93,6 @@ genfscon sysfs /devices/platform/soc/188101c.qcom,spss/wakeup/wakeup21          
 genfscon sysfs /devices/platform/soc/abb0000.qcom,cvpss/wakeup/wakeup23                                                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/wakeup/wakeup25                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/wakeup/wakeup27                                                                      u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/wakeup/wakeup29                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,smp2p_sleepstate/wakeup/wakeup30                                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/998000.qcom,qup_uart/wakeup/wakeup31                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/diag/diag/wakeup32                                                                                          u:object_r:sysfs_wakeup:s0
