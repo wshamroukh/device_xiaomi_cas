@@ -112,7 +112,7 @@ BOARD_KERNEL_CMDLINE := \
     reboot=panic_warm \
     service_locator.enable=1 \
     swiotlb=2048
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=enforcing
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -216,4 +216,4 @@ CONFIG_IEEE80211AX := true
 include vendor/xiaomi/cas/BoardConfigVendor.mk
 
 # Inherit from proprietary files for miuicamera
--include vendor/xiaomi/cas-miuicamera/products/board.mk
+#-include vendor/xiaomi/cas-miuicamera/products/board.mk
