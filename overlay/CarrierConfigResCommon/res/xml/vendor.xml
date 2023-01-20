@@ -43,6 +43,10 @@
         <string name="gps.nfw_proxy_apps">com.example.android.locationattribution</string>
         <boolean name="dtmf_type_enabled_bool" value="true" />
         <boolean name="csp_enabled_bool" value="true" />
+        <!-- Show VoLTE and VoWIFI for all -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="001" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1161,6 +1165,21 @@
         <boolean name="config_retry_sms_over_ims" value="true" />
         <boolean name="config_update_service_status" value="false" />
         <boolean name="carrier_supports_multianchor_conference" value="true" />
+    </carrier_config>
+    <carrier_config mcc="424" mnc="02">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="424" mnc="03">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="420" mnc="01,03,04">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="440" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true" />
