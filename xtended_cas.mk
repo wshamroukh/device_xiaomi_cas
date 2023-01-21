@@ -13,24 +13,22 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common Xtended stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-
-PRODUCT_NAME := xtended_cas
-PRODUCT_DEVICE := cas
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := M2007J1SC
-PRODUCT_MANUFACTURER := Xiaomi
-
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
 # Xtended Stuffs
-XTENDED_BUILD_MAINTAINER := waddah
+XTENDED_BUILD_MAINTAINER := WADDAH
 XTENDED_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
-XTENDED_BUILD_DONATE_URL := https://www.paypal.com/paypalme/Alec174
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_INCLUDE_EXTRA_GAPPS=true
+
+PRODUCT_NAME := xtended_cas
+PRODUCT_DEVICE := cas
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := M2007J1SC
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
