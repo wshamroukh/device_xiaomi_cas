@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit GAPPS
-$(call inherit-product, vendor/gms/common/common-vendor.mk)
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
 
 # crdroid Stuffs
 WITH_GAPPS := true
