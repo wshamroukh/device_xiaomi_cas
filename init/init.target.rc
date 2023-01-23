@@ -219,7 +219,7 @@ on boot
     chown system system /sys/touchpanel/double_tap
 
     # Charging current limitation
-    write /sys/class/power_supply/battery/constant_charge_current_max 6000000
+    #write /sys/class/power_supply/battery/constant_charge_current_max 6000000
 
     # Set fingerprint related permissions
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq
