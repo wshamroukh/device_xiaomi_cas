@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common aicp stuff.
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+WITH_GMS := true
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="WADDAH"
 
