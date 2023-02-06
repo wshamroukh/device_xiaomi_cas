@@ -19,5 +19,5 @@
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 
     <!-- Shows the required view for Screen OFF FOD -->
-    <bool name="config_supportsScreenOffUdfps">true</bool>
+    <bool name="config_supportScreenOffUdfps">true</bool>
 </resources>
