@@ -334,8 +334,7 @@ PRODUCT_PACKAGES += \
     DeviceFrameworks \
     DeviceSystemUI \
     DeviceTelephony \
-    SettingsProviderOverlay \
-    SettingsResCas
+    SettingsProviderOverlay
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
