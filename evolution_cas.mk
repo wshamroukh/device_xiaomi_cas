@@ -13,7 +13,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-EVO_BUILD_TYPE := UNOFFICIAL
+EVO_BUILD_TYPE := OFFICIAL
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
