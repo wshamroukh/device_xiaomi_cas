@@ -333,8 +333,7 @@ PRODUCT_PACKAGES += \
     WifiResTarget \
     DeviceFrameworks \
     DeviceSystemUI \
-    DeviceTelephony \
-    SettingsProviderOverlay
+    DeviceTelephony
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
