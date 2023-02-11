@@ -1,6 +1,2 @@
 r_dir_file(xiaomiparts_app, vendor_sysfs_graphics)
 allow xiaomiparts_app vendor_sysfs_graphics:file write;
-
-allow xiaomiparts_app content_capture_service:service_manager { find };
-allow xiaomiparts_app game_service:service_manager { find };
-allow xiaomiparts_app netstats_service:service_manager { find };
