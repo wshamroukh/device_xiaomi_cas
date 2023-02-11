@@ -335,7 +335,6 @@ PRODUCT_PACKAGES += \
     DeviceFrameworks \
     DeviceSystemUI \
     DeviceTelephony \
-    SettingsProviderOverlay \
     SettingsResCas
 
 # Partitions
