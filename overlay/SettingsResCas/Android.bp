@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SettingsRes",
+    name: "SettingsResCas",
     product_specific: true,
 }
