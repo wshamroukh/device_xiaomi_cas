@@ -15,7 +15,7 @@
     <integer name="config_udfpsHbmType">0</integer>
 
     <!-- Udfps vendor code -->
-    <integer name="config_udfps_vendor_code">22</integer>
+    <integer name="config_udfpsVendorCode">22</integer>
 
     <!-- Burn-in protection -->
     <dimen name="burnin_protection_horizontal_shift">1dp</dimen>
