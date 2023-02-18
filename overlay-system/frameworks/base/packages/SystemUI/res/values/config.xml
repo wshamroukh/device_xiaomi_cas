@@ -19,5 +19,8 @@
 
     <!-- Burn-in protection -->
     <dimen name="burnin_protection_horizontal_shift">1dp</dimen>
+
+    <!-- StatusBar burn-in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
     
 </resources>
