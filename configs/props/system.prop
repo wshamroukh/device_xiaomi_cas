@@ -1,5 +1,5 @@
 # Camera
-vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam,org.lineageos.aperture
+vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 
 # Charger
 ro.charger.enable_suspend=1
