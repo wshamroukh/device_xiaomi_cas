@@ -19,6 +19,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/cas/cas-vendor.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/cas-miuicamera/products/miuicamera.mk)
+
 # SDCardFS Deprecation ## https://source.android.com/devices/storage/sdcardfs-deprecate
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
@@ -325,7 +328,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-system
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    ApertureRes \
     CarrierConfigResCommon \
     FrameworksResCommon \
     FrameworksResTarget \
