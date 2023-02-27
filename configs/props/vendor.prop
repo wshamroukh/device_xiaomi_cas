@@ -137,6 +137,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
+debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.native_mode=2
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.kona.api30
 ro.hardware.vulkan=adreno
