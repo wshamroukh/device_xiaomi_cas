@@ -30,3 +30,6 @@ ro.mot.eri.losalert.delay=100
 ro.vendor.use_data_netmgrd=true
 ro.vold.umsdirtyratio=20
 power.saving.mode=1
+
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
