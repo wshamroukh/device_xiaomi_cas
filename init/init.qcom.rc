@@ -635,6 +635,11 @@ service dhcpcd_wlan0 /system/bin/dhcpcd -ABKLG
     disabled
     oneshot
 
+service dhcpcd_eth0 /system/bin/dhcpcd -ABKL -f dhcpcd.conf
+    class main
+    disabled
+    oneshot
+
 service dhcpcd_bond0 /system/bin/dhcpcd -ABKLG
     class late_start
     disabled
@@ -652,6 +657,11 @@ service dhcpcd_wigig0 /system/bin/dhcpcd -ABKLG
 
 service iprenew_wlan0 /system/bin/dhcpcd -n
     class late_start
+    disabled
+    oneshot
+
+service iprenew_eth0 /system/bin/dhcpcd -n
+    class main
     disabled
     oneshot
 

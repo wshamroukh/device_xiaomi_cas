@@ -214,6 +214,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# Ethernet
+PRODUCT_COPY_FILES += \
+frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.ethernet.xml
+
 # IFAA manager
 PRODUCT_PACKAGES += \
     IFAAService
