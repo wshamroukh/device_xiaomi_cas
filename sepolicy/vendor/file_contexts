@@ -51,9 +51,6 @@
 # powershare
 /(vendor|system|vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi_kona                           u:object_r:hal_lineage_powershare_default_exec:s0
 
-# NFC
-/vendor/bin/hw/android\.hardware\.nfc_snxxx@1\.2-service    u:object_r:hal_nfc_default_exec:s0
-
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                            u:object_r:persist_subsys_file:s0
 
