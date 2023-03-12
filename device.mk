@@ -337,7 +337,6 @@ PRODUCT_PACKAGES += \
     DeviceFrameworks \
     DeviceSystemUI \
     DeviceTelephony \
-    SettingsProviderOverlay
 
 
 # Partitions
