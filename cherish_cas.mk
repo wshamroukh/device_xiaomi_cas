@@ -15,6 +15,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 # Rom Specific Flags
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true

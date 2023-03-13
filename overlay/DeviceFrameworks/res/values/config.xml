@@ -416,6 +416,9 @@
         <item>103</item>
     </integer-array>
 
+     <!-- Whether the device supports Smart Pixels -->
+     <bool name="config_supportSmartPixels">true</bool>
+     
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
 

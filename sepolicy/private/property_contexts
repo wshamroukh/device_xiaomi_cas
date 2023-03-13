@@ -22,5 +22,16 @@ ro.ril.oem.meid                 u:object_r:deviceid_prop:s0
 ro.cust.test                    u:object_r:exported_system_prop:s0
 ro.miui.                        u:object_r:exported_system_prop:s0
 
+#
+persist.sensor.sardisable		u:object_r:exported_system_prop:s0
+invn.hal.verbose.				u:object_r:exported_system_prop:s0
+invn.hal.entry.					u:object_r:exported_system_prop:s0
+invn.hal.data.					u:object_r:exported_system_prop:s0
+invn.hal.debug.					u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.support	u:object_r:exported_system_prop:s0
+sys.panel.touch_vendor			u:object_r:exported_system_prop:s0
+ro.carrier.name					u:object_r:exported_system_prop:s0
+persist.hydra.mem_trace			u:object_r:exported_system_prop:s0
+
 # Recovery
 ro.build.expect.        u:object_r:exported_default_prop:s0
