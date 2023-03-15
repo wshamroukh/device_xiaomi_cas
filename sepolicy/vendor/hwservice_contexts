@@ -13,3 +13,7 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                                   
 
 # powershare
 vendor.lineage.powershare::IPowerShare                                  u:object_r:hal_lineage_powershare_hwservice:s0
+
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                  u:object_r:hal_nxpnfc_hwservice:s0
+vendor.nxp.nxpese::INxpEse                  u:object_r:hal_nxpese_hwservice:s0
