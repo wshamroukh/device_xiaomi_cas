@@ -17,3 +17,7 @@ vendor.lineage.powershare::IPowerShare                                  u:object
 # NFC
 vendor.nxp.nxpnfc::INxpNfc                  u:object_r:hal_nxpnfc_hwservice:s0
 vendor.nxp.nxpese::INxpEse                  u:object_r:hal_nxpese_hwservice:s0
+
+# WLC
+vendor.google.wireless_charger::IWirelessCharger u:object_r:hal_wlc_hwservice:s0
+
