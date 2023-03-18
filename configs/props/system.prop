@@ -1,5 +1,6 @@
 # Camera
 vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
+log.tag.CHIUSECASE=ERROR
 
 # Charger
 ro.charger.enable_suspend=1

@@ -113,6 +113,7 @@ vendor.qcom.bluetooth.soc=hastings
 # Camera
 camera.disable_zsl_mode=true
 persist.camera.gyro.disable=0
+persist.vendor.camera.logInfoMask=false
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
