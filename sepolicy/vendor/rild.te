@@ -1,1 +1,10 @@
 set_prop(rild, deviceid_prop)
+
+# IMEI
+set_prop(rild, vendor_deviceid_prop)
+
+# MEID
+set_prop(rild, vendor_meid_prop)
+
+# Serial number
+set_prop(rild, vendor_sno_prop)

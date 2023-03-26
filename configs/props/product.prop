@@ -10,3 +10,5 @@ ro.af.client_heap_size_kbyte=7168
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
+
+ro.product.marketname=Mi 10 Ultra
