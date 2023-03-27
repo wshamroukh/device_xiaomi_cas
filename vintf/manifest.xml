@@ -38,6 +38,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.google.google_battery</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IGoogleBattery</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.2::IGoogleBattery/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
         <version>6.0</version>

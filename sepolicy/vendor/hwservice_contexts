@@ -21,3 +21,4 @@ vendor.nxp.nxpese::INxpEse                  u:object_r:hal_nxpese_hwservice:s0
 # WLC
 vendor.google.wireless_charger::IWirelessCharger u:object_r:hal_wlc_hwservice:s0
 
+vendor.google.google_battery::IGoogleBattery                            u:object_r:hal_turbo_adapter_hwservice:s0
