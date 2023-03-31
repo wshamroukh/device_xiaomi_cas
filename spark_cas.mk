@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common cherish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common Spark-OS stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 # Rom Specific Flags
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_CALL_RECORDING := true
@@ -22,12 +22,12 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP  := true
 EXTRA_UDFPS_ANIMATIONS := true
-WITH_GMS := true
+WITH_GAPPS := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Waddah
-CHERISH_BUILD_TYPE := UNOFFICIAL
+    ro.spark.maintainer=Waddah \
+	ro.spark.status=UNOFFICIAL
 
-PRODUCT_NAME := cherish_cas
+PRODUCT_NAME := spark_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
