@@ -104,8 +104,10 @@ genfscon sysfs /devices/virtual/misc/msm_amrwbplus/wakeup55                     
 genfscon sysfs /devices/virtual/misc/msm_ape/wakeup56                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_evrc/wakeup57                                                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_g711alaw/wakeup58                                                                                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_g711mlaw/wakeup58                                                                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_g711mlaw/wakeup59                                                                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_mp3/wakeup60                                                                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_multi_aac/wakeup60                                                                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_multi_aac/wakeup61                                                                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_qcelp/wakeup62                                                                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wma/wakeup63                                                                                       u:object_r:sysfs_wakeup:s0
@@ -216,3 +218,9 @@ genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-adsp/wakeup/wakeup8         
 # Power_supply
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply                                                                                       u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply                                               u:object_r:sysfs_power_supply:s0
+
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup100    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup103    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup104    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup/wakeup103    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup/wakeup104    u:object_r:sysfs_wakeup:s0
