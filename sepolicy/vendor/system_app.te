@@ -18,3 +18,5 @@ allow system_app hal_wlc_hwservice:hwservice_manager find;
 get_prop(system_app, vendor_aware_available_prop);
 
 allow system_app proc_pagetypeinfo:file r_file_perms;
+
+get_prop(system_app, qemu_hw_prop)

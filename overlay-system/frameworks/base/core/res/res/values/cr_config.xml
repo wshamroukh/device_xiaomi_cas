@@ -21,20 +21,12 @@
      for different hardware and product builds.  Do not translate. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">120</integer>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketUseLightSensor">false</bool>
+
     <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportsScreenOffUdfps">true</bool>
-
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">false</bool>
-
-    <!-- Does the device have a notification led -->
-    <bool name="config_hasNotificationLed">false</bool>
-
-    <!-- Does the battery LED support multiple colors?
-         Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
-
-    <!-- Do the battery/notification LEDs support pulsing?
-         Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">false</bool>
+    <bool name="config_supportScreenOffUdfps">true</bool>
 </resources>
