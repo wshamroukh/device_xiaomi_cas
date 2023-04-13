@@ -222,7 +222,10 @@ genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply       
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply                                               u:object_r:sysfs_power_supply:s0
 
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup100    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup/wakeup101    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup102    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup/wakeup102    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup103    u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup104    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup/wakeup103    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/wakeup/wakeup104    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup/wakeup104    u:object_r:sysfs_wakeup:s0
