@@ -492,10 +492,13 @@
     <bool name="config_ui_enableFadingMarquee">true</bool>
 
     <!-- Smart charging -->
-    <bool name="config_smartChargingAvailable">false</bool>
+    <bool name="config_smartChargingAvailable">enable</bool>
     <integer name="config_smartChargingBatteryLevel">80</integer>
     <integer name="config_smartChargingBatteryResumeLevel">60</integer>
     <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_smartChargingSuspendValue" translatable="false">0</string>
     <string name="config_smartChargingResumeValue" translatable="false">1</string>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">enable</bool>
 </resources>
