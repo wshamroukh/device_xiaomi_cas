@@ -4,4 +4,3 @@ allow hal_bluetooth_default vendor_ramdump_vendor_data_file:file create_file_per
 
 allow hal_bluetooth_default vendor_wifi_vendor_data_file:dir search;
 allow hal_bluetooth_default vendor_wifi_vendor_data_file:file { open read };
-
