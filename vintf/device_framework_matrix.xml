@@ -13,14 +13,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.google.google_battery</name>
-        <version>1.2</version>
-        <interface>
-            <name>IGoogleBattery</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.radio</name>
         <version>1.0-2</version>
         <interface>
@@ -526,31 +518,6 @@
         <version>1.0</version>
         <interface>
             <name>IQspmhal</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.powershare</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPowerShare</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.dolby.hardware.dms</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDms</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-	<hal format="hidl" optional="true">
-        <name>vendor.dolby.hardware.dms</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDms</name>
             <instance>default</instance>
         </interface>
     </hal>
