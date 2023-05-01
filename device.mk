@@ -114,9 +114,15 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libreverbwrapper \
     libsndmonitor \
+	libspatialaudio \
     libtinycompress \
     libvisualizer \
-    libvolumelistener
+    libvolumelistener \
+	sound_trigger.primary.lahaina
+
+# Spatial Audio
+PRODUCT_PACKAGES += \
+    frameworks/native/data/etc/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.dynamic.head_tracker.xml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml

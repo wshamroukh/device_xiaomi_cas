@@ -1,4 +1,5 @@
 # Audio
+ro.audio.spatializer_enabled=true
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=1
