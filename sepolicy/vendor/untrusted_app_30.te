@@ -1,0 +1,5 @@
+allow untrusted_app_30 shell_test_data_file:dir { search };
+allow untrusted_app_30 proc_kmsg:file { getattr };
+allow untrusted_app_30 proc_keys:file { getattr };
+allow untrusted_app_30 proc_swaps:file { getattr };
+allow untrusted_app_30 wifi_hal_prop:file { read };
