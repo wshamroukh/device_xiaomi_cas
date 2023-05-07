@@ -66,5 +66,7 @@
     <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
     <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
     <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
-
+	
+	<!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
 </resources>
