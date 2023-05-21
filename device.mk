@@ -381,6 +381,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    MiuiGallery 
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
