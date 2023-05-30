@@ -17,6 +17,7 @@ allow xiaomiparts_app {
   surfaceflinger_service
   tethering_service
   thermal_service
+  voiceinteraction_service
 }:service_manager find;
 
 allow xiaomiparts_app system_app_data_file:dir create_dir_perms;
