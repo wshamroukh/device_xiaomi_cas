@@ -33,3 +33,5 @@ allow xiaomiparts_app {
 allow xiaomiparts_app content_capture_service:service_manager { find };
 allow xiaomiparts_app game_service:service_manager { find };
 allow xiaomiparts_app netstats_service:service_manager { find };
+
+dontaudit xiaomiparts_app default_prop:file read;

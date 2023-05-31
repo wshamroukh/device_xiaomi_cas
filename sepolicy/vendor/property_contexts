@@ -42,6 +42,7 @@ ro.vendor.oem.psno                              u:object_r:vendor_sno_prop:s0
 
 # wlan
 wifi.interface			                u:object_r:wifi_hal_prop:s0
+wifi.active.interface 					u:object_r:wifi_hal_prop:s0
 
 ro.vendor.display.type				u:object_r:vendor_display_prop:s0
 

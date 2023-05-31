@@ -38,3 +38,13 @@ ro.build.expect.        u:object_r:exported_default_prop:s0
 
 # Hardware
 ro.hardware.chipname           u:object_r:exported_default_prop:s0
+
+ro.input.resampling                             u:object_r:exported_system_prop:s0
+viewroot.profile_rendering                  u:object_r:exported_default_prop:s0
+persist.input.velocitytracker.strategy	     u:object_r:exported_system_prop:s0
+ro.vendor.gfx.32bit.target                  u:object_r:exported_system_prop:s0
+vendor.panel.display                    u:object_r:exported_system_prop:s0
+persist.vendor.low.cutoff      u:object_r:exported_system_prop:s0
+qemu.hw.mainkeys      u:object_r:exported_system_prop:s0
+qemu.sf.lcd_density      u:object_r:exported_system_prop:s0
+zeroth.debuglog.logmask        u:object_r:vendor_default_prop:s0
