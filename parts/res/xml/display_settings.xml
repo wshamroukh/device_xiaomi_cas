@@ -18,4 +18,10 @@
         android:defaultValue="false"
         android:title="@string/dc_dimming_enable_title"
         android:summary="@string/dc_dimming_enable_summary" />
+	
+	<SwitchPreference
+        android:key="hbm_mode"
+        android:defaultValue="false"
+        android:title="@string/hbm_mode_title"
+        android:summary="@string/hbm_mode_summary" />
 </PreferenceScreen>
