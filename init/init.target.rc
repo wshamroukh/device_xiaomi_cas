@@ -164,10 +164,8 @@ on boot
     setprop vendor.usb.controller a600000.dwc3
     #Load WLAN driver
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_wlan
-    chown system system /sys/class/drm/card0-DSI-1/disp_param
     chown system system /proc/tp_selftest
     chmod 0664 /proc/tp_selftest
-    chmod 0700 /sys/class/drm/card0-DSI-1/disp_param
     chown system system /sys/class/drm/card0-DSI-1/mipi_reg
     chmod 0664 /sys/class/drm/card0-DSI-1/mipi_reg
     chown system system /sys/class/drm/card0-DSI-1/panel_info
@@ -191,8 +189,7 @@ on boot
     chown system system /sys/class/thermal/thermal_message/sconfig
 
     # Dc Dimming
-    chown system system /sys/class/drm/card0-DSI-1/disp_param
-    chmod 0660 /sys/class/drm/card0-DSI-1/disp_param
+    chmod 0777 /sys/class/drm/card0-DSI-1/disp_param
 
     chown system system /sys/class/thermal/thermal_message/balance_mode
     # Load all wlan drivers
