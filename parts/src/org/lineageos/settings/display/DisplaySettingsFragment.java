@@ -65,7 +65,6 @@ public class DisplaySettingsFragment extends PreferenceFragment implements
         if (HBM_ENABLE_KEY.equals(preference.getKey())) {
             FileUtils.writeLine(HBM_NODE, (Boolean) newValue ? "0x10000" : "0xF0000");
         }
-        }
         return true;
     }
 }
