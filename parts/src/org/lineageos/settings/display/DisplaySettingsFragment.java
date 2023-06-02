@@ -18,6 +18,7 @@ package org.lineageos.settings.display;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.MenuItem;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
@@ -39,6 +40,7 @@ public class DisplaySettingsFragment extends PreferenceFragment implements
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.display_settings);
+        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         mDcDimmingPreference = (SwitchPreference) findPreference(DC_DIMMING_ENABLE_KEY);
         if (FileUtils.fileExists(DC_DIMMING_NODE)) {
             mDcDimmingPreference.setEnabled(true);
@@ -68,4 +70,14 @@ public class DisplaySettingsFragment extends PreferenceFragment implements
         }
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            getActivity().onBackPressed();
+            return true;
+        }
+        return false;
+    }
+
 }

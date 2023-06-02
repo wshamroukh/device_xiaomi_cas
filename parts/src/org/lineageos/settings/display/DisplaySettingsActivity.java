@@ -18,17 +18,16 @@
 package org.lineageos.settings.display;
 
 import android.os.Bundle;
-import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
+import android.preference.PreferenceActivity;
 
-public class DisplaySettingsActivity extends CollapsingToolbarBaseActivity {
+public class DisplaySettingsActivity extends PreferenceActivity {
 
     private static final String TAG_DCDIMMING = "dcdimming";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getFragmentManager().beginTransaction().replace(android.R.id.content,
                 new DisplaySettingsFragment(), TAG_DCDIMMING).commit();
     }
 }
