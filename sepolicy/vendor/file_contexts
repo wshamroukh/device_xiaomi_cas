@@ -47,6 +47,9 @@
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/dynamic_fps       u:object_r:vendor_sysfs_graphics:s0
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/smart_fps_value   u:object_r:vendor_sysfs_graphics:s0
 
+# Google battery
+/vendor/bin/hw/vendor\.google\.google_battery-service                     u:object_r:hal_googlebattery_exec:s0
+
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
 /vendor/bin/mlipayd@1.1                                                  u:object_r:hal_mlipay_default_exec:s0
