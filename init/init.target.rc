@@ -167,8 +167,9 @@ on boot
     chown system system /proc/tp_selftest
     chmod 0664 /proc/tp_selftest
 	
-	# Dc Dimming
+	# HBM
     chmod 0777 /sys/class/drm/card0-DSI-1/disp_param
+	chmod 0777 /sys/class/backlight/panel0-backlight/brightness
 
     chown system system /sys/class/drm/card0-DSI-1/mipi_reg
     chmod 0664 /sys/class/drm/card0-DSI-1/mipi_reg
