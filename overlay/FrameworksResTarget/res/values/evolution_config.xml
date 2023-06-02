@@ -21,6 +21,9 @@
      for different hardware and product builds.  Do not translate. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- Whether device supports in-display fingerprint -->
+    <bool name="config_supportsUdfps">true</bool>
+	
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
 
@@ -48,4 +51,7 @@
 	
 	<!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
+	
+	<!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
 </resources>
