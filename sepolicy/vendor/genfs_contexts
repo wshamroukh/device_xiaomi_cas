@@ -10,9 +10,6 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/request_vreg           
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable                 u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/vendor                        u:object_r:vendor_sysfs_fingerprint:s0
 
-# Dc Dimming
-genfscon sysfs /class/drm/card0-DSI-1/disp_param                                              u:object_r:vendor_sysfs_graphics:s0
-
 # Power_supply
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0066/power_supply/bq2597x-standalone                                         u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-0055/power_supply/lionsemi                                                   u:object_r:vendor_sysfs_battery_supply:s0
