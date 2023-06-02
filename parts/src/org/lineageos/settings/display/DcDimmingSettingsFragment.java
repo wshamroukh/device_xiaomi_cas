@@ -39,17 +39,19 @@ public class DcDimmingSettingsFragment extends PreferenceFragment implements
         addPreferencesFromResource(R.xml.dcdimming_settings);
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         mDcDimmingPreference = (SwitchPreference) findPreference(DC_DIMMING_ENABLE_KEY);
-        mDcDimmingPreference.setEnabled(true);
-        mDcDimmingPreference.setOnPreferenceChangeListener(this);
+        if (FileUtils.fileExists(DC_DIMMING_NODE)) {
+            mDcDimmingPreference.setEnabled(true);
+            mDcDimmingPreference.setOnPreferenceChangeListener(this);
+        } else {
+            mDcDimmingPreference.setSummary(R.string.dc_dimming_enable_summary_not_supported);
+            mDcDimmingPreference.setEnabled(false);
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (DC_DIMMING_ENABLE_KEY.equals(preference.getKey())) {
-            try {
-                FileUtils.writeLine(DC_DIMMING_NODE, (Boolean) newValue ? "0x40000" : "0x50000");
-            } catch(Exception e) {
-            }
+            FileUtils.writeLine(DC_DIMMING_NODE, (Boolean) newValue ? "0x40000":"0x50000");
         }
         return true;
     }
