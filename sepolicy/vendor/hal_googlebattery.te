@@ -1,0 +1,10 @@
+type hal_googlebattery, domain;
+type hal_googlebattery_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_googlebattery)
+
+binder_call(hal_googlebattery, servicemanager)
+add_service(hal_googlebattery, hal_googlebattery_service)
+
+allow hal_googlebattery dumpstate:fd use;
+allow hal_googlebattery dumpstate:fifo_file write;
