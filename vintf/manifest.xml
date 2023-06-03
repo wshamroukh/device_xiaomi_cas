@@ -577,4 +577,28 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+	<hal format="hidl">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IComposer/default</fqname>
+        <fqname>@3.0::IComposer/default</fqname>
+        <fqname>@4.0::IComposer/default</fqname>
+    </hal>
+	<hal format="hidl">
+        <name>android.hardware.graphics.mapper</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IMapper/default</fqname>
+        <fqname>@3.0::IMapper/default</fqname>
+        <fqname>@4.0::IMapper/default</fqname>
+    </hal>
+	<hal format="hidl">
+        <name>vendor.lineage.powershare</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPowerShare/default</fqname>
+    </hal>
+	<hal format="aidl">
+        <name>android.hardware.power</name>
+		<transport>hwbinder</transport>
+        <fqname>IPower/default</fqname>
+    </hal>
 </manifest>

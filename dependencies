@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_vendor_hardware_xiaomi",
+    "target_path": "vendor/hardware/xiaomi"
+  }
+]

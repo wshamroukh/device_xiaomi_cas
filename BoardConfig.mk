@@ -29,7 +29,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -87,7 +87,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Fingerprint
 TARGET_USES_FOD_ZPOS := true
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
+TARGET_SURFACEFLINGER_UDFPS_LIB := //vendor/hardware/xiaomi:libudfps_extension.xiaomi
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
@@ -120,11 +120,17 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_KERNEL_CMDLINE += androidboot.selinux=enforcing
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
+# Configure Prebuilt Kernel
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel/kernel
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/kernel/dtbo.img
+BOARD_PREBUILT_DTBIMAGE := $(DEVICE_PATH)/prebuilts/kernel/dtb.img
+
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 
-TARGET_KERNEL_CLANG_COMPILE := true
+#TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_SOURCE := kernel/xiaomi/cas
 TARGET_KERNEL_CONFIG := cas_defconfig
