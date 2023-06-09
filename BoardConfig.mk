@@ -67,11 +67,6 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# DTB
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_BOOT_HEADER_VERSION := 2
-BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
-
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
 
@@ -101,6 +96,10 @@ DEVICE_MANIFEST_FILE := \
 DEVICE_MATRIX_FILE := \
     $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 
+# DTB
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_BOOT_HEADER_VERSION := 2
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
@@ -112,28 +111,26 @@ BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
     earlycon=msm_geni_serial,0xa90000 \
     loop.max_part=7 \
-    lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
     reboot=panic_warm \
     service_locator.enable=1 \
-    swiotlb=2048
-BOARD_KERNEL_CMDLINE += androidboot.selinux=enforcing
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+    swiotlb=2048 \
+    androidboot.usbconfigfs=true \
+	androidboot.selinux=permissive
 
-# Configure Prebuilt Kernel
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel/kernel
+BOARD_KERNEL_IMAGE_NAME    := Image
+BOARD_KERNEL_PAGESIZE      := 4096
+BOARD_KERNEL_BASE          := 0x00000000
+BOARD_KERNEL_TAGS_OFFSET   := 0x00000100
+BOARD_KERNEL_OFFSET        := 0x00008000
+BOARD_KERNEL_SECOND_OFFSET := 0x00000000
+BOARD_RAMDISK_OFFSET       := 0x01000000
+BOARD_DTB_OFFSET           := 0x01f00000
+TARGET_KERNEL_ARCH := arm64
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel/kernel.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/kernel/dtbo.img
-BOARD_PREBUILT_DTBIMAGE := $(DEVICE_PATH)/prebuilts/kernel/dtb.img
-
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_KERNEL_PAGESIZE := 4096
-
-#TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
-TARGET_KERNEL_SOURCE := kernel/xiaomi/cas
-TARGET_KERNEL_CONFIG := cas_defconfig
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilts/kernel/dtb
+BOARD_INCLUDE_RECOVERY_DTBO := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
