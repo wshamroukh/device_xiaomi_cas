@@ -172,9 +172,9 @@ PRODUCT_COPY_FILES += \
 
 # Copy the kernel from the prebuilts directory.
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/kernel/kernel:$(PRODUCT_OUT)/kernel \
-    $(LOCAL_PATH)/prebuilts/kernel/dtb.img:$(PRODUCT_OUT)/dtb.img \
-	$(LOCAL_PATH)/prebuilts/kernel/dtbo.img:$(PRODUCT_OUT)/dtbo.img
+    $(LOCAL_PATH)/prebuilts/kernel/kernel.img:$(PRODUCT_OUT)/kernel \
+    $(LOCAL_PATH)/prebuilts/kernel/dtbo.img:$(PRODUCT_OUT)/dtbo.img \
+	$(LOCAL_PATH)/prebuilts/kernel/dtb/dtb.img:$(PRODUCT_OUT)/dtb.img	
 
 # Configstore
 PRODUCT_PACKAGES += \
