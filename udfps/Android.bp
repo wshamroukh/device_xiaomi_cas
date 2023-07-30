@@ -12,6 +12,6 @@ cc_library {
         "libbase",
     ],
     header_libs: [
-        "//vendor/hardware/xiaomi:xiaomifingerprint_headers",
+        "//hardware/xiaomi:xiaomifingerprint_headers",
     ],
 }

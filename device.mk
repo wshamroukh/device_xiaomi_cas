@@ -322,7 +322,7 @@ PRODUCT_COPY_FILES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    vendor/hardware/xiaomi
+    hardware/xiaomi
 
 # Neural networks
 PRODUCT_PACKAGES += \
