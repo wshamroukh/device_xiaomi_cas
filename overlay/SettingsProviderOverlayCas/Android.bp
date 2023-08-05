@@ -4,7 +4,7 @@
 //
 
 runtime_resource_overlay {
-    name: "SettingsProviderOverlay",
+    name: "SettingsProviderOverlayCas",
     sdk_version: "current",
     resource_dirs: ["res"],
     vendor: true,

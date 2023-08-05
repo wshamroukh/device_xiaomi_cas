@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aosp.settingsprovideroverlay.cas">
+    package="com.aosp.settingsprovideroverlaycas.cas">
 
     <application android:hasCode="false" />
     <overlay android:targetPackage="com.android.providers.settings"
