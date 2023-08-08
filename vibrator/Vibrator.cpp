@@ -191,9 +191,10 @@ int InputFFDevice::play(int effectId, uint32_t timeoutMs, long *playLengthMs) {
 
     /* For QMAA compliance, return OK even if vibrator device doesn't exist */
     if (mVibraFd == INVALID_VALUE) {
-        if (playLengthMs != NULL)
-            *playLengthMs = 0;
-            return 0;
+        if (playLengthMs != NULL){
+			*playLengthMs = 0;
+		}
+        return 0;
     }
 
     if (timeoutMs != 0) {

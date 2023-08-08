@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_cas.mk
+    $(LOCAL_DIR)/kenvyra_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_cas-eng \
-    cherish_cas-user \
-    cherish_cas-userdebug
+    kenvyra_cas-eng \
+    kenvyra_cas-user \
+    kenvyra_cas-userdebug

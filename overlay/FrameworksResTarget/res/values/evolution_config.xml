@@ -54,4 +54,8 @@
 	
 	<!-- Boost Framework -->
     <bool name="config_supportsBoostFramework">true</bool>
+	
+	<!-- Whether to spoof device as pixel for certain google apps, to
+         unlock pixel-exclusive features -->
+    <bool name="config_spoofGoogleApps">true</bool>
 </resources>
