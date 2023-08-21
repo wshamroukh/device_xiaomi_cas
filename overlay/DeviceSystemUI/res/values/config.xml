@@ -30,4 +30,7 @@
 	<!-- SystemUI: Turn on UMO turbulence noise and surface ripple by default -->
     <bool name="flag_umo_surface_ripple">true</bool>
     <bool name="flag_umo_turbulence_noise">true</bool>
+	
+	<!-- Whether show refresh rate QS tile -->
+    <bool name="config_showRefreshRateQsTile">true</bool>
 </resources>

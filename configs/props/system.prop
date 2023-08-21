@@ -38,6 +38,3 @@ ro.vendor.perf.scroll_opt=true
 # Radio VoNR Calling
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
-
-# SuperiorExtended Maintainer
-ro.spos.maintainer=Waddah
