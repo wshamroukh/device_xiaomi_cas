@@ -92,7 +92,6 @@ vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.passthrough=false
-vendor.audio.offload.track.enable=false
 vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.safx.pbe.enabled=false
 vendor.audio.spkcal.copy.inhal=true
@@ -146,7 +145,6 @@ vendor.product.device=OP_PHONE
 vendor.product.manufacturer=OPD
 
 # DPM
-persist.vendor.dpm.feature=1
 persist.vendor.dpm.loglevel=0
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
