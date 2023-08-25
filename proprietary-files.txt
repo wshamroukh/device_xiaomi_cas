@@ -1,4 +1,4 @@
-# All blobs below are extracted - from V13.0.6.0.SJJCNXM, unless pinned
+# All blobs below are extracted - from V14.0.2.0.TJJCNXM, unless pinned
 
 # ACDB Loader
 vendor/lib/libacdb-fts.so
@@ -85,19 +85,37 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio Configs
+vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/audio_configs.xml
 vendor/etc/audio_configs_stock.xml
+vendor/etc/audio_diag.cfg
 vendor/etc/audio_effects.conf
 vendor/etc/audio_effects.xml
 vendor/etc/audio_io_policy.conf
+vendor/etc/audio_karaoke_list.xml
+vendor/etc/audio_platform_info.xml
 vendor/etc/audio_platform_info_intcodec.xml
+vendor/etc/audio_platform_info_qrd.xml
+vendor/etc/audio_policy_configuration.xml
+vendor/etc/audio_policy_engine_configuration.xml
+vendor/etc/audio_policy_engine_configuration_mi.xml
+vendor/etc/audio_policy_engine_default_stream_volumes.xml
+vendor/etc/audio_policy_engine_default_stream_volumes_mi.xml
+vendor/etc/audio_policy_engine_product_strategies.xml
+vendor/etc/audio_policy_engine_product_strategies_mi.xml
+vendor/etc/audio_policy_engine_stream_volumes.xml
+vendor/etc/audio_policy_engine_stream_volumes_mi.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/audio_tuning_mixer.txt
 vendor/etc/cirrus.cfg
 vendor/etc/mixer_paths.xml
+vendor/etc/mixer_paths_cdp.xml
 vendor/etc/mixer_paths_overlay_dynamic.xml
 vendor/etc/mixer_paths_overlay_static.xml
+vendor/etc/mixer_paths_qrd.xml
 vendor/etc/sound_trigger_mixer_paths.xml
+vendor/etc/sound_trigger_mixer_paths_cdp.xml
+vendor/etc/sound_trigger_mixer_paths_qrd.xml
 vendor/etc/sound_trigger_platform_info.xml
 
 # Audio FX Modules
@@ -123,8 +141,10 @@ vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/libmmhardware.so
 vendor/lib/libqtigef.so
 vendor/lib/libresampler.so
 vendor/lib/libssrec.so
@@ -136,8 +156,10 @@ vendor/lib64/liba2dpoffload.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioroute_ext.so
+vendor/lib64/libmmhardware.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libresampler.so
 vendor/lib64/libssrec.so
@@ -502,7 +524,7 @@ vendor/etc/camera/st_license.lic
 vendor/etc/camera/vidhance_calibration
 
 # Camera
-system/lib/libyuv.so
+system/lib64/libyuv.so
 vendor/lib/camera/com.qti.actuator.cas_ofilm_ultra_dw9800.so
 vendor/lib/camera/com.qti.eeprom.cas_ofilm_imx350_gt24p64b.so
 vendor/lib/camera/com.qti.eeprom.cas_semco_imx586_sem1215.so
@@ -725,14 +747,12 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 
 # Charger
-vendor/bin/batteryd
 vendor/bin/batterylog.sh
 vendor/bin/batterysecret
 vendor/bin/charge_logger
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/charger_fstab.qti
-vendor/etc/init/init.batteryd.rc
 vendor/etc/init/init.batterysecret.rc
 vendor/etc/init/init.charge_logger.rc
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
