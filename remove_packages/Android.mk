@@ -9,9 +9,7 @@ LOCAL_OVERRIDES_PACKAGES := \
 		  Duo \
 		  YTMusic \
 		  CalendarGoogle \
-		  YouTube \
-		  Chrome 
-		  
+		  YouTube \		  
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := platform
