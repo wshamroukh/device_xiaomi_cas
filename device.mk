@@ -396,7 +396,7 @@ PRODUCT_COPY_FILES += \
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
-    RemovePackages
+    CasRemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \
