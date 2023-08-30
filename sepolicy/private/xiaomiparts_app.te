@@ -17,7 +17,6 @@ allow xiaomiparts_app {
   surfaceflinger_service
   tethering_service
   thermal_service
-  trust_service
   voiceinteraction_service
 }:service_manager find;
 
