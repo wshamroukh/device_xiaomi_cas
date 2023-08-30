@@ -56,10 +56,6 @@ public class AutoHBMService extends Service {
             FileUtils.writeLine(HBM, "0xF0000");
             FileUtils.writeLine(BACKLIGHT, "2047");
         }
-
-    }
-    private boolean isCurrentlyEnabled() {
-        return FileUtils.getFileValueAsBoolean(HBM, false);
     }
 
     SensorEventListener mSensorEventListener = new SensorEventListener() {
@@ -71,7 +67,7 @@ public class AutoHBMService extends Service {
             boolean keyguardShowing = km.inKeyguardRestrictedInputMode();
             float threshold = Float.parseFloat(mSharedPrefs.getString(HBMFragment.KEY_AUTO_HBM_THRESHOLD, "20000"));
             if (lux > threshold) {
-                if ((!mAutoHBMActive | !isCurrentlyEnabled()) && !keyguardShowing) {
+                if ((!mAutoHBMActive | !keyguardShowing)) {
                     mAutoHBMActive = true;
                     enableHBM(true);
                 }
