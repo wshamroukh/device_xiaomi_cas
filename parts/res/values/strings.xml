@@ -46,14 +46,15 @@
 
 	<!-- HBM settings -->
     <string name="hbm_fragment_title">High brightness mode</string>
-    <string name="hbm_fragment_summary">Customize HBM preferences</string>
+    <string name="hbm_fragment_summary">Settings for HBM</string>
     <string name="hbm_mode_title">HBM</string>
     <string name="hbm_mode_summary">Enable peak luminance</string>
     <string name="auto_hbm_title">Automatic HBM</string>
     <string name="auto_hbm_summary">Enable peak luminance based on sunlight</string>
     <string name="auto_hbm_threshold_title"></string>
-    <string name="auto_hbm_threshold_summary">Threshold (lux)</string>
-    <string name="auto_hbm_mode_warning">Auto brightness needs to be turned on for auto HBM to work</string>
+    <string name="auto_hbm_threshold_summary">threshold (lux)</string>
+    <string name="hbm_mode_warning">Long time usage of High brightness mode may damage your display</string>
+    <string name="auto_hbm_mode_warning">Auto HBM relies on auto brightness to be enabled</string>
 
 	<!-- Per-app refresh rate -->
     <string name="refresh_title">Per-app refresh rate</string>
