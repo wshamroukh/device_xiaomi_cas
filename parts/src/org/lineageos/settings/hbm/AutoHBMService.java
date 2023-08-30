@@ -16,16 +16,12 @@ import android.os.PowerManager;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.utils.FileUtils;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 public class AutoHBMService extends Service {
     private static final String HBM = "/sys/class/drm/card0/card0-DSI-1/disp_param";
     private static final String BACKLIGHT = "/sys/class/backlight/panel0-backlight/brightness";
 
     private static boolean mAutoHBMActive = false;
-    private ExecutorService mExecutorService;
 
     private SensorManager mSensorManager;
     Sensor mLightSensor;
@@ -33,19 +29,15 @@ public class AutoHBMService extends Service {
     private SharedPreferences mSharedPrefs;
 
     public void activateLightSensorRead() {
-        submit(() -> {
         mSensorManager = (SensorManager) getApplicationContext().getSystemService(Context.SENSOR_SERVICE);
         mLightSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         mSensorManager.registerListener(mSensorEventListener, mLightSensor, SensorManager.SENSOR_DELAY_NORMAL);
-        });
     }
 
     public void deactivateLightSensorRead() {
-        submit(() -> {
         mSensorManager.unregisterListener(mSensorEventListener);
         mAutoHBMActive = false;
         enableHBM(false);
-        });
     }
 
     private void enableHBM(boolean enable) {
@@ -99,7 +91,6 @@ public class AutoHBMService extends Service {
 
     @Override
     public void onCreate() {
-        mExecutorService = Executors.newSingleThreadExecutor();
         IntentFilter screenStateFilter = new IntentFilter(Intent.ACTION_SCREEN_ON);
         screenStateFilter.addAction(Intent.ACTION_SCREEN_OFF);
         registerReceiver(mScreenStateReceiver, screenStateFilter);
@@ -108,10 +99,6 @@ public class AutoHBMService extends Service {
         if (pm.isInteractive()) {
             activateLightSensorRead();
         }
-    }
-
-    private Future<?> submit(Runnable runnable) {
-        return mExecutorService.submit(runnable);
     }
 
     @Override
