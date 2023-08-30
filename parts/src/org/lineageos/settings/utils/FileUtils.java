@@ -165,22 +165,6 @@ public final class FileUtils {
         return ok;
     }
 
-    public static boolean getFileValueAsBoolean(String filename, boolean defValue) {
-        String fileValue = readOneLine(filename);
-        if(fileValue!=null){
-            return (fileValue.equals("0")?false:true);
-        }
-        return defValue;
-    }
-
-    public static String getFileValue(String filename, String defValue) {
-        String fileValue = readOneLine(filename);
-        if(fileValue!=null){
-            return fileValue;
-        }
-        return defValue;
-    }
-
     private static boolean mServiceEnabled = false;
 
     private static void startService(Context context) {
