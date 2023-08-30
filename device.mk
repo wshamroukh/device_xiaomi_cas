@@ -394,10 +394,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
@@ -445,8 +441,13 @@ PRODUCT_BOOT_JARS += \
 # Thermal
 PRODUCT_PACKAGES += \
 	android.hardware.thermal@2.0.vendor \
-    android.hardware.thermal@2.0-service.qti \
     android.hardware.thermal@2.0
+
+# Thermal
+ifeq ($(TARGET_USE_QTI_THERMAL_SERVICE),true)
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
+endif
 
 # Touchscreen
 PRODUCT_PACKAGES += \
