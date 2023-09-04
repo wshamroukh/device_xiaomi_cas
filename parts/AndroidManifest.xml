@@ -63,6 +63,12 @@
         </activity>
 
         <service
+            android:name=".thermal.ThermalService"
+            android:exported="true"
+            android:permission="ThermalService">
+        </service>
+
+        <service
             android:name=".doze.DozeService"
             android:permission="XiaomiDozeService">
         </service>
@@ -154,6 +160,25 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/dc_dimming_enable_summary" />
+        </activity>
+
+        <activity
+            android:name=".thermal.ThermalActivity"
+            android:label="@string/thermal_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase_v31">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/thermal_summary" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
         </activity>
 
     </application>

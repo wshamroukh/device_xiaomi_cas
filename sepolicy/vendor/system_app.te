@@ -21,3 +21,6 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 
 # FPS Info
 allow system_app vendor_sysfs_graphics:file { getattr open read };
+
+# Allow Parts write thermals
+allow system_app sysfs_thermal:file rw_file_perms;

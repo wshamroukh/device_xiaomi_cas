@@ -57,6 +57,7 @@
         <name>vendor.xiaomi.hardware.touchfeature</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
+        <fqname>@1.0::ITouchFeature/default</fqname>
         <interface>
             <name>ITouchFeature</name>
             <instance>default</instance>

@@ -3,4 +3,5 @@ allow hal_health_default sysfs_wakeup:file r_file_perms;
 allow hal_health_default sysfs:file rw_file_perms;
 allow hal_health_default sysfs_power_supply:dir search;
 allow hal_health_default sysfs_power_supply:file { getattr open read };
+allow hal_health_default sysfs_battery_supply:file r_file_perms;
 r_dir_file(hal_health_default, vendor_sysfs_battery_supply)
