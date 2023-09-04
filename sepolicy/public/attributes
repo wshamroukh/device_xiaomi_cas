@@ -1,3 +1,5 @@
 hal_attribute_lineage(mlipay)
 
 hal_attribute_lineage(touchfeature)
+
+attribute thermal_data_file;

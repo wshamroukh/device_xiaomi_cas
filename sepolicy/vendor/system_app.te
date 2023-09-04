@@ -27,3 +27,6 @@ get_prop(system_app, vendor_aware_available_prop)
 # Battery Health
 allow system_app sysfs_power_supply:dir { search };
 allow system_app sysfs_power_supply:file { r_file_perms };
+
+# Allow Parts write thermals
+allow system_app sysfs_thermal:file rw_file_perms;
