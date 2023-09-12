@@ -20,6 +20,4 @@
     <string name="config_batteryChargeCycles">/sys/class/power_supply/bms/cycle_count</string>
     <bool name="config_supportBatteryHealth">true</bool>
 
-    <!-- Smart Charging -->
-    <bool name="config_supportSmartCharging">true</bool>
 </resources>
