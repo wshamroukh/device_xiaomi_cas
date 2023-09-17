@@ -350,6 +350,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     SystemUIResCommon \
     TelephonyResCommon \
+	WifiResCas \
     WifiResCommon \
     WifiResTarget \
     DeviceFrameworks \
