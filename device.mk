@@ -389,9 +389,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
-# Remove unwanted packages
+# Remove unwanted packages in GAPPS build
+ifeq ($(BUILD_WITH_GAPPS),true)
 PRODUCT_PACKAGES += \
     RemovePackages
+endif
 
 # RIL
 PRODUCT_PACKAGES += \
