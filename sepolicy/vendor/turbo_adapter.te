@@ -22,5 +22,5 @@ r_dir_file(turbo_adapter, proc_uid_cputime_showstat);
 binder_call(turbo_adapter, system_suspend_internal_server)
 get_prop(turbo_adapter, suspend_prop)
 
-
 allow turbo_adapter hal_turbo_adapter_hwservice:hwservice_manager find;
+allow turbo_adapter hal_googlebattery_service:service_manager { find };

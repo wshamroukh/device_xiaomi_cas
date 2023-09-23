@@ -376,6 +376,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+	TurboAdapter
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
