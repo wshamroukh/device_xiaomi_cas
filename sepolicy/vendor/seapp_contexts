@@ -1,0 +1,2 @@
+# Turbo Adapter
+user=_app seinfo=platform name=com.google.android.turboadapter domain=turbo_adapter type=app_data_file levelFrom=all
