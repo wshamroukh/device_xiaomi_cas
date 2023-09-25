@@ -33,3 +33,7 @@ dontaudit vendor_wcnss_service vendor_wifi_vendor_log_data_file:dir create_dir_p
 dontaudit vendor_wcnss_service vendor_wifi_vendor_log_data_file:file create_file_perms;
 dontaudit vendor_init-qcom-sensors-sh vendor_data_file:dir rw_dir_perms;
 dontaudit untrusted_app ashmem_device:chr_file open;
+
+dontaudit {
+    kernel
+} self:capability dac_read_search;
