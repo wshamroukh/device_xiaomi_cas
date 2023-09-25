@@ -6,6 +6,9 @@ persist.camera.                             u:object_r:vendor_camera_prop:s0
 persist.vendor.camera                       u:object_r:vendor_camera_prop:s0
 vendor.camera.                              u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.                           u:object_r:vendor_camera_prop:s0
+vendor.camera.aux.packagelist				u:object_r:vendor_camera_prop:s0
+vendor.camera.aux.packageblacklist      	u:object_r:vendor_camera_prop:s0
+vendor.camera.aux.packageexcludelist		u:object_r:vendor_camera_prop:s0
 audio.camerasound.force                     u:object_r:vendor_default_prop:s0
 
 # Fingerprint
