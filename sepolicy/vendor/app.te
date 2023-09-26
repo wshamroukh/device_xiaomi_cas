@@ -1,5 +1,2 @@
 get_prop({ appdomain -isolated_app }, vendor_payment_security_prop)
 get_prop({ appdomain -isolated_app }, vendor_fp_prop)
-
-# Allow appdomain to get vendor_persist_camera_prop
-get_prop(appdomain, vendor_camera_prop)
