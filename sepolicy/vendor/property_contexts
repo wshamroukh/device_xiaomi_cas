@@ -6,7 +6,6 @@ persist.camera.                             u:object_r:vendor_camera_prop:s0
 persist.vendor.camera                       u:object_r:vendor_camera_prop:s0
 vendor.camera.                              u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.                           u:object_r:vendor_camera_prop:s0
-audio.camerasound.force                     u:object_r:vendor_default_prop:s0
 
 # Fastcharge HAL
 persist.vendor.sec.fastchg_enabled              u:object_r:vendor_fastcharge_prop:s0
@@ -42,10 +41,6 @@ ro.vendor.oem.meid								 u:object_r:vendor_meid_prop:s0
 # Serial number
 ro.vendor.oem.sno                               u:object_r:vendor_sno_prop:s0
 ro.vendor.oem.psno                              u:object_r:vendor_sno_prop:s0
-
-# wlan
-wifi.interface			                u:object_r:wifi_hal_prop:s0
-wifi.active.interface 					u:object_r:wifi_hal_prop:s0
 
 ro.vendor.display.type				u:object_r:vendor_display_prop:s0
 
