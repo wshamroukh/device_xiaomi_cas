@@ -25,4 +25,7 @@
 
     <!-- Whether to show TouchGestures preference -->
     <bool name="config_supportsTouchGestures">true</bool>
+	
+	<!-- Whether to enable Lineage Fast Charge Prefernece -->
+    <bool name="config_lineageFastChargeSupported">true</bool>
 </resources>
