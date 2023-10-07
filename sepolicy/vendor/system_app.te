@@ -22,3 +22,6 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 # To allow Settings to find and bind Google Battery HAL
 allow system_app hal_googlebattery_service:service_manager find;
 binder_call(system_app, hal_googlebattery)
+
+# Allow KProfiles to be adjusted by a system app
+allow system_app sysfs_kprofiles:file rw_file_perms;
