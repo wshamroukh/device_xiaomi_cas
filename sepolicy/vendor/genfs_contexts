@@ -225,5 +225,5 @@ genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-a
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/wakeup/wakeup104    u:object_r:sysfs_wakeup:s0
 
 # KProfiles
-genfscon sysfs /module/kprofiles/parameters/auto_kprofiles u:object_r:sysfs_kprofiles:s0
-genfscon sysfs /module/kprofiles/parameters/kp_mode u:object_r:sysfs_kprofiles:s0
+genfscon sysfs /module/kprofiles/parameters/auto_kp u:object_r:sysfs_kprofiles:s0
+genfscon sysfs /kernel/kprofiles/kp_mode u:object_r:sysfs_kprofiles:s0
