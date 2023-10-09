@@ -1,2 +1,0 @@
-vendor.google.google_battery.IGoogleBattery                      u:object_r:hal_googlebattery_service:s0
-vendor.google.google_battery.IGoogleBattery/default                      u:object_r:hal_googlebattery_service:s0
