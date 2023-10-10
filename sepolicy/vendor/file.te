@@ -29,6 +29,3 @@ type vendor_sysfs_iio, fs_type, sysfs_type;
 type vendor_sysfs_tp_virtual_prox, fs_type, sysfs_type;
 
 type vendor_thermal_data_file, file_type, data_file_type;
-
-# KProfiles
-type sysfs_kprofiles, sysfs_type, fs_type;
