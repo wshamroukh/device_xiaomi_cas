@@ -29,10 +29,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 PRODUCT_BOARD_PLATFORM := kona
 PRODUCT_USES_QCOM_HARDWARE := true
 
-
 # Kernel
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/prebuilt/kernel/Image:$(PRODUCT_OUT)/kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/kernel/Image:$(PRODUCT_OUT)/kernel \
+    $(LOCAL_PATH)/prebuilt/kernel/dtb.img:$(PRODUCT_OUT)/dtb.img \
+    $(LOCAL_PATH)/prebuilt/kernel/dtbo.img:$(PRODUCT_OUT)/dtbo.img
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \

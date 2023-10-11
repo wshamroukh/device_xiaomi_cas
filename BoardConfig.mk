@@ -124,9 +124,9 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=2048
 
-TARGET_KERNEL_DIR ?= prebuilt/kernel
+TARGET_KERNEL_DIR ?= $(DEVICE_PATH)/prebuilt/kernel
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
-PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_DIR)/dtbo.img
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
