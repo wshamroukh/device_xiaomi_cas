@@ -27,6 +27,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Platform
 PRODUCT_BOARD_PLATFORM := kona
+PRODUCT_USES_QCOM_HARDWARE := true
+
+
+# Kernel
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/prebuilt/kernel/Image:$(PRODUCT_OUT)/kernel
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -197,10 +203,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Fastcharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.xiaomi
-
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
@@ -322,7 +324,7 @@ PRODUCT_COPY_FILES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    vendor/hardware/xiaomi
 
 # Neural networks
 PRODUCT_PACKAGES += \
@@ -379,10 +381,6 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
-
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.xiaomi_kona
 
 # QMI
 PRODUCT_PACKAGES += \

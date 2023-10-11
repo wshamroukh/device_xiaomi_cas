@@ -64,6 +64,9 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# MIUI Camera
+TARGET_INCLUDES_MIUI_CAMERA := true
+
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
@@ -87,7 +90,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Fingerprint
 TARGET_USES_FOD_ZPOS := true
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
+TARGET_SURFACEFLINGER_UDFPS_LIB := //vendor/hardware/xiaomi:libudfps_extension.xiaomi
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
@@ -102,6 +105,9 @@ DEVICE_MATRIX_FILE := \
     $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 
 # Kernel
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
@@ -117,32 +123,19 @@ BOARD_KERNEL_CMDLINE := \
     reboot=panic_warm \
     service_locator.enable=1 \
     swiotlb=2048
-BOARD_KERNEL_CMDLINE += androidboot.selinux=enforcing
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_KERNEL_PAGESIZE := 4096
-
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
-TARGET_KERNEL_SOURCE := kernel/xiaomi/cas
-TARGET_KERNEL_CONFIG := cas_defconfig
+TARGET_KERNEL_DIR ?= prebuilt/kernel
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/input_suspend
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Media
 TARGET_USES_ION := true
 
 # Platform
-BOARD_USES_QCOM_HARDWARE := true
+BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := kona
 
 # Partitions
