@@ -25,9 +25,8 @@ $(call inherit-product-if-exists, vendor/xiaomi/cas-miuicamera/products/miuicame
 # SDCardFS Deprecation ## https://source.android.com/devices/storage/sdcardfs-deprecate
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Platform
-PRODUCT_BOARD_PLATFORM := kona
-PRODUCT_USES_QCOM_HARDWARE := true
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Kernel
 PRODUCT_COPY_FILES += \

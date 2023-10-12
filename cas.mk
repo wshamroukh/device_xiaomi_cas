@@ -11,17 +11,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common StatiX stuff.
-$(call inherit-product, vendor/statix/config/common.mk)
-$(call inherit-product, vendor/statix/config/gsm.mk)
-TARGET_DOES_NOT_USE_GAPPS := false
-ENABLE_GAMETOOLS := true
-DISABLE_COLUMBUS := false
-SYSTEMUI_USE_COMPOSE := true
-INCLUDE_PIXEL_LAUNCHER := false
-STATIX_BUILD_TYPE := false
+# Zephyrus flags
+CUSTOM_BUILD_TYPE := Official
+WITH_GMS := true
+SHIP_APERTURE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+USE_PIXEL_CHARGER_IMAGES := true
+TARGET_SUPPORTS_BLUR := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
 
-PRODUCT_NAME := statix_cas
+# Platform
+PRODUCT_BOARD_PLATFORM := kona
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# Kernel headers
+PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/cas/prebuilt/kernel/kernel-headers/
+
+PRODUCT_NAME := cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC

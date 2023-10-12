@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/statix_cas.mk
+    $(LOCAL_DIR)/cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_cas-eng \
-    statix_cas-user \
-    statix_cas-userdebug
+    cas-eng \
+    cas-user \
+    cas-userdebug
