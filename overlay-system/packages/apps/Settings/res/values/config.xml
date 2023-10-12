@@ -38,5 +38,9 @@
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
     <bool name="config_supports_dynamic_refresh_rate_controls">true</bool>
+	
+	<!-- Maintainer info -->
+    <string name="config_maintainer_name" translatable="false">Waddah</string>
+    <string name="config_maintainer_link"  translatable="false">https://t.me/+JciK8-z3FqhlOWY1</string>
 
 </resources>
