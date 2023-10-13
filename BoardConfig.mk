@@ -6,9 +6,6 @@
 
 DEVICE_PATH := device/xiaomi/cas
 
-# Build Copy Headers
-BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
-
 # AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
