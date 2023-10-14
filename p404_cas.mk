@@ -11,26 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-EVO_BUILD_TYPE := COMMUNITY
-TARGET_USES_AOSP_RECOVERY := true
+# Inherit from the 404 configuration.
+$(call inherit-product, vendor/404/configs/common.mk)
+WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_INCLUDES_MIUI_CAMERA := true
-TARGET_ENABLE_BLUR := true
-SYSTEM_OPTIMIZE_JAVA := true
-SYSTEMUI_OPTIMIZE_JAVA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_TOUCHGESTURES := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
-PRODUCT_NAME := evolution_cas
+PRODUCT_NAME := p404_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
