@@ -187,8 +187,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # SELinux
-#include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+#include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
