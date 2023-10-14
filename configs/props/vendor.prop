@@ -195,9 +195,6 @@ ro.netflix.bsp_rev=Q8250-19134-1
 persist.vendor.data.iwlan.enable=true
 ro.vendor.use_data_netmgrd=true
 
-# Qualcomm System Daemon
-persist.vendor.qcomsysd.enabled=1
-
 # RCS
 persist.rcs.supported=1
 

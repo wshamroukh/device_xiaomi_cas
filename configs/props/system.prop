@@ -16,9 +16,6 @@ persist.dbg.wfc_avail_ovr=1
 # RIL
 persist.vendor.radio.report_codec=1
 
-# Vendor
-ro.vendor.qti.va_aosp.support=1
-
 # RIL Powersaving
 persist.radio.add_power_save=1
 pm.sleep_mode=1
