@@ -85,24 +85,15 @@ PRODUCT_PACKAGES += \
     audio.primary.kona \
     audio.r_submix.default \
     audio.usb.default \
-    libaacwrapper \
-    libaudiopreprocessing \
     libbatterylistener \
-    libbundlewrapper \
     libcomprcapture \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
     libhdmiedid \
     libhfp \
-    libldnhncr \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libreverbwrapper \
     libsndmonitor \
     libtinycompress \
-    libvisualizer \
     libvolumelistener
 
 PRODUCT_COPY_FILES += \
