@@ -140,16 +140,5 @@
                 android:resource="@string/dc_dimming_enable_summary" />
         </activity>
 
-        <service
-            android:name=".dolby.DolbyTileService"
-            android:exported="true"
-            android:icon="@drawable/ic_dolby_qs"
-            android:label="@string/dolby_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
     </application>
 </manifest>

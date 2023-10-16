@@ -26,7 +26,6 @@ import android.util.Log;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.dolby.DolbyUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.utils.FileUtils;
@@ -44,7 +43,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         DiracUtils.initialize(context);
-        DolbyUtils.getInstance(context).onBootCompleted();
         DozeUtils.checkDozeService(context);
 		RefreshUtils.startService(context);
 

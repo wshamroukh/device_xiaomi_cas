@@ -78,7 +78,7 @@
     <string name="music_headset_scenario_video">Video</string>
     <string name="music_headset_scenario_vocal">Voice</string>
 
-    <!-- Dirac settings: equalizer presets -->
+     <!-- Dirac settings: equalizer presets -->
     <string name="dirac_preset_default">Default</string>
     <string name="dirac_preset_rock">Rock</string>
     <string name="dirac_preset_jazz">Jazz</string>
@@ -103,28 +103,4 @@
     <string name="dc_dimming_enable_title">DC Dimming</string>
     <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
     <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
-    
-    <!-- Dolby Atmos -->
-    <string name="dolby_title">Dolby Atmos</string>
-    <string name="dolby_enable">Enable</string>
-    <string name="dolby_summary">Surround sound</string>
-    <string name="dolby_preset_title">Choose a preset</string>
-    <string name="dolby_profile_title">Choose a profile</string>
-
-    <!-- Dolby Atmos: Sound Profiles -->
-    <string name="dolby_profile_dynamic">Dynamic</string>
-    <string name="dolby_profile_music">Music</string>
-    <string name="dolby_profile_video">Video</string>
-    <string name="dolby_profile_vocal">Voice</string>
-
-    <!-- Dolby Atmos: Equalizer presets -->
-    <string name="dolby_preset_default">Default</string>
-    <string name="dolby_preset_rock">Rock</string>
-    <string name="dolby_preset_jazz">Jazz</string>
-    <string name="dolby_preset_pop">Pop</string>
-    <string name="dolby_preset_classical">Classical</string>
-    <string name="dolby_preset_hiphop">Hip Hop</string>
-    <string name="dolby_preset_blues">Blues</string>
-    <string name="dolby_preset_electronic">Electronic</string>
-    <string name="dolby_preset_metal">Metal</string>
 </resources>
