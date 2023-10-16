@@ -6,8 +6,5 @@ type nxpnfc_hwservice, hwservice_manager_type;
 type nxpese_hwservice, hwservice_manager_type;
 type hal_wlc_hwservice, hwservice_manager_type;
 
-# Dolby
-type hal_dms_hwservice, hwservice_manager_type;
-
 # TurboAdapter
 type hal_turbo_adapter_hwservice, hwservice_manager_type;
