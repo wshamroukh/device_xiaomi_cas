@@ -31,6 +31,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Platform
 PRODUCT_BOARD_PLATFORM := kona
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
