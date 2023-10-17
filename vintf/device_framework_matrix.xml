@@ -460,9 +460,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>android.hardware.wifi</name>
-        <version>1.0-6</version>
+        <version>1</version>
         <interface>
             <name>IWifi</name>
             <instance>default</instance>
@@ -527,15 +527,6 @@
 			<instance>default</instance>
 		</interface>
 	</hal>
-	<hal format="hidl">
-        <name>vendor.lineage.powershare</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPowerShare</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
 	<hal format="aidl" optional="true">
         <name>android.hardware.power</name>
         <version>3</version>
@@ -549,22 +540,6 @@
         <version>1.2</version>
         <interface>
             <name>IGoogleBattery</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-	<hal format="hidl" optional="false">
-        <name>vendor.lineage.fastcharge</name>
-        <version>1.0</version>
-        <interface>
-            <name>IRestrictedCurrent</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-	<hal format="aidl" optional="false">
-        <name>vendor.lineage.health</name>
-        <version>1</version>
-        <interface>
-            <name>IChargingControl</name>
             <instance>default</instance>
         </interface>
     </hal>
