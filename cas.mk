@@ -14,6 +14,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 # Zephyrus flags
 CUSTOM_BUILD_TYPE := Official
 WITH_GMS := true
+GMS_FULL := true
 SHIP_APERTURE := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
