@@ -1,1 +1,1 @@
-type hal_googlebattery_service, vendor_service, service_manager_type;
+type hal_googlebattery_service, service_manager_type;
