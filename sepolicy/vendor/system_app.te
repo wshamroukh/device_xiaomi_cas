@@ -9,7 +9,6 @@ allow system_app sysfs_power_supply:dir { search };
 allow system_app sysfs_power_supply:file { getattr read open };
 
 r_dir_file(system_app, vendor_sysfs_battery_supply)
-r_dir_file(system_app, sysfs_battery_supply)
 
 # WLC
 allow system_app hal_wlc_hwservice:hwservice_manager find;
