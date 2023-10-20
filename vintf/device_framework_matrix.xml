@@ -394,9 +394,9 @@
             <instance>vppService</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.wifidisplaysession</name>
-        <version>1</version>
+        <version>1.0</version>
         <interface>
             <name>IWifiDisplaySession</name>
             <instance>wifidisplaysession</instance>
@@ -461,9 +461,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>android.hardware.wifi</name>
-        <version>1.0-6</version>
+        <version>1</version>
         <interface>
             <name>IWifi</name>
             <instance>default</instance>
