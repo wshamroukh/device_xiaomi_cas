@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_cas.mk
+    $(LOCAL_DIR)/aospa_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    p404_cas-eng \
-    p404_cas-user \
-    p404_cas-userdebug
+    aospa_cas-eng \
+    aospa_cas-user \
+    aospa_cas-userdebug
