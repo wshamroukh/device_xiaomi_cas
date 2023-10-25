@@ -570,4 +570,29 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
+        <version>2</version>
+        <interface>
+            <name>ILights</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.aospa.power</name>
+        <version>1</version>
+        <interface>
+            <name>IPowerFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.aospa.power</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IPowerFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

@@ -599,4 +599,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.aospa.power</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IPowerFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
