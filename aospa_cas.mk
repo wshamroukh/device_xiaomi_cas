@@ -13,7 +13,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit from the AOSPA configuration.
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
-
+TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_NAME := aospa_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
