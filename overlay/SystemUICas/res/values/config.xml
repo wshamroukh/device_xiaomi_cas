@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The Linux Foundation 
+     SPDX-License-Identifier: BSD-3-Clause
+-->
+<resources>
+
+    <!-- Tiles to auto add to Quick Settings upon first change of a given secure setting.
+         The syntax is setting-name:spec. If the tile is a TileService, the spec should be specified
+         as custom(package/class). Relative class name is supported. -->
+    <string-array name="config_quickSettingsAutoAdd">
+        <item>accessibility_display_inversion_enabled:inversion</item>
+        <item>wind_down_first_time_setup:custom(com.google.android.apps.wellbeing/.screen.ui.GrayscaleTileService)</item>
+        <item>focus_mode_first_time_setup:custom(com.google.android.apps.wellbeing/.focusmode.quicksettings.FocusModeTileService)</item>
+    </string-array>
+
+    <!-- Doze: does this device support STATE_DOZE?  -->
+    <bool name="doze_display_state_supported">false</bool>
+
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
+	
+	<!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">120</integer>
+
+    <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
+         Note that while rounded.xml includes the entire path (including the horizontal and vertical
+         corner edges), this pulls out just the curve.
+     -->
+    <string name="config_rounded_mask" translatable="false">
+        M122,0 C71.76,3.59 52.03,8.07 29.6,29.6 8.07,52.03 3.59,71.76 0,122
+    </string>
+
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">70</integer>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfpsHbmType">0</integer>
+
+    <!-- Udfps vendor code -->
+    <integer name="config_udfpsVendorCode">22</integer>
+
+    <!-- Color of the UDFPS pressed view -->
+    <color name="config_udfpsColor">#00ffffff</color>
+	
+	<!-- Whether the combined qs shows in status bar when true, the combined qs will not be available if set it to false  -->
+    <bool name="flag_combined_qs_headers">true</bool>
+	<!-- SystemUI: Turn on UMO turbulence noise and surface ripple by default -->
+    <bool name="flag_umo_surface_ripple">true</bool>
+    <bool name="flag_umo_turbulence_noise">true</bool>
+	
+	<!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+    <integer name="config_aodMaxRefreshRate">60</integer>
+</resources>

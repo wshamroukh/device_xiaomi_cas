@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "WifiCas",
+    product_specific: true
+}
