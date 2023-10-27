@@ -334,24 +334,16 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-system
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon \
-    FrameworksResCommon \
-    FrameworksResTarget \
-    SystemUIResCommon \
-    TelephonyResCommon \
-	WifiResCas \
-    WifiResCommon \
-    WifiResTarget \
-    DeviceFrameworks \
-    DeviceSystemUI \
-    DeviceTelephony \
-    SettingsResCas \
-    SettingsProviderOverlay
-
+    CarrierConfigCas \
+    FrameworksCas \
+    SettingsCas \
+    SettingsProviderCas \
+    SystemUICas \
+    TelephonyCas \
+	WifiCas
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
