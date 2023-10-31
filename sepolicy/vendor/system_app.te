@@ -23,3 +23,7 @@ allow system_app vendor_sysfs_graphics:file { getattr open read };
 
 # Aware
 get_prop(system_app, vendor_aware_available_prop)
+
+# Battery Health
+allow system_app sysfs_power_supply:dir { search };
+allow system_app sysfs_power_supply:file { r_file_perms };
