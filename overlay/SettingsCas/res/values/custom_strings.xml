@@ -4,8 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- ROM maintainer name -->
-    <string name="build_maintainer_summary">Waddah</string>
-    <string name="build_device_url">https://t.me/+JciK8-z3FqhlOWY1</string>
-	<string name="build_maintainer_donate_url">https://t.me/+JciK8-z3FqhlOWY1</string>
+    <!-- Maintainer info -->
+    <string name="config_maintainer_name" translatable="false">Waddah</string>
+    <string name="config_maintainer_link" translatable="false">https://t.me/+JciK8-z3FqhlOWY1</string>
 </resources>
