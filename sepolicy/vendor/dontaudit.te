@@ -37,3 +37,7 @@ dontaudit untrusted_app ashmem_device:chr_file open;
 dontaudit {
     kernel
 } self:capability dac_read_search;
+
+dontaudit {
+    vold
+} vendor_spunvm_file:dir rw_dir_perms;
