@@ -1,1 +1,0 @@
-allow turbo_adapter hal_googlebattery_service:service_manager { find };
