@@ -25,7 +25,7 @@
     <bool name="config_supportsUdfps">true</bool>
 	
     <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportsScreenOffUdfps">true</bool>
+    <bool name="config_supportScreenOffUdfps">true</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">false</bool>
@@ -91,4 +91,11 @@
 	
 	<!-- Whether to enable Lineage Health Service -->
     <bool name="config_lineageHealthSupported">true</bool>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketUseLightSensor">true</bool>
+
+    <!-- Whether to use Richtap vibration -->
+    <bool name="config_usesRichtapVibration">true</bool>
 </resources>
