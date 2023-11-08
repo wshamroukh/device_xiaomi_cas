@@ -8,3 +8,5 @@ allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
 
 allow init vendor_sysfs_scsi_host:file w_file_perms;
 allow init proc:file { open write };
+
+allow init debugfs_trace_marker:file mounton;
