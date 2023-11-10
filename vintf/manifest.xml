@@ -599,4 +599,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <transport>hwbinder</transport>
         <fqname>@1.0::IRestrictedCurrent/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.nxp.nxpnfc</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::INxpNfc/default</fqname>
+    </hal>
 </manifest>
