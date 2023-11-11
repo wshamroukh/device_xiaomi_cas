@@ -153,8 +153,6 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     libbthost_if.vendor \
     libldacBT_bco.vendor \
-    libbthost_if_sink \
-    btaudio_offload_if \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -213,8 +211,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.1.vendor \
-    libloc_net_iface \
-    libloc_net_iface.vendor
+    libloc_net_iface
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
