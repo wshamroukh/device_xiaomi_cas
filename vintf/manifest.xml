@@ -652,10 +652,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
         <fqname>@1.0::IBluetoothAudioOffload/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.sensors</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::ISensors/default</fqname>
-        <fqname>@2.1::ISensors/default</fqname>
-    </hal>
 </manifest>
