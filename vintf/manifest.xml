@@ -587,9 +587,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <transport>hwbinder</transport>
         <fqname>@1.0::IRestrictedCurrent/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.tetheroffload.config</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IOffloadConfig/default</fqname>
-    </hal>
 </manifest>

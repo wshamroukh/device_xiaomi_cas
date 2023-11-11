@@ -585,12 +585,4 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>android.hardware.tetheroffload.config</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOffloadConfig</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
 </compatibility-matrix>
