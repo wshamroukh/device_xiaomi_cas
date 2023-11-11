@@ -637,9 +637,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <transport>hwbinder</transport>
         <fqname>@1.0::INxpNfc/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.configstore</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
-    </hal>
 </manifest>
