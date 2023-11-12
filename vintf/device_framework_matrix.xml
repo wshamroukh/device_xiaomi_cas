@@ -593,4 +593,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="false">
+        <name>android.hardware.audio.effect</name>
+        <version>6.0</version>
+        <version>7.0</version>
+        <version>7.1</version>
+        <interface>
+            <name>IEffectsFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
