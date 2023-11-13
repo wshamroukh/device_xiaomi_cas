@@ -31,8 +31,10 @@
 firmware_directories /vendor/firmware_mnt/image/
 
 # the DIAG device node is not world writable/readable.
-/dev/diag                 0660   system     oem_2901
-/dev/mhi_*_pipe_4         0660   system     system
+/dev/diag                 0666   system     oem_2901
+/dev/htcdiag              0666   system     oem_2901
+/dev/diag_arm9            0666   system     oem_2901
+/dev/mhi_*_pipe_4         0666   system     system
 
 /dev/xlog                 0660   system     audio
 
