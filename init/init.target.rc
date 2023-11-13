@@ -30,6 +30,7 @@
 
 import /vendor/etc/init/init.batterysecret.rc
 import /vendor/etc/init/init.mi_thermald.rc
+import /vendor/etc/init/init_thermal-engine.rc
 import /vendor/etc/init/init.charge_logger.rc
 import /vendor/etc/init/init.mishow.ctl.rc
 
