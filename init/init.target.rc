@@ -424,6 +424,13 @@ service vendor.btmac-sh /vendor/bin/init.mi.btmac.sh
     oneshot
     disabled
 
+# Ril
+service vendor.imsrcsservice /vendor/bin/imsrcsd
+    class main
+    user radio
+    group radio vendor_qti_diag log inet wakelock
+    disabled
+
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
