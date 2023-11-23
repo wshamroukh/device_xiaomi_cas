@@ -176,6 +176,7 @@ ro.opengles.version=196610
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 debug.gralloc.enable_fb_ubwc=1
+debug.sf.auto_latch_unsignaled=true
 
 # Keystore
 ro.hardware.keystore_desede=true
