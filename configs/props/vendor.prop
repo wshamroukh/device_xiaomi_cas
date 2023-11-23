@@ -167,7 +167,7 @@ vendor.gatekeeper.disable_spu=true
 
 # Graphics
 debug.sf.predict_hwc_composition_strategy=0
-persist.sys.sf.native_mode=2
+persist.sys.sf.native_mode=258
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.kona.api30
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
