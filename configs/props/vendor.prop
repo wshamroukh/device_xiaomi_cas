@@ -134,6 +134,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
 ro.vendor.display.sensortype=2
+vendor.display.enable_async_powermode=1
 
 # Dolby
 vendor.audio.dolby.ds2.enabled=false
