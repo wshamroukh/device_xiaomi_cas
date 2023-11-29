@@ -88,7 +88,4 @@
          recharge when the battery level is lower than a threshold. Set this so that the device
          will be charged between (limit - val) and limit. -->
     <integer name="config_chargingControlBatteryRechargeMargin">10</integer>
-	
-	<!-- Whether to enable Lineage Health Service -->
-    <bool name="config_lineageHealthSupported">true</bool>
 </resources>
