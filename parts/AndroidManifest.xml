@@ -181,5 +181,10 @@
                 android:value="1" />
         </activity>
 
+        <service
+            android:name=".display.ColorService"
+            android:permission="ColorService">
+        </service>
+
     </application>
 </manifest>

@@ -27,6 +27,7 @@ import android.util.Log;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.display.ColorService;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
@@ -44,6 +45,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        ColorService.startService(context);
         DiracUtils.initialize(context);
         DozeUtils.checkDozeService(context);
 		RefreshUtils.startService(context);

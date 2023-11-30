@@ -23,6 +23,7 @@ android_app {
         "org.lineageos.settings.resources",
 		"SettingsLib",
         "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature-V1.0-java",
+        "//hardware/xiaomi:vendor.xiaomi.hardware.displayfeature-V1.0-java",
     ],
 
     optimize: {
