@@ -41,3 +41,7 @@ dontaudit {
 dontaudit {
     vold
 } vendor_spunvm_file:dir rw_dir_perms;
+
+dontaudit {
+    hal_power_stats_default
+} vendor_sysfs_iio:dir rw_dir_perms;
