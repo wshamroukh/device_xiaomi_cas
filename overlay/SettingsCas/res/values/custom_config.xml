@@ -22,9 +22,6 @@
 
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">true</bool>
-
-    <!-- Whether to show TouchGestures preference -->
-    <bool name="config_supportsTouchGestures">true</bool>
 	
 	<!-- Whether to enable Lineage Fast Charge Prefernece -->
     <bool name="config_lineageFastChargeSupported">true</bool>
