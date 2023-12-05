@@ -1,0 +1,1 @@
+allow vold fusectlfs:file rw_file_perms;
