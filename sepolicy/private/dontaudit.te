@@ -6,3 +6,5 @@ dontaudit linkerconfig self:capability kill;
 
 # b/152468658
 dontaudit vdc self:capability kill;
+
+dontaudit xiaomiparts_app default_android_hwservice:hwservice_manager find;

@@ -1,5 +1,9 @@
 app_domain(xiaomiparts_app)
 
+hal_client_domain(xiaomiparts_app, hal_touchfeature)
+
+binder_call(xiaomiparts_app, hal_touchfeature)
+
 allow xiaomiparts_app {
   activity_service
   activity_task_service
