@@ -2228,7 +2228,10 @@ vendor/lib64/libtime_genoff.so
 vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service
 vendor/bin/toucheventcheck
 vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc
+vendor/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
+vendor/lib/vendor.xiaomi.hardware.touchfeature@1.0.so
 vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
 
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
