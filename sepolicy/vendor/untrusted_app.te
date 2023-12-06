@@ -1,2 +1,1 @@
-allow untrusted_app userdebug_or_eng_prop:file { read };
 allow untrusted_app vendor_display_prop:file { read };
