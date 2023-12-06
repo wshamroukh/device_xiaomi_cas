@@ -441,7 +441,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.bluetooth.audio</name>
-		<version>2</version>
+		<version>3</version>
         <interface>
             <name>IBluetoothAudioProviderFactory</name>
             <instance>default</instance>
@@ -472,6 +472,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.wifi.supplicant</name>
+        <version>1</version>
         <interface>
             <name>ISupplicant</name>
             <instance>default</instance>
@@ -585,14 +586,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-	<hal format="aidl" optional="false">
-        <name>vendor.lineage.health</name>
-        <version>1</version>
-        <interface>
-            <name>IChargingControl</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>com.dsi.ant</name>
         <version>1.0</version>
@@ -624,6 +617,30 @@
         <version>1.0</version>
         <interface>
             <name>INxpNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.cas</name>
+        <version>1</version>
+        <interface>
+            <name>IMediaCasService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.configstore</name>
+        <version>1.1</version>
+        <interface>
+            <name>ISurfaceFlingerConfigs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.supplicant</name>
+        <version>2</version>
+        <interface>
+            <name>ISupplicant</name>
             <instance>default</instance>
         </interface>
     </hal>
