@@ -364,8 +364,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power.stats@1.0-service.mock \
-    android.hardware.power-service-qti
+    android.hardware.power \
+    android.hardware.power.stats@1.0-service.mock
 
 # PowerShare
 PRODUCT_PACKAGES += \
