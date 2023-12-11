@@ -33,6 +33,9 @@ dontaudit vendor_wcnss_service vendor_wifi_vendor_log_data_file:dir create_dir_p
 dontaudit vendor_wcnss_service vendor_wifi_vendor_log_data_file:file create_file_perms;
 dontaudit vendor_init-qcom-sensors-sh vendor_data_file:dir rw_dir_perms;
 dontaudit untrusted_app ashmem_device:chr_file open;
+dontaudit untrusted_app shell_test_data_file:dir { search };
+dontaudit untrusted_app selinuxfs:file { read open getattr };
+dontaudit vold fusectlfs:file rw_file_perms;
 
 dontaudit {
     kernel
