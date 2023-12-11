@@ -10,3 +10,5 @@ allow init vendor_sysfs_scsi_host:file w_file_perms;
 allow init proc:file { open write };
 
 allow init debugfs_trace_marker:file mounton;
+
+set_prop(vendor_init, vendor_power_prop)

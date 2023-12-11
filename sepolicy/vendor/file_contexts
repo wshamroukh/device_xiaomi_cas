@@ -48,6 +48,7 @@
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
 /vendor/bin/mlipayd@1.1                                                  u:object_r:hal_mlipay_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock                 u:object_r:hal_power_stats_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr                                  u:object_r:hal_power_default_exec:s0
 
 # powershare
 /(vendor|system|vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi_kona                           u:object_r:hal_lineage_powershare_default_exec:s0
@@ -89,3 +90,6 @@
 
 # Label discard_max_bytes in /data partition
 /sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_scsi_host:s0
+
+# UFS
+/sys/devices/platform/soc/[a-f0-9]+.ufshc/clkgate_enable        u:object_r:vendor_sysfs_scsi_host:s0
