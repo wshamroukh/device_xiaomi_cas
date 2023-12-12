@@ -25,4 +25,3 @@ vendor_internal_prop(vendor_sno_prop);
 # Aware
 vendor_restricted_prop(vendor_aware_available_prop);
 
-vendor_internal_prop(vendor_power_prop)
