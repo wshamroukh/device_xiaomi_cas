@@ -1,1 +1,2 @@
-allow untrusted_app vendor_display_prop:file { read };
+allow untrusted_app vendor_display_prop:file { read open };
+allow untrusted_app app_data_file:file { execute };
