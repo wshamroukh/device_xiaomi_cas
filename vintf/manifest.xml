@@ -605,15 +605,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@1.0::INxpNfc/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.configstore</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.thermal</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IThermal/default</fqname>
-        <fqname>@1.1::IThermal/default</fqname>
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
@@ -622,11 +616,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
         <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
         <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.bluetooth.a2dp</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IBluetoothAudioOffload/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.wifidisplaysession</name>
