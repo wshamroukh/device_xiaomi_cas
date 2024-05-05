@@ -552,15 +552,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.fastcharge</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFastCharge</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
 	<hal format="hidl" optional="true">
         <name>vendor.google.google_battery</name>
         <version>1.2</version>
