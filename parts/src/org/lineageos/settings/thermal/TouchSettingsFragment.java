@@ -19,19 +19,19 @@ import android.app.ActionBar;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Switch;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 
 import com.android.settingslib.widget.MainSwitchPreference;
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import org.lineageos.settings.R;
 import org.lineageos.settings.widget.SeekBarPreference;
 
 public class TouchSettingsFragment extends PreferenceFragment
-        implements SharedPreferences.OnSharedPreferenceChangeListener, OnMainSwitchChangeListener {
+        implements SharedPreferences.OnSharedPreferenceChangeListener, OnCheckedChangeListener {
 
     private SharedPreferences mSharedPrefs;
     private SeekBarPreference mTouchSensitivity;
@@ -100,7 +100,7 @@ public class TouchSettingsFragment extends PreferenceFragment
     }
 
     @Override
-    public void onSwitchChanged(Switch switchView, boolean isChecked) {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         mGameMode.setChecked(isChecked);
         mTouchSensitivity.setEnabled(isChecked);
         mTouchResponse.setEnabled(isChecked);
