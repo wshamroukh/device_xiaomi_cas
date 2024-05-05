@@ -543,28 +543,11 @@
 			<instance>default</instance>
 		</interface>
 	</hal>
-	<hal format="hidl">
-        <name>vendor.lineage.powershare</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPowerShare</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
 	<hal format="hidl" optional="true">
         <name>vendor.google.google_battery</name>
         <version>1.2</version>
         <interface>
             <name>IGoogleBattery</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-	<hal format="hidl" optional="false">
-        <name>vendor.lineage.fastcharge</name>
-        <version>1.0</version>
-        <interface>
-            <name>IRestrictedCurrent</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -589,14 +572,6 @@
         <version>2</version>
         <interface>
             <name>ISupplicant</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="false">
-        <name>android.hardware.audio.sounddose</name>
-        <version>1</version>
-        <interface>
-            <name>ISoundDoseFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
