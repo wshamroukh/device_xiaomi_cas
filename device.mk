@@ -26,6 +26,9 @@ $(call inherit-product, vendor/xiaomi/cas/cas-vendor.mk)
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/cas-miuicamera/products/miuicamera.mk)
 
+# Call the ViperFX Config
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # SDCardFS Deprecation ## https://source.android.com/devices/storage/sdcardfs-deprecate
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
