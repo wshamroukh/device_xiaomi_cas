@@ -30,6 +30,10 @@ WITH_GMS := true
 BUILD_GOOGLE_CONTACTS := true
 BUILD_GOOGLE_DIALER := true
 BUILD_GOOGLE_MESSAGE := true
+# Nuke AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+# Nuke Auxio
+TARGET_EXCLUDES_AUXIO := true
 
 
 PRODUCT_NAME := lineage_cas
