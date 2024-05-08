@@ -1,3 +1,6 @@
+# Bluetooth
+persist.bluetooth.sbc_hd_higher_bitrate=1
+
 # Camera
 vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 log.tag.CHIUSECASE=ERROR

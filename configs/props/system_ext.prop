@@ -1,6 +1,13 @@
 # Audio
+af.resampler.quality=7
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
+ro.audio.usb.period_us=20375
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.tbwcheat=0
+
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
