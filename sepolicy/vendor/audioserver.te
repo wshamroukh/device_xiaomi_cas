@@ -1,8 +1,2 @@
 allow audioserver sysfs_f0_value:file rw_file_perms;
 allow audioserver sound_device:chr_file rw_file_perms;
-
-# ViperFX
-get_prop(audioserver, vendor_audio_prop)
-
-allow audioserver unlabeled:file { read write open getattr };
-allow hal_audio_default hal_audio_default:process { execmem };
