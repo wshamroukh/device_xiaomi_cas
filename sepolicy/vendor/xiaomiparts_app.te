@@ -1,2 +1,4 @@
 r_dir_file(xiaomiparts_app, vendor_sysfs_graphics)
 allow xiaomiparts_app vendor_sysfs_graphics:file write;
+
+dontaudit xiaomiparts_app hal_touchfeature_hwservice:hwservice_manager { find };
