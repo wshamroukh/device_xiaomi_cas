@@ -236,6 +236,9 @@ on boot
 
     # Touchpanel
     chown system system /sys/touchpanel/double_tap
+    chmod 0660 /sys/touchpanel/double_tap
+    # Enable DT2W
+    write /sys/touchpanel/double_tap "1"
 
     # Charging current limitation
     #write /sys/class/power_supply/battery/constant_charge_current_max 6000000
