@@ -23,4 +23,8 @@
     <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
     <dimen name="config_rounded_mask_size">122px</dimen>
 
+    <dimen name="keyguard_lock_height">28dp</dimen>
+
+    <dimen name="keyguard_affordance_fixed_height">42dp</dimen>
+
 </resources>
