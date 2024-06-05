@@ -1912,6 +1912,15 @@ vendor/etc/init/imsdatadaemon.rc
 vendor/etc/init/imsqmidaemon.rc
 vendor/etc/init/imsrcsd.rc
 vendor/etc/seccomp_policy/imsrtp.policy
+vendor/firmware/gfcas.b00
+vendor/firmware/gfcas.b01
+vendor/firmware/gfcas.b02
+vendor/firmware/gfcas.b03
+vendor/firmware/gfcas.b04
+vendor/firmware/gfcas.b05
+vendor/firmware/gfcas.b06
+vendor/firmware/gfcas.b07
+vendor/firmware/gfcas.mdt
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
