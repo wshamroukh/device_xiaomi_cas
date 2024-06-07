@@ -620,4 +620,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <version>7.0</version>
+        <interface>
+            <name>IDevicesFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

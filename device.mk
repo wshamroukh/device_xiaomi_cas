@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.audio@6.0-impl \
+    android.hardware.audio@7.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
     audio.primary.kona \
