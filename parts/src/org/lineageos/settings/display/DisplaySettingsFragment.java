@@ -21,7 +21,7 @@ import android.os.Bundle;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import org.lineageos.settings.R;
 import org.lineageos.settings.display.DisplayNodes;
@@ -30,10 +30,10 @@ import org.lineageos.settings.utils.FileUtils;
 public class DisplaySettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private SwitchPreference mDcDimmingPreference;
+    private SwitchPreferenceCompat mDcDimmingPreference;
     private String DC_DIMMING_ENABLE_KEY;
     private String DC_DIMMING_NODE;
-    private SwitchPreference mHBMPreference;
+    private SwitchPreferenceCompat mHBMPreference;
     private String HBM_ENABLE_KEY;
     private String HBM_NODE;
 
@@ -45,7 +45,7 @@ public class DisplaySettingsFragment extends PreferenceFragment implements
         HBM_NODE = DisplayNodes.getHbmNode();
 
         addPreferencesFromResource(R.xml.display_settings);
-        mDcDimmingPreference = (SwitchPreference) findPreference(DC_DIMMING_ENABLE_KEY);
+        mDcDimmingPreference = (SwitchPreferenceCompat) findPreference(DC_DIMMING_ENABLE_KEY);
         if (FileUtils.fileExists(DC_DIMMING_NODE)) {
             mDcDimmingPreference.setEnabled(true);
             mDcDimmingPreference.setOnPreferenceChangeListener(this);
@@ -53,7 +53,7 @@ public class DisplaySettingsFragment extends PreferenceFragment implements
             mDcDimmingPreference.setSummary(R.string.dc_dimming_enable_summary_not_supported);
             mDcDimmingPreference.setEnabled(false);
         }
-        mHBMPreference = (SwitchPreference) findPreference(HBM_ENABLE_KEY);
+        mHBMPreference = (SwitchPreferenceCompat) findPreference(HBM_ENABLE_KEY);
         if (FileUtils.fileExists(HBM_NODE)) {
             mHBMPreference.setEnabled(true);
             mHBMPreference.setOnPreferenceChangeListener(this);
