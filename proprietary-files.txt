@@ -150,6 +150,7 @@ vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib/btaudio_offload_if.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
@@ -157,6 +158,7 @@ vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib64/btaudio_offload_if.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
@@ -2324,3 +2326,14 @@ vendor/lib/libprotobuf-cpp-full-3.9.1.so
 vendor/lib64/libprotobuf-cpp-full-3.9.1.so
 vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
+
+# Misc
+system/lib/libjsoncpp.so
+system/lib/libpng.so
+system/lib/libsqlite.so
+system/lib/libutilscallstack.so
+system/lib64/libjsoncpp.so
+system/lib64/libpng.so
+system/lib64/libsqlite.so
+system/lib64/libutilscallstack.so
+vendor/lib/libstagefright_softomx_plugin.so
