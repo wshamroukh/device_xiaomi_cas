@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
     libldacBT_bco \
     libldnhncr \
     libMguTraceWrapper \
+    libprocessgroup.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -166,6 +167,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0 \
     android.hardware.bluetooth.a2dp@1.0-impl.mock \
     com.dsi.ant@1.0.vendor \
+    libbthost_if_sink \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -174,8 +176,13 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
+    libcamera_metadata.vendor \
     libdng_sdk.vendor \
     libgui_vendor \
+    libpiex \
+    libutilscallstack.vendor \
+    libutilscallstack.vendor:64 \
+    libyuv.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
@@ -186,6 +193,10 @@ PRODUCT_COPY_FILES += \
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
+
+# CURL
+PRODUCT_PACKAGES += \
+    libcurl.vendor:64
 
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8250/display/config/display-product.mk)
@@ -224,7 +235,9 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    libloc_net_iface \
+    libloc_net_iface.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -280,14 +293,23 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# JSON
+PRODUCT_PACKAGES += \
+    libjsoncpp.vendor
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+# LZ4
+PRODUCT_PACKAGES += \
+    liblz4.vendor
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail.vendor
+    libavservices_minijail.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
@@ -391,7 +413,9 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libsqlite.vendor \
+    libsqlite.vendor:64
 
 # PowerShare
 PRODUCT_PACKAGES += \
@@ -508,6 +532,7 @@ PRODUCT_COPY_FILES += \
     # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
+    libpng.vendor \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
