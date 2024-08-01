@@ -269,6 +269,7 @@ vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcvface_api.so
+vendor/lib/libpiex.so
 vendor/lib64/libalCFRLV.so
 vendor/lib64/libcamera_scene_cen.so
 vendor/lib64/libcamxexternalformatutils.so
@@ -283,6 +284,7 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcvface_api.so
 vendor/lib64/libmiphone_bokeh_effect.so
+vendor/lib64/libpiex.so
 vendor/lib64/libwa_sat.so
 
 # Camera-components

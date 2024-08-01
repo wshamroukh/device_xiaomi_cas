@@ -179,7 +179,6 @@ PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    libpiex \
     libutilscallstack.vendor \
     libutilscallstack.vendor:64 \
     libyuv.vendor \
