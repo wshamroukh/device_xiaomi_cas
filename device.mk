@@ -118,9 +118,7 @@ PRODUCT_PACKAGES += \
     libeffectproxy \
     libhdmiedid \
     libhfp \
-    libldacBT_bco \
     libldnhncr \
-    libMguTraceWrapper \
     libprocessgroup.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \

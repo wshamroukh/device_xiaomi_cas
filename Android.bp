@@ -1,10 +1,2 @@
 soong_namespace {
 }
-
-cc_library_shared {
-    name: "libldacBT_bco",
-}
-
-cc_library_shared {
-    name: "libMguTraceWrapper",
-}
