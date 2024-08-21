@@ -23,6 +23,7 @@ import android.content.SharedPreferences;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
+import android.provider.Settings;
 
 import org.lineageos.settings.display.DisplayNodes;
 import org.lineageos.settings.utils.FileUtils;
@@ -31,6 +32,7 @@ public class HBMTileService extends TileService {
 
     private String HBM_ENABLE_KEY;
     private String HBM_NODE;
+    private String BACKLIGHT_NODE;
 
     private void updateUI(boolean enabled) {
         final Tile tile = getQsTile();
@@ -43,6 +45,7 @@ public class HBMTileService extends TileService {
         super.onStartListening();
         HBM_ENABLE_KEY = DisplayNodes.getHbmEnableKey();
         HBM_NODE = DisplayNodes.getHbmNode();
+        BACKLIGHT_NODE = DisplayNodes.getBacklight();
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         updateUI(sharedPrefs.getBoolean(HBM_ENABLE_KEY, false));
     }
@@ -59,6 +62,12 @@ public class HBMTileService extends TileService {
         final boolean enabled = !(sharedPrefs.getBoolean(HBM_ENABLE_KEY, false));
         FileUtils.writeLine(HBM_NODE, enabled ? "1" : "0");
         sharedPrefs.edit().putBoolean(HBM_ENABLE_KEY, enabled).commit();
+        if (enabled) {
+            // Set the backlight to its maximum value
+            FileUtils.writeLine(BACKLIGHT_NODE, "2047");
+            // Update the system's screen brightness to maximum
+            Settings.System.putInt(this.getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);
+        }
         updateUI(enabled);
     }
 }
