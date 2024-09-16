@@ -35,6 +35,8 @@ BUILD_GOOGLE_MESSAGE := true
 TARGET_EXCLUDES_AUDIOFX := true
 # Nuke Auxio
 TARGET_EXCLUDES_AUXIO := true
+# DeviceAsWebcam
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
 
 PRODUCT_NAME := lineage_cas
