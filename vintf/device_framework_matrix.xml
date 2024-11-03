@@ -570,9 +570,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="false">
+    <hal format="hidl" optional="false">
         <name>android.hardware.cas</name>
-        <version>1</version>
+        <version>1.2</version>
         <interface>
             <name>IMediaCasService</name>
             <instance>default</instance>
