@@ -13,16 +13,17 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common Project Matrixx stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
-INFINITY_BUILD_TYPE := Unofficial
+INFINITY_BUILD_TYPE := UNOFFICIAL
 INFINITY_MAINTAINER := Waddah
+TARGET_SUPPORTS_BLUR := true
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDES_MIUI_CAMERA := true
+TARGET_INCLUDES_POCKET_MODE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_MIUI_CAMERA := true
 WITH_GAPPS := true
 TARGET_BUILD_GOOGLE_TELEPHONY := true
-TARGET_SUPPORTS_TOUCHGESTURES := true
-TARGET_EXCLUDES_AUDIOFX := false
+TARGET_EXCLUDES_AUDIOFX := true
 
 
 PRODUCT_NAME := infinity_cas
