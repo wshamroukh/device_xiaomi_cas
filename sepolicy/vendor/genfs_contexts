@@ -2,7 +2,7 @@
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value                  u:object_r:sysfs_f0_value:s0
 
 # Display Exposure
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable                 u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /class/drm/card0-DSI-1/disp_param                   u:object_r:vendor_sysfs_graphics:s0
 
 # Display HBM
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/hbm                          u:object_r:vendor_sysfs_graphics:s0
