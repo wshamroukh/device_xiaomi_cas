@@ -50,9 +50,3 @@ persist.radio.is_vonr_enabled_1=true
 
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
-
-# Infinity X properties
-ro.infinity.soc=Snapdragon 865
-ro.infinity.battery=4500 mAh
-ro.infinity.display=1080 x 2340, 120 Hz
-ro.infinity.camera=48MP + 48MP + 12MP + 8MP
