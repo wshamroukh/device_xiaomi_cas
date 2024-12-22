@@ -11,22 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Project Matrixx stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := Waddah
-TARGET_SUPPORTS_BLUR := true
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+RISING_BUILDTYPE := COMMUNITY
+RISING_MAINTAINER := Waddah
+TARGET_ENABLE_BLUR := true
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDES_POCKET_MODE := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_MIUI_CAMERA := true
-WITH_GAPPS := true
-TARGET_BUILD_GOOGLE_TELEPHONY := true
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_LINEAGE_CHARGER := true
+WITH_GMS := true
+TARGET_CORE_GMS := true
 TARGET_EXCLUDES_AUDIOFX := true
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 865" \
+    RisingMaintainer="Waddah"
 
-PRODUCT_NAME := infinity_cas
+PRODUCT_NAME := lineage_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
