@@ -23,6 +23,7 @@ WITH_LINEAGE_CHARGER := true
 WITH_GMS := true
 TARGET_CORE_GMS := true
 TARGET_EXCLUDES_AUDIOFX := true
+WITH_SU := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Snapdragon 865" \
