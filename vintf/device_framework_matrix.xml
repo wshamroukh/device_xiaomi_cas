@@ -684,4 +684,59 @@
         <fqname>@1.0::IKeyDisabler/default</fqname>
         <fqname>@1.0::IKeySwapper/default</fqname>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.livedisplay</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IAdaptiveBacklight</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IColorEnhancement</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IAutoContrast</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayColorCalibration</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IReadingEnhancement</name>
+            <instance>default</instance>
+        </interface>
+		<interface>
+            <name>IAntiFlicker</name>
+            <instance>default</instance>
+        </interface>
+		<interface>
+            <name>IColorBalance</name>
+            <instance>default</instance>
+        </interface>
+		<interface>
+            <name>ISunlightEnhancement</name>
+            <instance>default</instance>
+        </interface>
+		<interface>
+            <name>IPictureAdjustment</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::IAdaptiveBacklight/default</fqname>
+        <fqname>@2.0::IColorEnhancement/default</fqname>
+        <fqname>@2.0::IAutoContrast/default</fqname>
+        <fqname>@2.0::IDisplayColorCalibration/default</fqname>
+        <fqname>@2.0::IDisplayModes/default</fqname>
+        <fqname>@2.0::IReadingEnhancement/default</fqname>
+		<fqname>@2.0::IAntiFlicker/default</fqname>
+		<fqname>@2.0::IColorBalance/default</fqname>
+		<fqname>@2.0::ISunlightEnhancement/default</fqname>
+		<fqname>@2.0::IPictureAdjustment/default</fqname>
+    </hal>
 </compatibility-matrix>
