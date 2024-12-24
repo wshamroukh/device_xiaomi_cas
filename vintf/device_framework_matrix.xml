@@ -640,4 +640,48 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.fastcharge</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFastCharge</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.touch</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IHighTouchPollingRate</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IGloveMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IStylusMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IKeyDisabler</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IKeySwapper</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IHighTouchPollingRate/default</fqname>
+        <fqname>@1.0::IGloveMode/default</fqname>
+        <fqname>@1.0::IStylusMode/default</fqname>
+        <fqname>@1.0::ITouchscreenGesture/default</fqname>
+        <fqname>@1.0::IKeyDisabler/default</fqname>
+        <fqname>@1.0::IKeySwapper/default</fqname>
+    </hal>
 </compatibility-matrix>
