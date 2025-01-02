@@ -40,4 +40,3 @@ ro.vendor.display.type				u:object_r:vendor_display_prop:s0
 
 # Aware
 ro.vendor.aware_available          u:object_r:vendor_aware_available_prop:s0
-
