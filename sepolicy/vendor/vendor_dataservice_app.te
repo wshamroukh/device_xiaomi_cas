@@ -1,0 +1,1 @@
+allow vendor_dataservice_app zygote:unix_stream_socket { getopt };
