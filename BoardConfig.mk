@@ -129,6 +129,10 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/cas
 TARGET_KERNEL_CONFIG := cas_defconfig
 
+# Kernel Clang Flags
+KERNEL_CC := CC=clang
+override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
