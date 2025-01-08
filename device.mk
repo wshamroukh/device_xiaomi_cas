@@ -202,6 +202,9 @@ $(call inherit-product, vendor/qcom/opensource/display/config/display-product-ve
 BOARD_DISPLAY_HAL := hardware/qcom-caf/sm8250/display
 TARGET_BOARD_PLATFORM := kona
 
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-service.example
+
 # Dolby
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
