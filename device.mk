@@ -475,7 +475,7 @@ PRODUCT_BOOT_JARS += \
 # Thermal
 PRODUCT_PACKAGES += \
 	android.hardware.thermal@2.0.vendor \
-    android.hardware.thermal@2.0
+    android.hardware.thermal-service.qti
 
 # Touchscreen
 PRODUCT_PACKAGES += \
