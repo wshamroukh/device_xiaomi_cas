@@ -12,3 +12,5 @@ allow init proc:file { rw_file_perms };
 
 # Allow init to set read_ahead_kb on /data partition
 allow init vendor_sysfs_scsi_host:file w_file_perms;
+
+allow init vendor_spunvm_file:filesystem { mount relabelfrom relabelto };
