@@ -203,7 +203,10 @@ BOARD_DISPLAY_HAL := hardware/qcom-caf/sm8250/display
 TARGET_BOARD_PLATFORM := kona
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.example
+    android.hardware.memtrack-service.example \
+    libqdMetaData \
+    libqdMetaData.system \
+    libtinyxml
 
 # Dolby
 PRODUCT_COPY_FILES += \
