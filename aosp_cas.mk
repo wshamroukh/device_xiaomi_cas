@@ -11,25 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-RISING_BUILDTYPE := COMMUNITY
-RISING_MAINTAINER := Waddah
-TARGET_ENABLE_BLUR := true
-TARGET_HAS_UDFPS := true
-TARGET_ENABLE_BLUR := true
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+IS_OFFICIAL:= false
+WITH_ADB_INSECURE := true
+TARGET_CALL_RECORDING_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_LINEAGE_CHARGER := true
-WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_EXCLUDES_AUDIOFX := true
 WITH_SU := true
+WITH_GMS := true
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 865" \
-    RisingMaintainer="Waddah"
-
-PRODUCT_NAME := lineage_cas
+PRODUCT_NAME := aosp_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
