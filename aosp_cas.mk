@@ -15,12 +15,10 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 IS_OFFICIAL:= false
-WITH_ADB_INSECURE := true
 TARGET_CALL_RECORDING_SUPPORTED := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_SU := true
 WITH_GMS := true
 
 PRODUCT_NAME := aosp_cas

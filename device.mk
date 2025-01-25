@@ -17,6 +17,9 @@ ALLOW_MISSING_DEPENDENCIES := true
 # Keys
 -include vendor/lineage-priv/keys/keys.mk
 
+# Device Certification vendor/extra/product.mk
+$(call inherit-product, vendor/extra/product.mk)
+
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
