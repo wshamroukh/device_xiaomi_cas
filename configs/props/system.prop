@@ -1,5 +1,7 @@
 # Bluetooth
 persist.bluetooth.sbc_hd_higher_bitrate=1
+persist.vendor.btstack.enable.lpa=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 
 # Camera
 vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
