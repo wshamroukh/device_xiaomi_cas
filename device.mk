@@ -323,18 +323,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc
 
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
-PRODUCT_PACKAGES += \
-    CarrierConfigCas \
-    FrameworksCas \
-    SettingsCas \
-    SettingsProviderCas \
-    SystemUICas \
-    TelephonyCas \
-	WifiCas
-
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -351,6 +339,7 @@ PRODUCT_PACKAGES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     media \
+    overlay \
     perf \
     telephony
 
