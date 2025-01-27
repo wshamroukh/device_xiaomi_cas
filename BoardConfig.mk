@@ -189,9 +189,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 TARGET_OTA_ALLOW_NON_AB := true
 AB_OTA_UPDATER := false
 
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
-
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom

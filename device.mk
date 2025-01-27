@@ -403,18 +403,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power.stats@1.0-service.mock \
-    android.hardware.power-service
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
@@ -424,6 +412,10 @@ PRODUCT_PACKAGES += \
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.xiaomi_kona
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # QTI
 PRODUCT_PACKAGES += \
@@ -477,11 +469,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Thermal
-PRODUCT_PACKAGES += \
-	android.hardware.thermal@2.0.vendor \
-    android.hardware.thermal-service.qti
 
 # Touchscreen
 PRODUCT_PACKAGES += \
