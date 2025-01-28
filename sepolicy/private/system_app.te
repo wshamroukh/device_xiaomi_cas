@@ -1,4 +1,2 @@
-hal_client_domain(system_app, hal_mlipay)
-
 # zram
 r_dir_file(system_app sysfs_zram)
