@@ -21,5 +21,3 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 
 # FPS Info
 allow system_app vendor_sysfs_graphics:file { getattr open read };
-
-allow system_app zygote:unix_stream_socket { getopt };
