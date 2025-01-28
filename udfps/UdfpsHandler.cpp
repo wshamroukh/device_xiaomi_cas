@@ -98,6 +98,18 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
         // nothing
     }
 
+    void preEnroll() {
+        // nothing
+    }
+
+    void enroll() {
+        // nothing
+    }
+
+    void postEnroll() {
+        // nothing
+    }
+
     void onAcquired(int32_t result, int32_t vendorCode) {
         if (result == FINGERPRINT_ACQUIRED_GOOD) {
             int arg[2] = {TOUCH_FOD_ENABLE, FOD_STATUS_OFF};
