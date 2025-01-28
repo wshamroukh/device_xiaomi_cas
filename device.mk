@@ -347,10 +347,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.xiaomi_kona
-
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
