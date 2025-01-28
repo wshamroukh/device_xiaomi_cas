@@ -34,6 +34,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Platform
 PRODUCT_BOARD_PLATFORM := kona
+TARGET_BOARD_PLATFORM := kona
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -174,20 +175,37 @@ PRODUCT_PACKAGES += \
     libcurl.vendor:64
 
 # Display
-$(call inherit-product, hardware/qcom-caf/sm8250/display/config/display-product.mk)
-$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
-$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
-$(call inherit-product, vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk)
-$(call inherit-product, vendor/qcom/opensource/display/config/display-product-vendor.mk)
-
-BOARD_DISPLAY_HAL := hardware/qcom-caf/sm8250/display
-TARGET_BOARD_PLATFORM := kona
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.composer-service
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.example \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    vendor.qti.hardware.display.allocator-service
+
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    memtrack.kona
+
+PRODUCT_PACKAGES += \
+    libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
-    libtinyxml
+    libsdmcore \
+    libsdmutils \
+    libtinyxml \
+    libvulkan \
+    vendor.display.config@1.5 \
+    vendor.display.config@1.11.vendor \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.display.config-V5-ndk \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor
 
 # Dolby
 PRODUCT_COPY_FILES += \
