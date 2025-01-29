@@ -6,6 +6,8 @@
 
 DEVICE_PATH := device/xiaomi/cas
 
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+
 # AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
