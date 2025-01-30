@@ -348,7 +348,6 @@ PRODUCT_PACKAGES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
-    adreno \
     bt \
     media \
     overlay \
