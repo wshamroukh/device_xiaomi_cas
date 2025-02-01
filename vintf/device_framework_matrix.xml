@@ -546,9 +546,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="aidl" optional="false">
         <name>android.hardware.cas</name>
-        <version>1.2</version>
+        <version>1</version>
         <interface>
             <name>IMediaCasService</name>
             <instance>default</instance>
@@ -568,15 +568,6 @@
         <version>1.0</version>
         <interface>
             <name>IAnt</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.btconfigstore</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IBTConfigStore</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -736,6 +727,87 @@
 		<version>1</version>
         <interface>
             <name>IThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <transport>hwbinder</transport>
+        <version>4</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.aospa.power</name>
+        <transport>hwbinder</transport>
+        <version>1</version>
+        <interface>
+            <name>IPowerFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi</name>
+        <transport>hwbinder</transport>
+        <version>1</version>
+        <interface>
+            <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.hostapd</name>
+        <transport>hwbinder</transport>
+        <version>1</version>
+        <interface>
+            <name>IHostapd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.perf2</name>
+        <transport>hwbinder</transport>
+        <version>1</version>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.power.powermodule</name>
+        <transport>hwbinder</transport>
+        <version>1</version>
+        <interface>
+            <name>IPowerModule</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.servicetrackeraidl</name>
+        <transport>hwbinder</transport>
+        <version>1</version>
+        <interface>
+            <name>IServicetracker</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <transport>hwbinder</transport>
+        <version>1</version>
+        <interface>
+            <name>ISupplicantVendor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.qspmhal</name>
+        <transport>hwbinder</transport>
+        <version>1</version>
+        <interface>
+            <name>IQspmhal</name>
             <instance>default</instance>
         </interface>
     </hal>
