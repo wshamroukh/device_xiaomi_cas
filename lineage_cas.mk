@@ -14,7 +14,6 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 # Inherit some common Project Matrixx stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 MATRIXX_BUILD_TYPE := Unofficial
-MATRIXX_MAINTAINER := Waddah
 MATRIXX_CHIPSET := SM8250
 MATRIXX_BATTERY := 4500mAh
 MATRIXX_DISPLAY := 1080x2340
