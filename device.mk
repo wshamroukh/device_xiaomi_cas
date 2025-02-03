@@ -350,7 +350,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
-    adreno \
     bt \
     media \
     overlay \
