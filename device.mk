@@ -287,6 +287,9 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Kernel
+PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/cas-kernel/kernel-headers
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
@@ -323,6 +326,7 @@ PRODUCT_COPY_FILES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    device/xiaomi/cas-kernel \
     hardware/xiaomi
 
 # Neural networks

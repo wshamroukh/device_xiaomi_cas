@@ -102,6 +102,7 @@ DEVICE_MATRIX_FILE := \
     $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 
 # Kernel
+$(shell mkdir -p $(OUT_DIR)/target/product/cas/obj/KERNEL_OBJ/usr)
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
@@ -117,16 +118,26 @@ BOARD_KERNEL_CMDLINE := \
     reboot=panic_warm \
     service_locator.enable=1 \
     swiotlb=2048
-BOARD_KERNEL_CMDLINE += androidboot.selinux=enforcing
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+# Kernel Prebuilt
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_NO_KERNEL := false
+TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)-kernel/dtb.img:$(TARGET_COPY_OUT)/dtb.img \
+    $(DEVICE_PATH)-kernel/kernel:kernel
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
+KERNEL_LD := LD=ld.lld
 
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
-TARGET_KERNEL_CONFIG := cas_defconfig
 
 # Kernel Clang Flags
 KERNEL_CC := CC=clang
@@ -142,6 +153,7 @@ TARGET_USES_ION := true
 TARGET_USES_NQ_NFC := true
 
 # Platform
+BOARD_VENDOR := xiaomi
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := kona
 
