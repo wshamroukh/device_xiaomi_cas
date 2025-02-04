@@ -366,7 +366,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     device/xiaomi/cas-kernel \
-    hardware/xiaomi
+    vendor/hardware/xiaomi
 
 # Neural networks
 PRODUCT_PACKAGES += \
