@@ -11,17 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common StatixOS stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
-IS_OFFICIAL:= false
-TARGET_CALL_RECORDING_SUPPORTED := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_64_BIT_APPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
+STATIX_BUILD_TYPE := UNOFFICIAL
+ENABLE_GAMETOOLS := true
+DISABLE_COLUMBUS := false
+TARGET_USES_BLUR := true
+INCLUDE_PIXEL_LAUNCHER := true
 
-PRODUCT_NAME := aosp_cas
+PRODUCT_NAME := statix_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC
