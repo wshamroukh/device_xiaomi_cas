@@ -426,10 +426,6 @@ PRODUCT_PACKAGES += \
     libsqlite.vendor \
     libsqlite.vendor:64
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.xiaomi_kona
-
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \

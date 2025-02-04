@@ -614,15 +614,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.lineage.powershare</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPowerShare</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
         <version>7.0</version>
