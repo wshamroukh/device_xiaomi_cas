@@ -183,8 +183,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack-service.example \
     memtrack.kona
 
 PRODUCT_PACKAGES += \
