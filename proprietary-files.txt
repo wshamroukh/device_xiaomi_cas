@@ -797,6 +797,8 @@ vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
+system/lib64/vendor.qti.hardware.display.config-V5-ndk.so
+system/lib/vendor.qti.hardware.display.config-V5-ndk.so
 
 # Display (SDM)
 vendor/lib64/libclient2slpi.notifier.so
