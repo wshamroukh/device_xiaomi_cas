@@ -92,6 +92,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
     android.hardware.audio@7.0-impl \
+    android.hardware.audio.sounddose-vendor-impl \
+    android.hardware.bluetooth.audio@2.1 \
+    android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.primary.kona \
     audio.r_submix.default \
