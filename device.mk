@@ -495,6 +495,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
 
+# Disable ADB Authentication
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
