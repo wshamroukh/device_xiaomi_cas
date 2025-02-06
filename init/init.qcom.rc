@@ -1016,3 +1016,17 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     task_profiles ProcessCapacityHigh HighPerformance
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
+
+service logger /system/bin/logcat -b all -D -v time -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on post-fs-data
+    start logger
+
+on property:sys.boot_completed=1
+    # Stop the logger service
+    stop logger
