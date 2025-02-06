@@ -185,6 +185,8 @@ vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
+vendor/lib/libbluetooth_audio_session_qti_2_1.so
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 
 
 # Camera
@@ -1425,12 +1427,16 @@ vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib/libmdmdetect.so
+vendor/lib64/libmdmdetect.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib/libqcbor.so
+vendor/lib64/libqcbor.so
 
 # GNSS
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
@@ -1565,6 +1571,7 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
+vendor/lib/libqtikeymaster4.so
 
 # Limits HAL
 -vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
@@ -1742,6 +1749,11 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
+vendor/lib/libnetmgr.so
+vendor/lib64/libnetmgr.so
+vendor/lib64/libpdmapper.so
+vendor/lib/libconfigdb.so
+vendor/lib64/libconfigdb.so
 
 # QSPM HAL
 vendor/bin/vendor.qti.qspmhal@1.0-service
@@ -1759,6 +1771,24 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_listener.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+
+# RIL 
+system_ext/lib/vendor.qti.ims.rcsconfig@1.0.so
+system_ext/lib/vendor.qti.ims.rcsconfig@1.1.so
+system_ext/lib/vendor.qti.ims.rcsconfig@2.0.so
+system_ext/lib/vendor.qti.ims.rcsconfig@2.1.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so
+vendor/lib/vendor.qti.ims.rcsconfig@1.0.so
+vendor/lib/vendor.qti.ims.rcsconfig@1.1.so
+vendor/lib/vendor.qti.ims.rcsconfig@2.0.so
+vendor/lib/vendor.qti.ims.rcsconfig@2.1.so
+vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
+vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
+vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
+vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 
 # Secure Element
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
