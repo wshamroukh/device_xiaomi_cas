@@ -46,6 +46,9 @@
 
     <!-- Color of the UDFPS pressed view -->
     <color name="config_udfpsColor">#00ffffff</color>
+
+    <!-- Whether usage of the proximity sensor during doze is supported -->
+    <bool name="doze_proximity_sensor_supported">false</bool>
 	
 	<!-- Whether the combined qs shows in status bar when true, the combined qs will not be available if set it to false  -->
     <bool name="flag_combined_qs_headers">true</bool>
