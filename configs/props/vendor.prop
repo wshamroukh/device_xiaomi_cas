@@ -148,6 +148,12 @@ drm.service.enabled=true
 # Factory Reset Protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_modules=goodix_fod
+persist.vendor.fingerprint.sensor_location=540|1907|99
+persist.vendor.fingerprint.udfps.control_illumination=true
+
 # Fling 
 persist.vendor.qti.inputopts.enable=true 
 persist.vendor.qti.inputopts.movetouchslop=0.6 
