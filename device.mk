@@ -163,7 +163,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-impl.mock \
     com.dsi.ant@1.0.vendor \
     libbthost_if_sink \
-    libldacBT_bco \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
