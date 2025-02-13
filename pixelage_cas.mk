@@ -11,17 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Pixelage stuff.
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
-IS_OFFICIAL:= false
-TARGET_CALL_RECORDING_SUPPORTED := true
+# Pixelage
+PIXELAGE_BUILDTYPE := UNOFFICIAL
+PIXELAGE_MAINTAINER := Waddah
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_STOCK_AICORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_DOES_NOT_SUPPORT_GOOGLE_BATTERY := false
 
-PRODUCT_NAME := aosp_cas
+PRODUCT_NAME := pixelage_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC

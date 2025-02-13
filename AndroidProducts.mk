@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cas.mk
+    $(LOCAL_DIR)/pixelage_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_cas-eng \
-    aosp_cas-user \
-    aosp_cas-userdebug
+    pixelage_cas-eng \
+    pixelage_cas-user \
+    pixelage_cas-userdebug
