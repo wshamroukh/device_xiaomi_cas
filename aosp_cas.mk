@@ -13,6 +13,8 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common PixelOS stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit PIF
+$(call inherit-product, vendor/extra/product.mk)
 
 IS_OFFICIAL:= false
 TARGET_CALL_RECORDING_SUPPORTED := true
