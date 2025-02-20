@@ -1,33 +1,9 @@
-# App compaction
-# disabled app compaction due to app freezes when switching tasks
-persist.sys.appcompact.enable_app_compact=false
-persist.sys.appcompact.full_compact_type=2
-persist.sys.appcompact.some_compact_type=4
-persist.sys.appcompact.compact_throttle_somesome=5000
-persist.sys.appcompact.compact_throttle_somefull=10000
-persist.sys.appcompact.compact_throttle_fullsome=500
-persist.sys.appcompact.compact_throttle_fullfull=10000
-persist.sys.appcompact.compact_throttle_bfgs=600000
-persist.sys.appcompact.compact_throttle_persistent=600000
-persist.sys.appcompact.rss_throttle_kb=12000
-persist.sys.appcompact.delta_rss_throttle_kb=8000
-persist.sys.perf.topAppRenderThreadBoost.enable=false
-
-# App launch prefetching (IORapd)
-ro.iorapd.enable=false
-iorapd.perfetto.enable=false
-iorapd.readahead.enable=false
-persist.device_config.runtime_native_boot.iorap_readahead_enable=false
-
 # Bluetooth
 persist.bluetooth.sbc_hd_higher_bitrate=1
 
 # Camera
 vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 log.tag.CHIUSECASE=ERROR
-
-# Dexopt
-dalvik.vm.dex2oat64.enabled=true
 
 # Charger
 ro.charger.enable_suspend=1
