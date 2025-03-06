@@ -1,0 +1,109 @@
+
+cc_prebuilt_library_shared {
+    name: "liblhdc",
+
+    arch: {
+        arm: {
+            srcs: ["libs/armeabi-v7a/liblhdc.so",],
+        },
+        arm64: {
+            srcs: ["libs/arm64-v8a/liblhdc.so",],
+        },
+    },
+
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.btservices",
+    ],
+
+    strip: {
+        none:true,
+    },
+
+    shared_libs: [
+        "liblog",
+        "libstdc++",
+    ],
+}
+
+
+cc_prebuilt_library_shared {
+    name: "liblhdcv5",
+
+    arch: {
+        arm: {
+            srcs: ["libs/armeabi-v7a/liblhdcv5.so",],
+        },
+        arm64: {
+            srcs: ["libs/arm64-v8a/liblhdcv5.so",],
+        },
+    },
+
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.btservices",
+    ],
+
+    strip: {
+        none:true,
+    },
+
+    shared_libs: [
+        "liblog",
+        "libstdc++",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "liblhdcBT_enc",
+   // vendor_available: true,
+   // vndk: {
+   //     enabled: true,
+   // },
+    arch: {
+        arm: {
+            srcs: ["libs/armeabi-v7a/liblhdcBT_enc.so",],
+        },
+        arm64: {
+            srcs: ["libs/arm64-v8a/liblhdcBT_enc.so",],
+        },
+    },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "liblhdc",
+    ],
+
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.btservices",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "liblhdcv5BT_enc",
+   // vendor_available: true,
+   // vndk: {
+   //     enabled: true,
+   // },
+    arch: {
+        arm: {
+            srcs: ["libs/armeabi-v7a/liblhdcv5BT_enc.so",],
+        },
+        arm64: {
+            srcs: ["libs/arm64-v8a/liblhdcv5BT_enc.so",],
+        },
+    },
+
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "liblhdcv5",
+    ],
+
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.btservices",
+    ],
+}
