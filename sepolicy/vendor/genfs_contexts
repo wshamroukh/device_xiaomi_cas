@@ -3,6 +3,13 @@ genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value           
 
 # Display Exposure
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable                 u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/typec/port0/data_role u:object_r:vendor_sysfs_battery_supply:s0
+
+# Charger
+genfscon sysfs /class/power_supply/battery/constant_charge_current                                       u:object_r:vendor_sysfs_power_supply:s0
+
+# FastCharge
+genfscon sysfs /class/qcom-battery/restrict_chg                                                            u:object_r:sysfs_fastcharge:s0
 
 # Display HBM
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/hbm                          u:object_r:vendor_sysfs_graphics:s0

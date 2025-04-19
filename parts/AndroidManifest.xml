@@ -197,6 +197,58 @@
                 <category android:name="android.intent.category.DEFAULT" />
              </intent-filter>
         </receiver>
+        <!-- Turbo Charging -->
+        <activity
+            android:name=".turbocharging.TurboChargingActivity"
+            android:exported="true"
+            android:enabled="true"
+            android:label="@string/turbo_charge_title"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/turbo_charge_summary" />
+        </activity>
+
+        <service
+            android:name=".turbocharging.TurboChargingService"
+            android:exported="false"
+            android:permission="TurboChargingService">
+        </service>
+
+        <!-- Turbo Charging Tile Service -->
+        <service
+            android:name=".turbocharging.TurboChargingTile"
+            android:label="@string/turbo_charge_title"
+            android:icon="@drawable/ic_turbo_charging_tile"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+            android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+            android:value="true" />
+        </service>
+
+        <!-- Turbo Charging BootReceiver -->
+        <receiver
+            android:name=".turbocharging.TurboChargingBootReceiver"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+        </receiver>
+
 
     </application>
 </manifest>

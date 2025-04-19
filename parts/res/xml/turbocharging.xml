@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/turbo_charge_title">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="turbo_enable"
+        android:title="@string/turbo_enable_title"
+        android:summary="@string/turbo_charge_summary"
+        android:defaultValue="false" />
+
+    <androidx.preference.SwitchPreferenceCompat
+        android:key="sports_mode"
+        android:title="@string/sports_mode_title"
+        android:summary="@string/sports_mode_summary"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="turbo_current"
+        android:title="@string/turbo_charge_current_pref_title"
+        android:entries="@array/turbo_modes_entries"
+        android:entryValues="@array/turbo_modes_values"
+        android:defaultValue="9750000"
+        android:summary="%s" />
+</PreferenceScreen>

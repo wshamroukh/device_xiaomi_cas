@@ -47,3 +47,5 @@ persist.vendor.low.cutoff      u:object_r:exported_system_prop:s0
 qemu.hw.mainkeys      u:object_r:exported_system_prop:s0
 qemu.sf.lcd_density      u:object_r:exported_system_prop:s0
 zeroth.debuglog.logmask        u:object_r:vendor_default_prop:s0
+
+persist.sys.turbo_charge_current             u:object_r:exported_system_prop:s0
