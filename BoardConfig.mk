@@ -52,9 +52,6 @@ USE_CUSTOM_AUDIO_POLICY := 1
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
-# Bluetooth
-$(call soong_config_set, btservices, use_lhdc, true)
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
 TARGET_NO_BOOTLOADER := true
