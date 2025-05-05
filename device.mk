@@ -302,6 +302,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+# LDAC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/libldac/system/system/lib/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_abr.so \
+    $(LOCAL_PATH)/libldac/system/system/lib/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_enc.so \
+    $(LOCAL_PATH)/libldac/system/system/lib64/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_abr.so \
+    $(LOCAL_PATH)/libldac/system/system/lib64/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_enc.so
+
 # LZ4
 PRODUCT_PACKAGES += \
     liblz4.vendor
