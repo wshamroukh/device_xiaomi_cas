@@ -35,9 +35,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Powershare
-$(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-battery/reverse_chg_mode)
-
 # Platform
 PRODUCT_BOARD_PLATFORM := kona
 
@@ -434,10 +431,6 @@ PRODUCT_PACKAGES += \
     libjson \
     libsqlite.vendor \
     libsqlite.vendor:64
-
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.default
 
 # QTI
 PRODUCT_PACKAGES += \
