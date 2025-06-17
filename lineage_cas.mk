@@ -13,32 +13,17 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common Project Matrixx stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-MATRIXX_BUILD_TYPE := Unofficial
-MATRIXX_CHIPSET := SM8250
-MATRIXX_BATTERY := 4500mAh
-MATRIXX_DISPLAY := 1080x2340
-TARGET_HAS_UDFPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2340
+EVO_BUILD_TYPE := Unofficial
 TARGET_ENABLE_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_64_BIT_APPS := true
-WITH_SU := true
+TARGET_USES_MIUI_CAMERA := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := true
+TARGET_INCLUDE_ACCORD = false
 WITH_GMS := true
-WITH_GMS_COMMS_SUITE := true
-TARGET_SUPPORTS_WALLEFFECT := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_STOCK_AICORE := true
-# Disable ADB authentication
+TARGET_USES_MINI_GAPPS := true
 WITH_ADB_INSECURE := true
-# Nuke AudioFX
-TARGET_EXCLUDES_AUDIOFX := true
-# Nuke Auxio
-TARGET_EXCLUDES_AUXIO := true
-# DeviceAsWebcam
-TARGET_BUILD_DEVICE_AS_WEBCAM := true
+WITH_SU := true
+TARGET_DISABLE_EPPE := true
 
 
 PRODUCT_NAME := lineage_cas
