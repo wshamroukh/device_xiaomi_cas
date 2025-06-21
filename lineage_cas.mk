@@ -11,20 +11,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Project Matrixx stuff.
+# Inherit some common Lineage stuff.Add commentMore actions
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-EVO_BUILD_TYPE := Unofficial
+RISING_BUILDTYPE := COMMUNITY
+RISING_MAINTAINER := Waddah
 TARGET_ENABLE_BLUR := true
-TARGET_USES_MIUI_CAMERA := true
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
-TARGET_INCLUDE_ACCORD = false
+TARGET_ENABLE_BLUR := true
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2340
+WITH_LINEAGE_CHARGER := true
 WITH_GMS := true
 TARGET_USES_MINI_GAPPS := true
 WITH_ADB_INSECURE := true
 WITH_SU := true
-TARGET_DISABLE_EPPE := true
-
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+TARGET_USES_MIUI_CAMERA = true
+TARGET_SUPPORTS_64_BIT_APPS := true
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon SM8250" \
+    RisingMaintainer="Waddah"
 
 PRODUCT_NAME := lineage_cas
 PRODUCT_DEVICE := cas
