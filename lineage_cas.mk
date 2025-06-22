@@ -13,30 +13,29 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common Project Matrixx stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-MATRIXX_BUILD_TYPE := Unofficial
-MATRIXX_CHIPSET := SM8250
-MATRIXX_BATTERY := 4500mAh
-MATRIXX_DISPLAY := 1080x2340
-TARGET_HAS_UDFPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_ENABLE_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_64_BIT_APPS := true
-WITH_SU := true
+AXION_MAINTAINER := Waddah
+AXION_PROCESSOR := Snapdragon_865
+TARGET_DISABLE_EPPE := true
+# Camera
+PRODUCT_NO_CAMERA := false
+AXION_CAMERA_REAR_INFO := 48,48,12,20
+AXION_CAMERA_FRONT_INFO := 20
 WITH_GMS := true
-WITH_GMS_COMMS_SUITE := true
-TARGET_SUPPORTS_WALLEFFECT := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-# Disable ADB authentication
-WITH_ADB_INSECURE := true
-# Nuke AudioFX
-TARGET_EXCLUDES_AUDIOFX := true
-# Nuke Auxio
-TARGET_EXCLUDES_AUXIO := true
-# DeviceAsWebcam
-TARGET_BUILD_DEVICE_AS_WEBCAM := true
+# CPU
+AXION_CPU_SMALL_CORES := 0,1,2,3
+AXION_CPU_BIG_CORES := 4,5,6,7
+AXION_CPU_BG := 0-1
+AXION_CPU_FG := 0-7
+# BCR
+TARGET_PREBUILT_BCR := false
+# Blur
+TARGET_ENABLE_BLUR := false
+# Bypass Charging
+BYPASS_CHARGE_SUPPORTED := true
+# LineageOS Prebuilts
+TARGET_INCLUDES_LOS_PREBUILTS := true
+BYPASS_CHARGE_SUPPORTED := true
+AXION_DEBUGGING_ENABLED := true
 
 
 PRODUCT_NAME := lineage_cas
