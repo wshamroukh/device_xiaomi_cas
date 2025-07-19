@@ -96,7 +96,7 @@ static int amp_set_feedback(amplifier_device_t* device, void* adev, uint32_t snd
 
     tfa_dev->tfa98xx_out =
             pcm_open(tfa_dev->adev->snd_card, pcm_dev_tx_id, PCM_IN, &pcm_config_tfa98xx);
-    if (tfa_dev->tfa98xx_out && !pcm_is_ready(tfa_dev->tfa98xx_out)) {
+    if (!pcm_is_ready(tfa_dev->tfa98xx_out)) {
         ALOGE("%d: %s", __LINE__, pcm_get_error(tfa_dev->tfa98xx_out));
         rc = -EIO;
         goto disable;
