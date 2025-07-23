@@ -25,6 +25,8 @@ WITH_ADB_INSECURE := true
 WITH_SU := true
 TARGET_DISABLE_EPPE := true
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.product.mod_device=cas_global
 
 PRODUCT_NAME := lineage_cas
 PRODUCT_DEVICE := cas

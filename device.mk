@@ -27,7 +27,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, vendor/xiaomi/cas/cas-vendor.mk)
 
 # Call the MiuiCamera setup
-$(call inherit-product-if-exists, vendor/xiaomi/cas-miuicamera/products/miuicamera.mk)
+$(call inherit-product-if-exists, device/xiaomi/miuicamera/device.mk)
+$(call soong_config_set,camera,package_name,com.android.camera)
 
 # SDCardFS Deprecation ## https://source.android.com/devices/storage/sdcardfs-deprecate
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
