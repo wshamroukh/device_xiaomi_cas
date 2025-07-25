@@ -36,6 +36,9 @@ TARGET_EXCLUDES_AUXIO := true
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Bypass charging node /sys/class/power_supply/battery/input_suspend
+BYPASS_CHARGE_SUPPORTED := true
+
 
 PRODUCT_NAME := lineage_cas
 PRODUCT_DEVICE := cas

@@ -13,3 +13,6 @@ allow init vendor_spunvm_file:filesystem { unmount mount relabelfrom relabelto }
 
 # Allow init to set read_ahead_kb on /data partition
 allow init vendor_sysfs_scsi_host:file w_file_perms;
+
+# input_suspend label
+allow init sysfs_battery_supply:file rw_file_perms;
