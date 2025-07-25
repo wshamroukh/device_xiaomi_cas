@@ -485,10 +485,12 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qti-telephony-utils-prd \
     qti_telephony_utils_prd.xml \
-    telephony-ext
+    telephony-ext \
+    xiaomi-telephony-stub
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    telephony-ext \
+    xiaomi-telephony-stub
 
 # Thermal
 PRODUCT_PACKAGES += \
