@@ -1,0 +1,2 @@
+allow vendor_qtidataservices_app unlabeled:file { read };
+get_prop(vendor_qtidataservices_app, vendor_default_prop)
