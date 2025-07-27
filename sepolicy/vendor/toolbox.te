@@ -2,3 +2,6 @@ allow toolbox per_boot_file:dir create_dir_perms;
 allow toolbox per_boot_file:file create_file_perms;
 allow toolbox self:capability kill;
 allow toolbox resourcecache_data_file:dir rw_dir_perms;
+allow toolbox resourcecache_data_file:dir { rmdir };
+allow toolbox resourcecache_data_file:file rw_file_perms;
+allow toolbox resourcecache_data_file:file { unlink };
