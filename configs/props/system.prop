@@ -10,6 +10,7 @@ ro.charger.enable_suspend=1
 
 # Display
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.config.avoid_gfx_accel=true
 
 # Fling
 ro.min.fling_velocity=160 
