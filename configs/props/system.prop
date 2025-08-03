@@ -4,6 +4,13 @@ persist.bluetooth.sbc_hd_higher_bitrate=1
 # Camera
 vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 log.tag.CHIUSECASE=ERROR
+persist.camera.gyro.android=20
+persist.camera.HAL3.enabled=1
+persist.camera.is_type=4
+persist.camera.ois.enable=1
+persist.camera.ois.video=1
+persist.vendor.camera.ois.enable=1
+persist.vendor.camera.ois.video=1
 
 # Charger
 ro.charger.enable_suspend=1
