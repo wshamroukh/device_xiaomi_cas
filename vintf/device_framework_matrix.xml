@@ -764,9 +764,5 @@
             <name>IFastCharge</name>
             <instance>default</instance>
         </interface>
-        <interface>
-            <name>IRestrictedCurrent</name>
-            <instance>default</instance>
-        </interface>
     </hal>
 </compatibility-matrix>
