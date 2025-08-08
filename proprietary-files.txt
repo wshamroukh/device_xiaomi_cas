@@ -353,7 +353,7 @@ vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgo_video_colourkeeping.so
 vendor/lib64/libmialgo_video_seg.so
-vendor/lib64/libmialgoengine.so
+vendor/lib64/libmialgoengine.so|48ba2dd0b71e438bbc5974fbaa39dd0f8365d348
 vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
 vendor/lib64/libmibokeh_mask.so
