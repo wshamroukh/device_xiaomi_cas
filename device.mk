@@ -323,6 +323,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/liblhdc/system/system/lib64/liblhdcv5.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_abr.so \
     $(LOCAL_PATH)/liblhdc/system/system/lib64/liblhdcv5BT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_enc.so
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # LZ4
 PRODUCT_PACKAGES += \
     liblz4.vendor
