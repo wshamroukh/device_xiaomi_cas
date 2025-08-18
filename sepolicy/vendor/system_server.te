@@ -7,3 +7,17 @@ hal_client_domain(system_server, hal_lineage_powershare)
 
 allow system_server system_file:dir { map };
 allow system_server proc:file { getattr };
+allow system_server proc_keys:file { getattr };
+allow system_server proc_kmsg:file { getattr };
+allow system_server proc_misc:file { getattr };
+allow system_server proc_iomem:file { getattr };
+allow system_server proc_swaps:file { getattr };
+allow system_server proc_uptime:file { getattr };
+allow system_server proc_cgroups:file { getattr };
+allow system_server proc_modules:file { getattr };
+allow system_server proc_timer:file { getattr };
+allow system_server proc_zoneinfo:file { getattr };
+allow system_server proc_buddyinfo:file { getattr };
+allow system_server proc_diskstats:file { getattr };
+allow system_server proc_interrupts:file { getattr };
+allow system_server proc_kpageflags:file { getattr };
