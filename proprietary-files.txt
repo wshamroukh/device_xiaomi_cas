@@ -154,6 +154,14 @@ vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
 
 # Bluetooth
+system/lib/libldacBT_abr.so 
+system/lib/libldacBT_enc.so
+system/lib64/libldacBT_abr.so
+system/lib64/libldacBT_enc.so
+system_ext/lib/liblhdc.so
+system_ext/lib/liblhdcBT_enc.so
+system_ext/lib64/liblhdc.so
+system_ext/lib64/liblhdcBT_enc.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/btaudio_offload_if.so
