@@ -172,6 +172,17 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
+# Bluetooth Library Deps
+PRODUCT_PACKAGES += \
+    libbluetooth_audio_session \
+    libbthost_if.vendor \
+    libldacBT_bco \
+    libldacBT_bco.vendor \
+    liblhdc \
+    liblhdcBT_enc \
+    liblhdcdec \
+    liblhdcBT_dec
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -307,21 +318,6 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
-
-# LDAC && LHDC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/libldac/system/system/lib/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_abr.so \
-    $(LOCAL_PATH)/libldac/system/system/lib/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_enc.so \
-    $(LOCAL_PATH)/libldac/system/system/lib64/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_abr.so \
-    $(LOCAL_PATH)/libldac/system/system/lib64/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_enc.so \
-    $(LOCAL_PATH)/liblhdc/system/system/lib/liblhdc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_abr.so \
-    $(LOCAL_PATH)/liblhdc/system/system/lib/liblhdcBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_enc.so \
-	$(LOCAL_PATH)/liblhdc/system/system/lib/liblhdcv5.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_enc.so \
-	$(LOCAL_PATH)/liblhdc/system/system/lib/liblhdcv5BT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_enc.so \
-    $(LOCAL_PATH)/liblhdc/system/system/lib64/liblhdc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_abr.so \
-	$(LOCAL_PATH)/liblhdc/system/system/lib64/liblhdcBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_abr.so \
-	$(LOCAL_PATH)/liblhdc/system/system/lib64/liblhdcv5.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_abr.so \
-    $(LOCAL_PATH)/liblhdc/system/system/lib64/liblhdcv5BT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_enc.so
 
 # LZ4
 PRODUCT_PACKAGES += \
