@@ -1,0 +1,1 @@
+allow untrusted_app media_rw_data_file:file { relabelfrom };
