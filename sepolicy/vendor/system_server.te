@@ -21,3 +21,6 @@ allow system_server proc_buddyinfo:file { getattr };
 allow system_server proc_diskstats:file { getattr };
 allow system_server proc_interrupts:file { getattr };
 allow system_server proc_kpageflags:file { getattr };
+
+# Allow system_server to control Bypass Charging
+allow system_server sysfs_battery_supply:file { write getattr };
