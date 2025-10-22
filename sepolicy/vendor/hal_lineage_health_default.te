@@ -1,0 +1,5 @@
+r_dir_file(hal_lineage_health_default, sysfs_batteryinfo)
+r_dir_file(hal_lineage_health_default, vendor_sysfs_battery_supply)
+allow hal_lineage_health_default sysfs_batteryinfo:file rw_file_perms;
+allow hal_lineage_health_default vendor_sysfs_battery_supply:file rw_file_perms;
+allow hal_lineage_health_default vendor_sysfs_battery_supply:dir { search };
