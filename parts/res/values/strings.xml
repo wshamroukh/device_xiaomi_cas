@@ -52,23 +52,5 @@
     <string name="overlay_permission_denied">Overlay permission denied</string>
     <string name="game_bar_tile_label">GameBar</string>
     <string name="game_bar_tile_description">Toggle the game overlay</string>
-    
-    <!-- Turbo Charging -->
-    <string name="turbo_charge_title">Turbo Charging</string>
-    <string name="turbo_enable_title">Enable Turbo Charging</string>
-    <string name="turbo_charge_summary">Enable Turbo Charging for fast charging up to 90W</string>
-    <string name="turbo_charge_current_pref_title">Charging Wattage</string>
-
-    <!-- Sports Mode -->
-    <string name="sports_mode_title">Sports Mode</string>
-    <string name="sports_mode_summary">Enable Sports Mode for fast charging via the dedicated node</string>
-    
-    <!-- Toast messages -->
-    <string name="toast_wattage_set">Charging wattage set to %1$s</string>
-    <string name="toast_sports_on">Sports Mode turned ON</string>
-    <string name="toast_sports_off">Sports Mode turned OFF</string>
-    <string name="toast_turbo_on">Turbo Charging turned ON</string>
-    <string name="toast_turbo_off">Turbo Charging turned OFF</string>
-
 
 </resources>

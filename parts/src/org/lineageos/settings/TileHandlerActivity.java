@@ -30,8 +30,6 @@ import java.util.Map;
 
 import org.lineageos.settings.gamebar.GameBarSettingsActivity;
 import org.lineageos.settings.gamebar.GameBarTileService;
-import org.lineageos.settings.turbocharging.TurboChargingActivity;
-import org.lineageos.settings.turbocharging.TurboChargingTile;
 
 public final class TileHandlerActivity extends Activity {
     private static final String TAG = "TileHandlerActivity";
@@ -41,7 +39,6 @@ public final class TileHandlerActivity extends Activity {
 
     static {
         TILE_ACTIVITY_MAP.put(GameBarTileService.class.getName(), GameBarSettingsActivity.class);
-        TILE_ACTIVITY_MAP.put(TurboChargingTile.class.getName(), TurboChargingActivity.class);
     }
 
     @Override

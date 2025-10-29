@@ -219,13 +219,6 @@ on boot
 	chown system system /sys/class/power_supply/battery/battery_charging_enabled
     chmod 0666 /sys/class/power_supply/battery/battery_charging_enabled
 
-    # Allow system to modify charging current
-    chown system system /sys/class/power_supply/battery/constant_charge_current
-    chmod 0664 /sys/class/power_supply/battery/constant_charge_current
-
-    chown system system /sys/class/qcom-battery/restrict_chg
-    chmod 0664 /sys/class/qcom-battery/restrict_chg
-
     # Load all wlan drivers
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_qca6390 qca_cld3_qca6490
 
@@ -690,7 +683,3 @@ on property:sys.boot_completed=1
     on property:vendor.post_boot.parsed=1
         # Enable suspend to RAM
         write /sys/power/mem_sleep "deep"
-    
-# Monitor and apply Turbo Charging value via system property persist.sys.turbo_charge_current
-on property:persist.sys.turbo_charge_current=*
-    write /sys/class/power_supply/battery/constant_charge_current ${persist.sys.turbo_charge_current}

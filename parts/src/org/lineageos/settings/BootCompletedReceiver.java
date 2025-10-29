@@ -24,12 +24,12 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.SystemProperties;
 import android.util.Log;
+import org.lineageos.settings.utils.FileUtils;
 import android.content.SharedPreferences;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.utils.FileUtils;
-import org.lineageos.settings.turbocharging.TurboChargingService;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -51,9 +51,5 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "1" : "0");
         boolean hbmEnabled = sharedPrefs.getBoolean(HBM_ENABLE_KEY, false);
         FileUtils.writeLine(HBM_NODE, hbmEnabled ? "1" : "0");
-
-        // Start TurboChargingService
-        Intent turboChargingIntent = new Intent(context, TurboChargingService.class);
-        context.startService(turboChargingIntent);
     }
 }
