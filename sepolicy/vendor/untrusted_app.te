@@ -1,1 +1,6 @@
-allow untrusted_app media_rw_data_file:file { relabelfrom };
+allow untrusted_app media_rw_data_file:file { relabelfrom relabelto };
+allow untrusted_app vendor_sysfs_battery_supply:dir { search };
+allow untrusted_app sysfs:dir { read };
+allow untrusted_app proc_max_map_count:file { read };
+allow untrusted_app qemu_sf_lcd_density_prop:file { read };
+allow untrusted_app qemu_hw_prop:file { read open getattr map };
