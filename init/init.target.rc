@@ -375,6 +375,12 @@ on property:vendor.audio.cit.spkcal.copy=true
     chmod 666 /mnt/vendor/persist/audio/aw_cali.bin
     chmod 666 /mnt/vendor/persist/audio/aw88263_chk.txt
 
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+    override
+    class early_hal
+    user nfc
+    group nfc drmrpc system
+
 service audioshell_service /vendor/bin/audioshell_service
     oneshot
     disabled
