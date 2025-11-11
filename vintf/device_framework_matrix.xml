@@ -80,6 +80,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.nxp.hardware.nfc</name>
+        <version>2.0</version>
+        <interface>
+            <name>INqNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.qti.data.factory</name>
         <version>2.0-3</version>
         <interface>
@@ -588,10 +596,10 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.nxp.nxpnfc_aidl</name>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpnfc</name>
         <transport>hwbinder</transport>
-        <version>1</version>
+        <version>1.0</version>
         <interface>
             <name>INxpNfc</name>
             <instance>default</instance>
