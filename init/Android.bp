@@ -78,25 +78,3 @@ prebuilt_etc {
     src: "ueventd.qcom.rc",
     vendor: true,
 }
-
-cc_library_static {
-    name: "libinit_xiaomi_cas",
-    srcs: [
-        "libinit_dalvik_heap.cpp",
-        "libinit_variant.cpp",
-        "libinit_utils.cpp",
-        "init_xiaomi_cas.cpp"
-    ],
-    whole_static_libs: ["libbase"],
-    export_include_dirs: ["include"],
-    include_dirs: ["system/core/init"],
-    recovery_available: true,
-}
-
-cc_library_static {
-    name: "init_xiaomi_cas",
-    srcs: ["init_xiaomi_cas.cpp"],
-    whole_static_libs: ["libinit_xiaomi_cas"],
-    include_dirs: ["system/core/init"],
-    recovery_available: true,
-}

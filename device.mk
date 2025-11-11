@@ -301,8 +301,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_cas)
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
