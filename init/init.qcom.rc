@@ -319,6 +319,10 @@ on post-fs-data
     mkdir /data/vendor/audio/acdbdata 0770 media audio
     mkdir /data/vendor/audio/acdbdata/delta 0770 media audio
 
+    # NFC
+    mkdir /dev/pn54x 0770 nfc nfc
+    chown nfc nfc /dev/pn54x
+
     # Create directory for radio
     mkdir /data/vendor/radio 0770 system radio
     rm /data/vendor/radio/shmbus
