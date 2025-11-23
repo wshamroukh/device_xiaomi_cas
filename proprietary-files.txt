@@ -1637,6 +1637,7 @@ system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
+vendor/etc/seccomp_policy/mediaextractor.policy
 vendor/etc/seccomp_policy/mediacodec.policy
 
 # Mlipay
