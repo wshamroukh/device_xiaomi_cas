@@ -32,6 +32,7 @@ r_dir_file(hal_fingerprint_default, firmware_file)
 get_prop(system_server, vendor_fp_prop);
 
 set_prop(hal_fingerprint_default, vendor_fp_prop)
+get_prop(hal_fingerprint_default, vendor_fp_prop)
 
 allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
 allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
@@ -41,3 +42,5 @@ binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
 allow hal_fingerprint_default sysfs_fod:file { open read };
+
+allow hal_fingerprint_default vendor_fp_prop:file { read open };

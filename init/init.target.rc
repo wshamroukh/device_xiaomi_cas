@@ -493,6 +493,7 @@ service panel-info-sh /system/vendor/bin/sh /vendor/etc/init.panel_info.sh
     class core
     user root
     oneshot
+    disabled
 
 #camera dc
 service dc_cal /vendor/bin/dc_cal
@@ -524,6 +525,7 @@ service displaycount /vendor/bin/displaycount
 
 on property:sys.boot_completed=1
     start displaycount
+    start panel-info-sh
 
 service vendor.nv_mac /vendor/bin/nv_mac
     class late_start

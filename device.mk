@@ -214,6 +214,9 @@ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/dis
 $(call inherit-product, vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk)
 $(call inherit-product, vendor/qcom/opensource/display/config/display-product-vendor.mk)
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/init.panel_info.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.panel_info.sh
+
 BOARD_DISPLAY_HAL := hardware/qcom-caf/sm8250/display
 TARGET_BOARD_PLATFORM := kona
 
