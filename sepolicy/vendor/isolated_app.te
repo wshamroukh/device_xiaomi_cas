@@ -1,0 +1,1 @@
+allow isolated_app vendor_fp_prop:file { read open getattr map };
