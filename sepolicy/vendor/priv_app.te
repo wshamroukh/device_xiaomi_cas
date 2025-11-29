@@ -1,1 +1,2 @@
 allow priv_app zygote:unix_stream_socket { getopt };
+allow priv_app apex_system_server_data_file:dir { search };
