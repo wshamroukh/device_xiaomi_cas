@@ -13,16 +13,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <!-- Consumer IR -->
-    <hal format="hidl">
-        <name>android.hardware.ir</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IConsumerIr</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- Fingerprint -->
     <hal format="hidl">
         <name>vendor.goodix.hardware.biometrics.fingerprint</name>
