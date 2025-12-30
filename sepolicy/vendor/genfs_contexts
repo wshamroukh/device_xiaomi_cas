@@ -188,6 +188,11 @@ genfscon sysfs /devices/virtual/misc/msm_amrwb/wakeup53                         
 genfscon sysfs /devices/virtual/misc/msm_qcelp/wakeup61                                                                                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_alac/wakeup51                                                                                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-adsp/wakeup/wakeup8                                                                                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/power_supply/charge_pump_master/wakeup                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0034/884000.i2c:qcom,smb1396@34:qcom,div2_cp/wakeup                                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0035/884000.i2c:qcom,smb1396@35:qcom,div2_cp_slave/power_supply/cp_slave/wakeup                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/888000.i2c/i2c-5/5-003b/power_supply/idt/wakeup                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless/wakeup              u:object_r:sysfs_wakeup:s0
 
 # Power_supply
 genfscon sysfs /devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply                                                                                       u:object_r:sysfs_power_supply:s0
