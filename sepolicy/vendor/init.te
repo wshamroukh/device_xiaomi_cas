@@ -16,3 +16,6 @@ allow init vendor_sysfs_scsi_host:file w_file_perms;
 
 # Allow system_server to control Bypass Charging
 allow init sysfs_battery_supply:file rw_file_perms;
+
+# last_kmsg
+allow init proc_last_kmsg:file { setattr };

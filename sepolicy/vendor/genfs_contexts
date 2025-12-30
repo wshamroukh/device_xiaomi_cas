@@ -209,3 +209,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-a
 
 # FPS Info
 genfscon sysfs /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps u:object_r:vendor_sysfs_graphics:s0
+
+# Last_kmsg
+genfscon proc /last_kmsg u:object_r:proc_last_kmsg:s0
