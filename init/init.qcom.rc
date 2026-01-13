@@ -83,8 +83,8 @@ on init
     chown system system /sys/class/backlight/panel0-backlight/brightness
 
 on early-boot
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
+    # set RLIMIT_MEMLOCK to 64KB
+    setrlimit 8 65536 65536
     # Allow subsystem (modem etc) debugging
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1

@@ -111,8 +111,8 @@ on fs && property:ro.build.ab_update=true
     restorecon_recursive /mnt/rescue
 
 on post-fs
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
+    # set RLIMIT_MEMLOCK to 64KB
+    setrlimit 8 65536 65536
     write /dev/ipa 1
 
 on late-fs
