@@ -786,7 +786,7 @@ vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayqos.so
-vendor/lib64/libdpps.so
+vendor/lib64/libdpps.so|bcfdf598c553721bc4e2d499422d627ea2bc4ac3
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
