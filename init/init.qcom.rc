@@ -249,6 +249,11 @@ on boot
     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
     chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
 
+on property:persist.vendor.hvdcp_opti.start=1
+    chown root system /sys/class/power_supply/bms/soh
+    chown root system /sys/class/power_supply/bms/esr_actual
+    chown root system /sys/class/power_supply/bms/esr_nominal
+
 # msm specific files that need to be created on /data
 on post-fs-data
     rm /data/vendor/wifi/cnss_diag.conf
