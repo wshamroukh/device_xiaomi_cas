@@ -453,6 +453,11 @@ on post-fs-data
     # Create /data/vendor/tzstorage directory for SFS listener
     mkdir /data/vendor/tzstorage 0770 system system
 
+on property:persist.vendor.hvdcp_opti.start=1
+    chown root system /sys/class/power_supply/bms/soh
+    chown root system /sys/class/power_supply/bms/esr_actual
+    chown root system /sys/class/power_supply/bms/esr_nominal
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
