@@ -11,28 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
-# Inherit some common Project Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := Waddah
-TARGET_SUPPORTS_BLUR := true
-TARGET_HAS_UDFPS := true
+# Inherit some common Project lineage-X stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+MISTOS_MAINTAINER := Waddah
+WITH_GMS := true
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDES_POCKET_MODE := true
-TARGET_SUPPORTS_64_BIT_APPS := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_MIUI_CAMERA := true
-WITH_GAPPS := true
-WITH_SU := true
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_SHIPS_GOOGLE_DIALER := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SHIPS_AUDIOFX := false
-TARGET_BUILD_DEVICE_AS_WEBCAM := true
 BYPASS_CHARGE_SUPPORTED := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+WITH_ADB_INSECURE := true
+WITH_SU := true
+TARGET_EXCLUDES_AUDIOFX := false
 
-PRODUCT_NAME := infinity_cas
+PRODUCT_NAME := lineage_cas
 PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J1SC

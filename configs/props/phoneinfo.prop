@@ -1,6 +1,9 @@
-# Infinity X properties
-ro.product.marketname=Xiaomi Mi 10 Ultra
-ro.infinity.soc=Snapdragon 865
-ro.infinity.battery=4500 mAh
-ro.infinity.display=1080 x 2340, 120 Hz
-ro.infinity.camera=48MP + 48MP + 12MP + 8MP
+# MistOS properties
+ro.mist.display=1080 x 2400, 120 hz
+ro.mist.battery=4500mAh
+ro.mist.soc=Snapdragon® 865
+ro.mist.camera=48MP + 48MP + 12MP + 8MP
+ro.mist.front=12MP
+ro.mist.platform=SDM865
+ro.mist.screen=6.67' IPS OLED
+ro.mist.device.name=Xiaomi Mi 10 Ultra
