@@ -4,6 +4,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- ROM maintainer name -->
-    <string name="build_maintainer_summary">Waddah</string>
+    <string name="lunaris_device_message">Xiaomi Mi 10 Ultra</string>
+    <string name="lunaris_processor_code_message">Snapdragon® 865</string>
+    <string name="lunaris_battery_type_message">4500 mAh</string>
+    <string name="lunaris_screen_message">6.67 inches, OLED 120hz</string>
 </resources>

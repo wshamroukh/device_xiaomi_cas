@@ -145,6 +145,10 @@ $(call soong_config_set,lineage_health,fast_charge_node,/sys/class/qcom-battery/
 $(call soong_config_set,lineage_health,fast_charge_value_none,1)
 $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
+# Surfaceflinger refresh rates
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_cas.mk
+    $(LOCAL_DIR)/lineage_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_cas-eng \
-    infinity_cas-user \
-    infinity_cas-userdebug
+    lineage_cas-eng \
+    lineage_cas-user \
+    lineage_cas-userdebug
