@@ -15,20 +15,21 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.display;
+package org.lineageos.settings.touchsampling;
 
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-public class DisplaySettingsActivity extends CollapsingToolbarBaseActivity {
+public class TouchSamplingSettingsActivity extends CollapsingToolbarBaseActivity {
 
-    private static final String TAG_DCDIMMING = "dcdimming";
+    private static final String TAG_HTSR = "touchsampling";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         getSupportFragmentManager().beginTransaction().replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
-                new DisplaySettingsFragment(), TAG_DCDIMMING).commit();
+                new TouchSamplingSettingsFragment(), TAG_HTSR).commit();
     }
 }

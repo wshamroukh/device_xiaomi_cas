@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015-2016 The CyanogenMod Project
-                   2017-2018 The LineageOS Project
+                   2017-2024 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,88 +16,157 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="org.lineageos.settings"
-    android:sharedUserId="android.uid.system"
     android:versionCode="1"
-    android:versionName="1.0">
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
     <!-- Permissions Whitelist -->
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
-    <uses-sdk
-        android:minSdkVersion="24"
-        android:targetSdkVersion="24" />
-
     <application
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/device_settings_app_name"
-        android:persistent="true">
+        android:persistent="true"
+        android:theme="@style/Theme.SubSettingsBase"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true">
 
-        <!-- Override duplicate authorities -->
-        <provider
-            android:name="androidx.startup.InitializationProvider"
-            android:authorities="${applicationId}.androidx-startup"
-            tools:replace="android:authorities" />
-
-        <receiver android:name=".BootCompletedReceiver">
-            <intent-filter android:priority="1000">
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <receiver
+            android:name=".BootCompletedReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
-        <service
-            android:name=".doze.DozeService"
-            android:permission="XiaomiDozeService">
-        </service>
+        <activity
+            android:name=".dirac.DiracActivity"
+            android:exported="false"
+            android:label="@string/dirac_title"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.sound" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/dirac_summary" />
+        </activity>
 
         <service
-            android:name=".fpsinfo.FPSInfoService"
-            android:exported="false">
-        </service>
+            android:name=".thermal.ThermalService"
+            android:exported="true"
+            android:permission="ThermalService" />
 
         <service
-            android:name=".fpsinfo.FPSTileService"
-            android:icon="@drawable/ic_fps"
-            android:label="@string/fps_info_title"
+            android:name=".dirac.DiracTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_headphone"
+            android:label="@string/dirac_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+            <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+            android:value="true" />
+        </service>
+
+        <activity
+            android:name=".thermal.ThermalActivity"
+            android:exported="false"
+            android:label="@string/thermal_title"
+            android:theme="@style/Theme.SubSettingsBase_v31">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.system" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_thermal" />
+            <meta-data
+                android:name="com.android.settings.icon_tintable"
+                android:value="true" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="-255" />
+	    <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/thermal_summary" />
+        </activity>
+
+        <service
+            android:name=".RefreshRateTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_qs_refresh_rate"
+            android:label="@string/refresh_rate_tile_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
 
         <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:name=".refreshrate.RefreshActivity"
+            android:label="@string/refresh_title"
+            android:exported="false"
+            android:theme="@style/Theme.SubSettingsBase_v31">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/refresh_summary" />
         </activity>
-		
-		<activity
-            android:name=".speaker.ClearSpeakerActivity" 
-            android:label="@string/clear_speaker_title"
-            android:theme="@style/Theme.SubSettingsBase">
+
+        <service
+            android:name=".refreshrate.RefreshService"
+            android:exported="true"
+            android:permission="RefreshService">
+        </service>
+
+        <activity
+            android:name=".touchsampling.TouchSamplingSettingsActivity"
+            android:label="@string/htsr_enable_title"
+            android:theme="@style/Theme.SubSettingsBase"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/htsr_enable_summary" />
+        </activity>
+
+        <activity
+            android:name=".speaker.ClearSpeakerActivity"
+            android:exported="false"
+            android:label="@string/clear_speaker_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.sound" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/clear_speaker_summary" />
         </activity>
 
         <activity
@@ -141,62 +210,6 @@
             </intent-filter>
         </service>
 
-        <!-- GameBar Overlay -->
-        <activity
-            android:name=".gamebar.GameBarSettingsActivity"
-            android:label="@string/game_bar_title"
-            android:theme="@style/Theme.SubSettingsBase"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/game_bar_summary" />
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_gamebar" />
-        </activity>
-
-        <!-- GameBar AppSelector -->
-        <activity android:name=".gamebar.GameBarAppSelectorActivity" />
-        <activity android:name=".gamebar.GameBarAppRemoverActivity" />
-
-        <!-- GameBar Overlay Tile Service -->
-        <service
-            android:name=".gamebar.GameBarTileService"
-            android:label="@string/game_bar_tile_label"
-            android:icon="@drawable/ic_gamebar"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE" />
-            </intent-filter>
-            <meta-data
-                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
-                android:value="true" />
-        </service>
-
-        <!-- GameBar Overlay Monitor Service -->
-        <service
-            android:name=".gamebar.GameBarMonitorService"
-            android:exported="false" />
-
-        <!-- GameBar BootReceiver -->
-        <receiver
-            android:name=".gamebar.GameBarBootReceiver"
-            android:exported="true"
-            android:enabled="true"
-            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-                <category android:name="android.intent.category.DEFAULT" />
-             </intent-filter>
-        </receiver>
-
     </application>
+
 </manifest>

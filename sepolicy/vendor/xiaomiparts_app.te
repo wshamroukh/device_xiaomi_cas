@@ -10,3 +10,4 @@ allow xiaomiparts_app proc_stat:file { read open getattr };
 
 allow xiaomiparts_app vendor_sysfs_kgsl_gpuclk:file { read open getattr };
 allow xiaomiparts_app vendor_sysfs_kgsl:file { read open getattr };
+allow xiaomiparts_app vendor_sysfs_touch:file rw_file_perms;;

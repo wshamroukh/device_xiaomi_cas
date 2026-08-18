@@ -513,3 +513,9 @@ firmware_directories /vendor/firmware_mnt/image/
 # Battery
 /sys/class/power_supply/battery                         input_suspend                   0660    system  system
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless/                                 reverse_chg_mode                0644    system  system
+
+# HBM
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary/                        hbm                      0666    system  system
+
+# Touch Sampling
+/sys/devices/virtual/touch/touch_dev/                                          bump_sample_rate         0666    system  system

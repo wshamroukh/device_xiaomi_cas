@@ -20,7 +20,6 @@ import android.content.Context;
 import android.os.Bundle;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreferenceCompat;
 import android.provider.Settings;
 
@@ -28,7 +27,9 @@ import org.lineageos.settings.R;
 import org.lineageos.settings.display.DisplayNodes;
 import org.lineageos.settings.utils.FileUtils;
 
-public class DisplaySettingsFragment extends PreferenceFragment implements
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
+
+public class DisplaySettingsFragment extends SettingsBasePreferenceFragment implements
         OnPreferenceChangeListener {
 
     private SwitchPreferenceCompat mDcDimmingPreference;
