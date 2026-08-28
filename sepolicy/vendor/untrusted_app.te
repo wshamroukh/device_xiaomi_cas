@@ -5,3 +5,4 @@ allow untrusted_app proc_max_map_count:file { read };
 allow untrusted_app qemu_sf_lcd_density_prop:file { read };
 allow untrusted_app qemu_hw_prop:file { read open getattr map };
 allow untrusted_app shell_test_data_file:dir { search };
+allow untrusted_app overlay_service:service_manager { find };
