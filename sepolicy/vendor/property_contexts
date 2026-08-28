@@ -41,3 +41,6 @@ ro.vendor.display.type				u:object_r:vendor_display_prop:s0
 # Aware
 ro.vendor.aware_available          u:object_r:vendor_aware_available_prop:s0
 
+renderthread.skia.reduceopstasksplitting    u:object_r:exported_default_prop:s0
+audio.service.client_wait_ms                u:object_r:exported_default_prop:s0
+vendor.provisioned.keyboard.region_id       u:object_r:exported_default_prop:s0
