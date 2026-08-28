@@ -1,1 +1,7 @@
 allow untrusted_app_29 media_rw_data_file:file { relabelfrom relabelto };
+
+# Allow untrusted_app_29 to read qemu.sf.lcd_density
+get_prop(untrusted_app_29, qemu_sf_lcd_density_prop)
+
+# allow untrusted_app_29 to read qemu.hw.mainkeys
+get_prop(untrusted_app_29, qemu_hw_prop)
