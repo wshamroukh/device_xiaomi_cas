@@ -8,4 +8,3 @@ allow untrusted_app_30 proc_net:dir { read };
 allow untrusted_app_30 qemu_sf_lcd_density_prop:file { read };
 allow untrusted_app_30 qemu_hw_prop:file { read };
 allow untrusted_app_30 sysfs_net:dir { read };
-
