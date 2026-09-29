@@ -130,6 +130,11 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/cas
 TARGET_KERNEL_CONFIG := cas_defconfig
 
+# Required by the 4.19 kernel Makefile to select AArch64
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+CROSS_COMPILE=aarch64-linux-gnu- \
+CROSS_COMPILE_ARM32=arm-linux-gnueabi-
+
 # Kernel Clang Flags
 KERNEL_CC := CC=clang
 override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
