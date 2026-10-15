@@ -3,8 +3,6 @@ allow system_server proc_last_kmsg:file r_file_perms;
 
 get_prop(system_server, vendor_display_notch_prop)
 
-hal_client_domain(system_server, hal_lineage_powershare)
-
 allow system_server system_file:dir { map };
 allow system_server proc:file { getattr };
 allow system_server proc_keys:file { getattr };
