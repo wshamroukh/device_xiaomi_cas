@@ -33,7 +33,7 @@ $(call inherit-product, vendor/xiaomi/cas/cas-vendor.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/cas-miuicamera/products/miuicamera.mk)
 
 # SDCardFS Deprecation ## https://source.android.com/devices/storage/sdcardfs-deprecate
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
