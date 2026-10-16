@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_cas.mk
+    $(LOCAL_DIR)/clover_cas.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_cas-eng \
-    infinity_cas-user \
-    infinity_cas-userdebug
+    clover_cas-eng \
+    clover_cas-user \
+    clover_cas-userdebug
