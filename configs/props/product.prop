@@ -10,3 +10,6 @@ ro.af.client_heap_size_kbyte=7168
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
+
+# BPF
+ro.bpf.kver_override=5.10.239
