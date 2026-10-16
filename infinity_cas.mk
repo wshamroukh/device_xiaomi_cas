@@ -13,7 +13,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common Project Infinity-X stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
-INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_BUILD_TYPE := OFFICIAL
 INFINITY_MAINTAINER := Waddah
 TARGET_SUPPORTS_BLUR := true
 TARGET_HAS_UDFPS := true

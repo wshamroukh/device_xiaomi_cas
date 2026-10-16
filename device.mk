@@ -18,7 +18,7 @@ ALLOW_MISSING_DEPENDENCIES := true
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Keys
--include vendor/lineage-priv/keys/keys.mk
+#-include vendor/lineage-priv/keys/keys.mk
 
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -309,6 +309,9 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
     init.target.rc \
     ueventd.qcom.rc
+
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
 
 # IPACM
 PRODUCT_PACKAGES += \
