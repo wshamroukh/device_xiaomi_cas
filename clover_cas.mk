@@ -21,6 +21,7 @@ WITH_GMS := true
 WITH_SU := true
 WITH_ADB_INSECURE := true
 PRODUCT_NO_CAMERA := false
+CLOVER_VERSION_APPEND_TIME_OF_DAY := true
 
 PRODUCT_NAME := clover_cas
 PRODUCT_DEVICE := cas
