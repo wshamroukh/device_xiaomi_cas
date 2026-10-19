@@ -1,0 +1,11 @@
+allow platform_app_36 hal_dms_hwservice:hwservice_manager { find };
+allow platform_app_36 hal_dms_default:binder { call };
+allow platform_app_36 hal_dms_default:binder { transfer };
+allow platform_app_36 vendor_audio_prop:file { read };
+allow platform_app_36 vendor_audio_prop:file { open };
+allow platform_app_36 vendor_sysfs_kgsl:file { read };
+allow platform_app_36 vendor_sysfs_kgsl:file { open };
+allow platform_app_36 proc_stat:file { read };
+allow platform_app_36 zygote_config_prop:file { read };
+allow platform_app_36 proc_stat:file { read };
+allow platform_app_36 proc_stat:file { open };
