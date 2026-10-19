@@ -40,3 +40,4 @@ allow xiaomiparts_app sensitive_content_protection_service:service_manager { fin
 allow xiaomiparts_app hint_service:service_manager { find };
 allow xiaomiparts_app uimode_service:service_manager { find };
 allow xiaomiparts_app virtual_device_native_service:service_manager { find };
+allow xiaomiparts_app app_function_service:service_manager { find };
