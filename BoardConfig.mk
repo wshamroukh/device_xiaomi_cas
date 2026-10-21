@@ -219,7 +219,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # SELinux
 #include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/clover/sepolicy/libion/sepolicy.mk
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/qcom/sepolicy_vndr/legacy-um/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
