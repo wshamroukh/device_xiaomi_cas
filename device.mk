@@ -521,8 +521,12 @@ PRODUCT_BOOT_JARS += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-	android.hardware.thermal@2.0.vendor \
-    android.hardware.thermal@2.0
+    android.hardware.thermal-service.qti \
+    android.hardware.thermal@1.0.vendor \
+    android.hardware.thermal@2.0.vendor
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/thermal-legacy-um
 
 # Touchscreen
 PRODUCT_PACKAGES += \
