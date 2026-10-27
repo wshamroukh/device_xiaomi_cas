@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<irq-device-map>
+    <device name="wlan_wake_irq">
+        <subsystem>Wifi</subsystem>
+    </device>
+    <device name="pm8xxx_rtc_alarm">
+        <subsystem>Alarm</subsystem>
+    </device>
+    <device name="mhi">
+        <subsystem>Cellular_data</subsystem>
+    </device>
+</irq-device-map>
