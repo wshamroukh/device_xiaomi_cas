@@ -27,3 +27,4 @@ dontaudit hal_camera_default system_data_file:dir rw_dir_perms;
 allow hal_camera_default system_server:binder { call transfer };
 allow hal_camera_default zygote_config_prop:file { read };
 allow hal_camera_default zygote_config_prop:file { open };
+allow hal_camera_default zygote_config_prop:file { getattr };
