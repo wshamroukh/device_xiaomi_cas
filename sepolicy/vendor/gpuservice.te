@@ -1,0 +1,1 @@
+allow gpuservice fs_bpf:file { getattr };
