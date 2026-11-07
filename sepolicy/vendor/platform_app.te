@@ -21,3 +21,4 @@ allow platform_app hal_wlc_hwservice:hwservice_manager find;
 allow platform_app zygote:unix_stream_socket { getopt };
 
 allow platform_app vendor_sysfs_graphics:file { read open };
+allow platform_app vendor_sysfs_kgsl:file { getattr };
