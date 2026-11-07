@@ -9,3 +9,4 @@ allow platform_app_36 proc_stat:file { read };
 allow platform_app_36 zygote_config_prop:file { read };
 allow platform_app_36 proc_stat:file { read };
 allow platform_app_36 proc_stat:file { open };
+allow platform_app_36 vendor_sysfs_kgsl:file { getattr };
