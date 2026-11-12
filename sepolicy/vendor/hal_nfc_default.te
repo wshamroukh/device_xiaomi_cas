@@ -8,3 +8,5 @@ allow hal_nfc_default hal_nxpese_hwservice:hwservice_manager find;
 
 allow hal_nfc_default vendor_nfc_vendor_data_file:dir create_dir_perms;
 allow hal_nfc_default vendor_nfc_vendor_data_file:file create_file_perms;
+allow hal_nfc_default vendor_nfc_vendor_data_file:dir create_dir_perms;
+allow hal_nfc_default vendor_nfc_vendor_data_file:file create_file_perms;
