@@ -124,6 +124,8 @@ on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/nfc/param 0770 nfc nfc
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6390/fs_ready 1
     chmod 0660 /dev/ir_spi
