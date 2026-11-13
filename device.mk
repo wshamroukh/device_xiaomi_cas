@@ -252,7 +252,8 @@ PRODUCT_COPY_FILES += \
 
 # Dolby VNDK libs
 PRODUCT_PACKAGES += \
-    libstagefright_foundation-v33
+    libstagefright_foundation-v33.vendor \
+    libaudioroute-v34
 
 # DRM
 PRODUCT_PACKAGES += \
