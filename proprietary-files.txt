@@ -85,9 +85,7 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # ANT 
-vendor/lib/com.dsi.ant@1.0.so
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
-vendor/lib64/com.dsi.ant@1.0.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
@@ -168,7 +166,6 @@ vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
@@ -177,7 +174,6 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 
 # Camera
 vendor/lib/camera/com.qti.actuator.cas_ofilm_ultra_dw9800.so
@@ -258,10 +254,8 @@ vendor/lib/libswvdec.so
 vendor/lib/libsynx.so
 vendor/lib/libthreadutils.so
 vendor/lib/libvideoutils.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.qti.hardware.camera.device@3.5.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib64/camera/com.qti.actuator.cas_ofilm_ultra_dw9800.so
 vendor/lib64/camera/com.qti.eeprom.cas_ofilm_imx350_gt24p64b.so
 vendor/lib64/camera/com.qti.eeprom.cas_semco_imx586_sem1215.so
@@ -396,10 +390,8 @@ vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libxmi_high_dynamic_range.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 
 # Camera-arcsoft
 vendor/lib64/libarcsoft_beautyshot.so
@@ -1524,8 +1516,6 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # GRAloc
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
 
 # Graphics
 -vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED
@@ -1730,10 +1720,6 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # Protobuf
-vendor/lib/libprotobuf-cpp-full-3.9.1.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 
 # QCC
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
@@ -1985,7 +1971,6 @@ vendor/lib64/lib-rtpsl.so
 vendor/lib64/lib-siputility.so
 vendor/lib64/lib-uceservice.so
 vendor/lib64/librcc.so
-vendor/lib64/libwpa_client.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so
