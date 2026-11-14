@@ -353,7 +353,13 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libstagefright_softomx_plugin.vendor \
-    libstagefright_amrnb_common
+    libstagefright_amrnb_common \
+    libopus.vendor:32 \
+    libvpx.vendor:32 \
+    libvorbisidec.vendor:32 \
+    libstagefright_flacdec.vendor:32 \
+    libstagefright_enc_common.vendor:32 \
+    libstagefright_amrnb_common.vendor:32
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
@@ -431,7 +437,8 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxVdec \
-    libstagefrighthw
+    libstagefrighthw \
+    libOmxVenc
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
