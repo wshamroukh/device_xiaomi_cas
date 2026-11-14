@@ -237,7 +237,6 @@ vendor/lib/libcvp2.so
 vendor/lib/libcvp2_hfi.so
 vendor/lib/libcvp_common.so
 vendor/lib/libcvpcpuRev_skel.so
-vendor/lib/libgui_vendor.so
 vendor/lib/libipebpsstriping.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
@@ -338,7 +337,6 @@ vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libfocus.so
 vendor/lib64/libft2vendor.so
-vendor/lib64/libgui_vendor.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libipebpsstriping.so
@@ -805,7 +803,6 @@ vendor/lib/libqtigef.so|d2e8b296db9d8ff19051858ee1a0143e06c69df3
 vendor/lib/libstagefright_soft_ac4dec.so|e1560136d7f16ed177e8f848fba3448014ea061c|d5221991029fee159e225cafcb397e5e85070c81
 vendor/lib/libstagefright_soft_ddpdec.so|c1a83910911cdab332088b10b2d3675b735a9524|9d84bc7eca710f618e0e960d664ca00e608e756b
 vendor/lib/libstagefrightdolby.so|c4269437c623630cf9c79c2010a7cfb88828584a|a2a600ef92c3a032a5d6fb27fa27b01be92a4747
-vendor/lib/soundfx/libeffectproxy.so|44289fe864b085d53c051ad42ed233727ced175c
 vendor/lib/soundfx/libhwdap.so|6348b774b3df7bd2f485186f2ebc3e84d9435df8
 vendor/lib/soundfx/libswdap.so|bd73d33628837d0e3aa18d85c5ffb8e95b87af1b
 vendor/lib/soundfx/libswgamedap.so|a4d17b610b5cd873bd82c28f7361ba66a5d2c48e
@@ -816,7 +813,6 @@ vendor/lib64/libdlbdsservice.so|f8867071a19efabef94eae4eb62424a5a88b9ef0|2e29d88
 vendor/lib64/libstagefright_soft_ac4dec.so|8c89d21ba388c05504f2950d8a7c1103e57214ad|858913d67995d10dd5e0d114cdd614ee059446ef
 vendor/lib64/libstagefright_soft_ddpdec.so|555b5b366c35bad0c6d6e98a3d04f1105e4d9e92|ab6aabfe237df482c0ca9d78bd7ad08083b9d60d
 vendor/lib64/libstagefrightdolby.so|67157be87b3d8fe2c5a057044ce596ce1b68d16b|3f78d8a4eb9e0b5d07fe82747e08bb82d4bc0c21
-vendor/lib64/soundfx/libeffectproxy.so|e09115bb4087510eab62d21ab050274d6c98db71
 vendor/lib64/soundfx/libhwdap.so|901e19f8e271c8d228e41136ea8d611c3b3d30b4
 vendor/lib64/soundfx/libswdap.so|a468c839bd18e31d50f92d371dbd079374667068
 vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
