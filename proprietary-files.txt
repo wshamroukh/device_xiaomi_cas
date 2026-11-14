@@ -89,9 +89,9 @@ vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
-vendor/lib/hw/audio.primary.kona.so
+vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.xiaomi.so|636fcebd02ed081d0df2b7e0b72e46e6e6eb9f81
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/liba2dpoffload.so:vendor/lib/mi_a2dpoffload.so|068df93f602762fca3688a29264ff5a341228b6c
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
@@ -102,12 +102,12 @@ vendor/lib/libaudioroute_ext.so
 vendor/lib/libmmhardware.so
 vendor/lib/libqtigef.so
 vendor/lib/libresampler.so
-vendor/lib/libssrec.so
+vendor/lib/libssrec.so:vendor/lib/mi_ssrec.so|cd94d73d7f3b5bb020e55b90383340f2dfe1eaa6
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/vndk/libxlog.so
-vendor/lib64/hw/audio.primary.kona.so
+vendor/lib64/hw/audio.primary.kona.so:vendor/lib64/hw/audio.primary.xiaomi.so|3304b9d7ce04ddc56aba70e1f6b1a8805889c2c0
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib64/liba2dpoffload.so
+vendor/lib64/liba2dpoffload.so:vendor/lib64/mi_a2dpoffload.so|3ae022d4067ba8b393b05cb48d9acabe4c2e55dc
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
@@ -117,7 +117,7 @@ vendor/lib64/libaudioroute_ext.so
 vendor/lib64/libmmhardware.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libresampler.so
-vendor/lib64/libssrec.so
+vendor/lib64/libssrec.so:vendor/lib64/mi_ssrec.so|90f1f4452047b4e20c7d060fbbc2e846e0446d13
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
 # Audio Configs

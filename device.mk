@@ -107,7 +107,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
     audio.primary.default \
-    audio.primary.kona \
     audio.r_submix.default \
     audio.usb.default \
     libaacwrapper \
