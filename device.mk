@@ -129,7 +129,8 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libtinycompress \
     libvisualizer \
-    libvolumelistener
+    libvolumelistener \
+    libaudioroute-v34
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
@@ -200,7 +201,9 @@ PRODUCT_PACKAGES += \
     libutilscallstack.vendor:64 \
     libyuv.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    android.hardware.camera.common@1.0 \
+    libyuv
 
 # Camera - Qualcomm Gralloc
 PRODUCT_PACKAGES += \
@@ -238,7 +241,9 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.example \
     libqdMetaData \
     libqdMetaData.system \
-    libtinyxml
+    libtinyxml \
+    libgralloccore \
+    libgrallocutils
 
 # Dolby
 PRODUCT_COPY_FILES += \
@@ -252,16 +257,7 @@ PRODUCT_COPY_FILES += \
 
 # Dolby VNDK libs
 PRODUCT_PACKAGES += \
-    libstagefright_foundation-v33.vendor \
-    libaudioroute-v34
-
-# Source replacements for dropped system blobs
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hardware.camera.common@1.0 \
-    libhidltransport \
-    libstagefright_amrnb_common \
-    libyuv
+    libstagefright_foundation-v33.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -290,7 +286,8 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    android.hidl.base@1.0
 
 # Health
 PRODUCT_PACKAGES += \
@@ -355,7 +352,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libstagefright_softomx_plugin.vendor
+    libstagefright_softomx_plugin.vendor \
+    libstagefright_amrnb_common
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
@@ -573,7 +571,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_EXTRA_VNDK_VERSIONS := 31 32 33 34
 
 PRODUCT_PACKAGES += \
-    com.android.vndk.current.on_vendor
+    com.android.vndk.current.on_vendor \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # WiFi
 PRODUCT_PACKAGES += \
