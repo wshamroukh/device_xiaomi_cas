@@ -203,7 +203,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.hardware.camera.common@1.0 \
-    libyuv
+    libyuv \
+    libpiex.vendor:64
 
 # Camera - Qualcomm Gralloc
 PRODUCT_PACKAGES += \
