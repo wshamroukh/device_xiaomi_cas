@@ -1905,7 +1905,7 @@ vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 # RIL (IMS)
 -system_ext/app/ImsRcsService/ImsRcsService.apk
--system_ext/priv-app/ims/ims.apk
+-system_ext/priv-app/ims/ims.apk|186fef3f847a2650ee07f06984b67d7cc6f4182f
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
