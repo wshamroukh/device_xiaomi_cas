@@ -269,6 +269,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Firmware mount points
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
