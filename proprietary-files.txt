@@ -154,10 +154,6 @@ vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
 
 # Bluetooth
-system/lib/libldacBT_abr.so 
-system/lib/libldacBT_enc.so
-system/lib64/libldacBT_abr.so
-system/lib64/libldacBT_enc.so
 system_ext/lib/liblhdc.so
 system_ext/lib/liblhdcBT_enc.so
 system_ext/lib64/liblhdc.so
@@ -184,7 +180,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 
 # Camera
-system/lib64/libyuv.so
 vendor/lib/camera/com.qti.actuator.cas_ofilm_ultra_dw9800.so
 vendor/lib/camera/com.qti.eeprom.cas_ofilm_imx350_gt24p64b.so
 vendor/lib/camera/com.qti.eeprom.cas_semco_imx586_sem1215.so
@@ -1830,7 +1825,6 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
-system_ext/etc/permissions/extphonelib.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/framework/extphonelib.jar
@@ -2190,8 +2184,6 @@ vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # StageFright
-system/lib/libstagefright_amrnb_common.so
-system/lib64/libstagefright_amrnb_common.so
 vendor/lib/libopus.so
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_enc_common.so
@@ -2310,7 +2302,6 @@ system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
 system_ext/etc/seccomp_policy/wfdservice.policy
 system_ext/etc/seccomp_policy/wfdservice64.policy
 system_ext/etc/wfdconfigsink.xml
-system_ext/lib/android.hidl.base@1.0.so
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 system_ext/lib/libmmrtpdecoder.so
 system_ext/lib/libmmrtpencoder.so
@@ -2331,7 +2322,6 @@ system_ext/lib/libwfduibcsinkinterface.so
 system_ext/lib/libwfduibcsrc.so
 system_ext/lib/libwfduibcsrcinterface.so
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
-system_ext/lib64/android.hidl.base@1.0.so
 system_ext/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so
 system_ext/lib64/libmmrtpdecoder.so
 system_ext/lib64/libmmrtpencoder.so

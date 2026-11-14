@@ -255,6 +255,14 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation-v33.vendor \
     libaudioroute-v34
 
+# Source replacements for dropped system blobs
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hardware.camera.common@1.0 \
+    libhidltransport \
+    libstagefright_amrnb_common \
+    libyuv
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
