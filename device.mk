@@ -191,6 +191,19 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-legacy \
+    android.hardware.camera.provider@2.4-external \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    camera.device@3.3-impl \
+    camera.device@3.4-impl \
+    camera.device@3.5-impl \
+    camera.device@3.4-external-impl \
+    camera.device@3.5-external-impl \
+    camera.device@3.6-external-impl \
+    android.hardware.camera.device@3.6.vendor \
+    libexif.vendor \
+    libsync.vendor \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
     libcamera_metadata.vendor \
