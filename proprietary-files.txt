@@ -89,7 +89,6 @@ vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
-vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.xiaomi.so|636fcebd02ed081d0df2b7e0b72e46e6e6eb9f81
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/liba2dpoffload.so:vendor/lib/mi_a2dpoffload.so|068df93f602762fca3688a29264ff5a341228b6c
 vendor/lib/libadiertac.so
@@ -105,7 +104,6 @@ vendor/lib/libresampler.so
 vendor/lib/libssrec.so:vendor/lib/mi_ssrec.so|cd94d73d7f3b5bb020e55b90383340f2dfe1eaa6
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/vndk/libxlog.so
-vendor/lib64/hw/audio.primary.kona.so:vendor/lib64/hw/audio.primary.xiaomi.so|3304b9d7ce04ddc56aba70e1f6b1a8805889c2c0
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib64/liba2dpoffload.so:vendor/lib64/mi_a2dpoffload.so|3ae022d4067ba8b393b05cb48d9acabe4c2e55dc
 vendor/lib64/libadiertac.so
@@ -2276,3 +2274,9 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# Hotword enrollment (DSP "Hey Google")
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar

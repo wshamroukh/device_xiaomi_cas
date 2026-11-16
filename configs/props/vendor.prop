@@ -254,5 +254,3 @@ vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=0
 vendor.usb.use_gadget_hal=0
 
-# Audio: load the stock Xiaomi HAL (audio.primary.xiaomi.so)
-ro.hardware.audio.primary=xiaomi
