@@ -13,7 +13,7 @@ $(call inherit-product, device/xiaomi/cas/device.mk)
 
 # Inherit some common Project Clover stuff.
 $(call inherit-product, vendor/clover/config/common_full_phone.mk)
-CLOVER_BUILDTYPE := UNOFFICIAL
+CLOVER_BUILDTYPE := OFFICIAL
 CLOVER_MAINTAINER := Waddah
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_CALL_RECORDING_SUPPORTED := true
