@@ -19,4 +19,6 @@
 <resources>
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
     <string name="def_device_name_simple">Mi 10 Ultra</string>
+    <!-- Don't keep cellular data up while on Wi-Fi (~20 mA idle saving) -->
+    <bool name="def_mobile_data_always_on">false</bool>
 </resources>
